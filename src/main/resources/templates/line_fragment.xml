@@ -1,0 +1,22 @@
+<Placemark>
+  <name>{NAME}</name>
+  <description>{DESCRIPTION}</description>
+  <styleUrl>#line-F8971B-3325</styleUrl>
+  <ExtendedData>
+    <Data name="Region">
+      <value>{SERIES}</value>
+    </Data>
+    <Data name="description">
+      <value>{DESCRIPTION}</value>
+    </Data>
+    <Data name="_SnapToRoads">
+      <value>true</value>
+    </Data>
+  </ExtendedData>
+  <LineString>
+    <tessellate>1</tessellate>
+    <coordinates>
+      {COORDINATES}
+    </coordinates>
+  </LineString>
+</Placemark>

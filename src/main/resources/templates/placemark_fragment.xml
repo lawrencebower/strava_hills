@@ -1,0 +1,18 @@
+<Placemark>
+    <name>{NAME}</name>
+    <description>{DESCRIPTION}</description>
+    <styleUrl>#icon-503-009D57</styleUrl>
+    <ExtendedData>
+        <Data name="Type">
+            <value>Start</value>
+        </Data>
+        <Data name="description">
+            <value/>
+        </Data>
+    </ExtendedData>
+    <Point>
+        <coordinates>
+            {START_COORDINATE}
+        </coordinates>
+    </Point>
+</Placemark>

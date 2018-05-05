@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>100 Greatest Cycling Climbs</name>
+    <description><![CDATA[Note: the Elevation gains and distances have been taken from 100 Greatest Climbs (and Another 100 Greatest Climbs). <br><br>Start and end points and climb categories (along with average gradients) with have been taken from Strava.  The climb categories may therefore not be a true reflection of the severity of the climb as shown!  One particular (and rather obvious example is No 47 (Malham Cove), which at 3,410m in length and with an altitude gain of 199m should merit a category of 3, whereas Strava shows 4.3km and 127m elevation and Unclassified!<br><br>Also note that Strava segments for Another 100 Greatest Cycling Climbs may not be truly reflective of the climbs as described in the book as a result of how the climbs were collated for the purposes of the 100 Greatest Climbs club on Strava.]]></description>
+    <Style id="icon-1419-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/1419-trans-bicycle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1419-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/1419-trans-bicycle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1419">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1419-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1419-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1419-nodesc-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/1419-trans-bicycle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1419-nodesc-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/1419-trans-bicycle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1419-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1419-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1419-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-503-009D57-normal">
+      <IconStyle>
+        <color>ff579d00</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-503-009D57-highlight">
+      <IconStyle>
+        <color>ff579d00</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-503-009D57">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-503-009D57-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-503-009D57-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-503-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-503-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-503-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-503-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-503-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-991-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/991-biz-cafe.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-991-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/991-biz-cafe.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-991">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-991-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-991-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-991-nodesc-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/991-biz-cafe.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-991-nodesc-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/991-biz-cafe.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-991-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-991-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-991-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-009D57-3325-normal">
+      <LineStyle>
+        <color>ff579d00</color>
+        <width>3.325</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-009D57-3325-highlight">
+      <LineStyle>
+        <color>ff579d00</color>
+        <width>4.9875</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-009D57-3325">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-009D57-3325-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-009D57-3325-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-009D57-3519-normal">
+      <LineStyle>
+        <color>ff579d00</color>
+        <width>3.519</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-009D57-3519-highlight">
+      <LineStyle>
+        <color>ff579d00</color>
+        <width>5.2785</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-009D57-3519">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-009D57-3519-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-009D57-3519-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-3F5BA9-3131-normal">
+      <LineStyle>
+        <color>ffa95b3f</color>
+        <width>3.131</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-3F5BA9-3131-highlight">
+      <LineStyle>
+        <color>ffa95b3f</color>
+        <width>4.6965</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-3F5BA9-3131">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-3F5BA9-3131-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-3F5BA9-3131-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-3F5BA9-3325-normal">
+      <LineStyle>
+        <color>ffa95b3f</color>
+        <width>3.325</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-3F5BA9-3325-highlight">
+      <LineStyle>
+        <color>ffa95b3f</color>
+        <width>4.9875</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-3F5BA9-3325">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-3F5BA9-3325-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-3F5BA9-3325-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-4186F0-3131-normal">
+      <LineStyle>
+        <color>fff08641</color>
+        <width>3.131</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-4186F0-3131-highlight">
+      <LineStyle>
+        <color>fff08641</color>
+        <width>4.6965</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-4186F0-3131">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-4186F0-3131-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-4186F0-3131-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-4186F0-3325-normal">
+      <LineStyle>
+        <color>fff08641</color>
+        <width>3.325</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-4186F0-3325-highlight">
+      <LineStyle>
+        <color>fff08641</color>
+        <width>4.9875</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-4186F0-3325">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-4186F0-3325-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-4186F0-3325-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-62AF44-3325-normal">
+      <LineStyle>
+        <color>ff44af62</color>
+        <width>3.325</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-62AF44-3325-highlight">
+      <LineStyle>
+        <color>ff44af62</color>
+        <width>4.9875</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-62AF44-3325">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-62AF44-3325-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-62AF44-3325-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-7C3592-3325-normal">
+      <LineStyle>
+        <color>ff92357c</color>
+        <width>3.325</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-7C3592-3325-highlight">
+      <LineStyle>
+        <color>ff92357c</color>
+        <width>4.9875</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-7C3592-3325">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-7C3592-3325-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-7C3592-3325-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-A61B4A-3325-normal">
+      <LineStyle>
+        <color>ff4a1ba6</color>
+        <width>3.325</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-A61B4A-3325-highlight">
+      <LineStyle>
+        <color>ff4a1ba6</color>
+        <width>4.9875</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-A61B4A-3325">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-A61B4A-3325-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-A61B4A-3325-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-A61B4A-3519-normal">
+      <LineStyle>
+        <color>ff4a1ba6</color>
+        <width>3.519</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-A61B4A-3519-highlight">
+      <LineStyle>
+        <color>ff4a1ba6</color>
+        <width>5.2785</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-A61B4A-3519">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-A61B4A-3519-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-A61B4A-3519-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-C6A4CF-3131-normal">
+      <LineStyle>
+        <color>ffcfa4c6</color>
+        <width>3.131</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-C6A4CF-3131-highlight">
+      <LineStyle>
+        <color>ffcfa4c6</color>
+        <width>4.6965</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-C6A4CF-3131">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-C6A4CF-3131-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-C6A4CF-3131-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-CDDC39-3325-normal">
+      <LineStyle>
+        <color>ff39dccd</color>
+        <width>3.325</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-CDDC39-3325-highlight">
+      <LineStyle>
+        <color>ff39dccd</color>
+        <width>4.9875</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-CDDC39-3325">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-CDDC39-3325-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-CDDC39-3325-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-EE9C96-3131-normal">
+      <LineStyle>
+        <color>ff969cee</color>
+        <width>3.131</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-EE9C96-3131-highlight">
+      <LineStyle>
+        <color>ff969cee</color>
+        <width>4.6965</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-EE9C96-3131">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-EE9C96-3131-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-EE9C96-3131-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-EE9C96-3325-normal">
+      <LineStyle>
+        <color>ff969cee</color>
+        <width>3.325</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-EE9C96-3325-highlight">
+      <LineStyle>
+        <color>ff969cee</color>
+        <width>4.9875</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-EE9C96-3325">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-EE9C96-3325-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-EE9C96-3325-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-F8971B-3325-normal">
+      <LineStyle>
+        <color>ff1b97f8</color>
+        <width>3.325</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-F8971B-3325-highlight">
+      <LineStyle>
+        <color>ff1b97f8</color>
+        <width>4.9875</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-F8971B-3325">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-F8971B-3325-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-F8971B-3325-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Cycling Climbs</name>
+      {PLACEMARKS}
+    </Folder>
+    <Folder>
+      <name>Start Markers</name>
+      {MARKERS}
+    </Folder>
+  </Document>
+</kml>
