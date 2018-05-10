@@ -1,10 +1,10 @@
+package runners;
+
 import javastrava.api.v3.auth.AuthorisationService;
 import javastrava.api.v3.auth.impl.retrofit.AuthorisationServiceImpl;
 import javastrava.api.v3.auth.model.Token;
 import javastrava.api.v3.model.*;
-import javastrava.api.v3.service.ActivityService;
 import javastrava.api.v3.service.Strava;
-import javastrava.api.v3.service.StreamService;
 
 import java.util.List;
 
@@ -51,9 +51,9 @@ public class Test {
     public void hello(Strava strava) {
         java.util.Arrays.asList("hello");
 
-//        List<StravaStream> streams = strava.getSegmentStreams(637403);
+        List<StravaStream> streams = strava.getSegmentStreams(637403);
 
-        List<StravaStream> streams = strava.getActivityStreams(1148302107);
+//        List<StravaStream> streams = strava.getActivityStreams(1148302107);
 
         StravaStream gradients = streams.get(7);
 

@@ -1,12 +1,11 @@
+package utils;
+
+import model.LatLng;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class PolyUtil {
-
-    public static void main(String[] args) {
-        List<LatLng> decode = PolyUtil.decode("s{ckI|`yQ?JP^Ln@LVFd@Pd@NxCDrCFbACRm@lAQj@Ml@S`BBpAATDbB@rDLdFFdAVbBTrBz@fDHj@P~BVjBJlD?dGUzEC`BQ~AC~@?RWpAQjDEj@UpAA`@Iz@I`@Cx@G^?hAGhA@ZEX?v@Gz@CdAI\\GbADvAJ~@Nj@PPNB\\NNL@f@MzA@fBHhALp@HTv@`AVNf@Rv@f@TPRHLPBJd@|@PPLFJLTJXdAZn@BRLTTx@Vj@b@\\FNRz@Vp@r@zAzAjCNb@Nr@XtBZ`BB`@CvAFjAd@nDHRHJZN`@XPHBDFr@\\hA");
-        int i = 0;
-    }
 
     private PolyUtil() {}
 

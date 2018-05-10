@@ -1,0 +1,49 @@
+package reader;
+
+import model.SegmentSummaryData;
+import utils.PolyUtil;
+import utils.SegmentInfoUtils;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class SegmentSummaryReader {
+
+    public List<SegmentSummaryData> readSummaryFile(InputStream inputStream) {
+        return readDetailsStream(inputStream);
+    }
+
+    private List<SegmentSummaryData> readDetailsStream(InputStream inputStream) {
+
+        Scanner scanner = new Scanner(inputStream);
+
+        ArrayList<SegmentSummaryData> segmentSummaryValues = new ArrayList<>();
+
+        while (scanner.hasNextLine()) {
+            String line = scanner.nextLine();
+
+            if (!line.isEmpty()) {
+                System.out.println("line = " + line);
+                String[] tokens = line.split("\t");
+                SegmentSummaryData values = new SegmentSummaryData();
+                values.name = tokens[0];
+                values.description = tokens[1];
+                values.series = tokens[2];
+                values.startCoordinate = PolyUtil.stringToLatLong(tokens[3]);
+                values.altitudeValues = SegmentInfoUtils.stringsToFloats(tokens[4]);
+                values.distanceValues = SegmentInfoUtils.stringsToFloats(tokens[5]);
+                values.lineCoordinates = PolyUtil.stringsToLatLong(tokens[6]);
+
+                segmentSummaryValues.add(values);
+            }
+        }
+
+        scanner.close();
+
+        return segmentSummaryValues;
+    }
+}

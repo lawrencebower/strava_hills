@@ -1,15 +1,17 @@
-import javastrava.api.v3.model.StravaSegment;
+package writer;
+
+import model.LatLng;
+import model.SegmentSummaryData;
+import reader.IdReader;
+import utils.ClassPathStringLoader;
+import utils.SegmentInfoUtils;
 
 import java.io.*;
 import java.util.List;
 
 public class KmlWriter {
 
-    public static void main(String[] args) {
-        new KmlWriter().write();
-    }
-
-    private void write() {
+    public void write() {
 
         SegmentInfoUtils segmentInfoUtils = new SegmentInfoUtils();
         segmentInfoUtils.setupSession();
@@ -17,10 +19,8 @@ public class KmlWriter {
         System.out.println("starting...");
 //        List<Integer> segmentIds = Arrays.asList(6665368, 6677446);
         List<Integer> segmentIds = readIdsFile();
-        List<StravaSegment> segments = segmentInfoUtils.getSegments(segmentIds);
+        List<SegmentSummaryData> segmentSummaryValues = segmentInfoUtils.getSegmentSummaryValues(segmentIds);
         System.out.println("...done");
-
-        List<SegmentSummaryValues> segmentSummaryValues = segmentInfoUtils.getSegmentValues(segments);
 
         String kmlString = mapSegmentsToKML(segmentSummaryValues);
 
@@ -51,7 +51,7 @@ public class KmlWriter {
         }
     }
 
-    private String mapSegmentsToKML(List<SegmentSummaryValues> segments) {
+    private String mapSegmentsToKML(List<SegmentSummaryData> segments) {
 
         ClassPathStringLoader loader = new ClassPathStringLoader();
         String dirRoot = "/templates/";
@@ -63,7 +63,7 @@ public class KmlWriter {
         StringBuilder linesBuilder = new StringBuilder();
         StringBuilder placemarksBuilder = new StringBuilder();
 
-        for (SegmentSummaryValues segment : segments) {
+        for (SegmentSummaryData segment : segments) {
 
             processSegment(linesBuilder,
                     segment,
@@ -82,7 +82,7 @@ public class KmlWriter {
     }
 
     private void processSegment(StringBuilder linesBuilder,
-                                SegmentSummaryValues segment,
+                                SegmentSummaryData segment,
                                 String templateString) {
 
         templateString = templateString.replaceAll("\\{NAME\\}", segment.name);
