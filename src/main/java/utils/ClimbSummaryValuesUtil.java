@@ -10,10 +10,11 @@ import java.util.List;
 
 public class ClimbSummaryValuesUtil {
 
-    private static final int chunkSize = 100;
+    private static final int UNIT_DISTANCE = 20;
 
     public ClimbSummaryData segmentSummaryToClimbSummary(SegmentSummaryData segmentSummaryData) {
-        System.out.println("ClimbSummaryValuesUtil.segmentSummaryToClimbSummary");
+
+        System.out.println(segmentSummaryData.name);
 
         ClimbSummaryData results = new ClimbSummaryData();
         results.name = segmentSummaryData.name;
@@ -44,19 +45,32 @@ public class ClimbSummaryValuesUtil {
 
         List<GradUnit> results = new ArrayList<>();
 
-        for (int index1 = 0; index1 < alts.size(); index1 = (index1 + chunkSize)) {
+        int unitStartIndex = 0;
+        float unitStartDistance = 0;
+        float distanceSinceLast = 0;
 
-            int index2 = index1 + chunkSize;
+        for (int currentIndex = 0; currentIndex < alts.size(); currentIndex++) {
 
-            if ((index2) < alts.size()) {
+            Float currentDistance = dists.get(currentIndex);
+//            float incrementDistance = currentDistance - distanceSinceLast;
+            distanceSinceLast = currentDistance - unitStartDistance;
+
+            if (distanceSinceLast > UNIT_DISTANCE) {
                 GradUnit gradUnit = calculateGradUnit(
-                        dists.get(index1),
-                        alts.get(index1),
-                        dists.get(index2),
-                        alts.get(index2));
+                        dists.get(unitStartIndex),
+                        alts.get(unitStartIndex),
+                        dists.get(currentIndex),
+                        alts.get(currentIndex));
 
                 results.add(gradUnit);
                 System.out.println(gradUnit.toString());
+                if(gradUnit.grad > 30) {
+                    int i = 0;
+                }
+
+//                distanceSinceLast = 0;//reset
+                unitStartIndex = currentIndex++;
+                unitStartDistance = dists.get(unitStartIndex);
             }
         }
 

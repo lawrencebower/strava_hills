@@ -25,7 +25,7 @@ public class Test {
 //        StreamService streamService = javastrava.api.v3.service.impl.StreamServiceImpl.instance(token);
 
 //        StravaSegment segment = strava.getSegment(637403);
-//        StravaSegmentLeaderboard allSegmentLeaderboard = strava.getSegmentLeaderboard(1095648);
+//        StravaSegmentLeaderboard allSegmentLeaderboard = strava.getSegmentLeaderTime(1095648);
 //        StravaActivity activity = strava.getActivity(1148302107, true);
 
         new Test().hello(strava);

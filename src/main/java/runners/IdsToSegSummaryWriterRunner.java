@@ -1,31 +1,66 @@
 package runners;
 
+import model.SegInfo;
 import model.SegmentSummaryData;
 import reader.IdReader;
-import utils.SegmentInfoUtils;
+import utils.SegmentSummaryUtils;
 import writer.SegmentSummaryWriter;
 
 import java.io.*;
-import java.util.List;
+import java.util.ArrayList;
 
 public class IdsToSegSummaryWriterRunner {
 
+    private static int requests;
+
     public static void main(String[] args) throws FileNotFoundException {
 
-        FileInputStream inputStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\small_segments.txt");
+//        FileInputStream inputStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\small_segments.tsv");
+        FileInputStream inputStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\segments.tsv");
 
-        List<Integer> segIds = new IdReader().readIds(inputStream);
+        ArrayList<SegInfo> segInfos = new IdReader().readIds(inputStream);
 
         System.out.println("starting...");
-        SegmentInfoUtils segmentInfoUtils = new SegmentInfoUtils();
-        segmentInfoUtils.setupSession();
-//        List<Integer> segmentIds = Arrays.asList(6665368, 6677446);
-        List<SegmentSummaryData> segmentSummaryValues = segmentInfoUtils.getSegmentSummaryValues(segIds);
-        System.out.println("...done");
+        SegmentSummaryUtils segmentSummaryUtils = new SegmentSummaryUtils();
+        segmentSummaryUtils.setupSession();
 
+        SegmentSummaryWriter summaryWriter = new SegmentSummaryWriter();
         OutputStream outStream = new FileOutputStream(new File("C:\\Users\\lawrence\\uk_hill\\maps\\segment_stats.tsv"));
+        summaryWriter.prepareWriter(outStream);
 
-        new SegmentSummaryWriter().writeSegSummariesFile(segmentSummaryValues, outStream);
+        requests = 0;
+        int count = 0;
+        int totalCount = segInfos.size();
 
+        for (SegInfo segInfo : segInfos) {
+
+            count++;
+            requests++;
+
+            SegmentSummaryData segmentSummaryValues = segmentSummaryUtils.getSegmentSummaryValues(segInfo);
+            summaryWriter.writeSegSummaryLine(segmentSummaryValues);
+
+            System.out.println(String.format("%s/%s - %s (%s)", count, totalCount, segmentSummaryValues.name, requests));
+
+            checkRequestsCount();
+        }
+
+        summaryWriter.closeWriter();
+
+        System.out.println("...done");
+    }
+
+    private static void checkRequestsCount() {
+
+        if (requests == 180) {
+            try {
+                System.out.println("Hit maximum, sleeping...");
+                Thread.sleep(900000);
+                requests = 0;
+                System.out.println("...continuing");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

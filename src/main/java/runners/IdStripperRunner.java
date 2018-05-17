@@ -10,11 +10,9 @@ public class IdStripperRunner {
 
         File htmlDir = new File(args[0]);
 
-        File[] files = htmlDir.listFiles(new FilenameFilter() {
-            @Override
-            public boolean accept(File dir, String name) {
-                return name.endsWith(".html");
-            }
+        File[] files = htmlDir.listFiles((dir, name) -> {
+            return name.endsWith(".html");
+//            return name.startsWith("1_");
         });
 
         IdStripper idStripper = new IdStripper();

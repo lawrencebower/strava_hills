@@ -2,85 +2,65 @@ package writer;
 
 import model.LatLng;
 import model.SegmentSummaryData;
+import utils.SegmentSummaryUtils;
 
 import java.io.*;
 import java.util.List;
 
 public class SegmentSummaryWriter {
 
-    public void writeSegSummariesFile(List<SegmentSummaryData> segmentSummaryValues, OutputStream outputStream) {
+    private PrintWriter printWriter;
+    private SegmentSummaryUtils segUtils = new SegmentSummaryUtils();
 
-        buildSummaryString(segmentSummaryValues, outputStream);
-
-        int i = 0;
+    public void prepareWriter(OutputStream outputStream){
+        printWriter = new PrintWriter(outputStream);
     }
 
-    private void buildSummaryString(List<SegmentSummaryData> segments, OutputStream outputStream) {
-
-        PrintWriter writer = new PrintWriter(outputStream);
-
-        for (SegmentSummaryData segment : segments) {
-            System.out.println("Writing segment " + segment.name);
-            String segmentString = buildSummaryString(segment);
-            writer.write(segmentString);
-        }
-
-        writer.flush();
-        writer.close();
-
+    public void closeWriter() {
+        printWriter.close();
     }
 
-    private String buildSummaryString(SegmentSummaryData segmentSummaryData) {
+//    private void writeSegSummariesFile(List<SegmentSummaryData> segments) {
+//        for (SegmentSummaryData segment : segments) {
+//            writeSegSummaryLine(segment);
+//        }
+//    }
+
+    public void writeSegSummaryLine(SegmentSummaryData segment) {
+        System.out.println("Writing segment " + segment.name);
+        String segmentString = buildAndWriteSummaryString(segment);
+        printWriter.write(segmentString);
+    }
+
+    private String buildAndWriteSummaryString(SegmentSummaryData segmentSummaryData) {
         return summaryDataToString(segmentSummaryData);
     }
 
     private String summaryDataToString(SegmentSummaryData segmentSummaryData) {
 
         StringBuilder builder = new StringBuilder();
+        appendWithTab(builder, segmentSummaryData.id);
         appendWithTab(builder, segmentSummaryData.name);
-        appendWithTab(builder, segmentSummaryData.description);
-        appendWithTab(builder, segmentSummaryData.series);
+        appendWithTab(builder, segmentSummaryData.city);
+        appendWithTab(builder, segUtils.seriesNamesToString(segmentSummaryData.seriesNames));
+        appendWithTab(builder, segmentSummaryData.category);
+        appendWithTab(builder, segmentSummaryData.distance.toString());
+        appendWithTab(builder, segmentSummaryData.averageGrad.toString());
+        appendWithTab(builder, segmentSummaryData.maxGrad.toString());
+        appendWithTab(builder, segmentSummaryData.elevation.toString());
+        appendWithTab(builder, segmentSummaryData.leaderTime);
 
         LatLng startCoordinate = segmentSummaryData.startCoordinate;
-        String startCoordinatesString = coordinatesToString(startCoordinate);
+        String startCoordinatesString = segUtils.coordinatesToString(startCoordinate);
         appendWithTab(builder, startCoordinatesString);
 
-        String lineString = coordinatesToString(segmentSummaryData.lineCoordinates);
-        String altitudeString = listToString(segmentSummaryData.altitudeValues);
-        String distanceString = listToString(segmentSummaryData.distanceValues);
+        String altitudeString = segUtils.listToString(segmentSummaryData.altitudeValues);
+        String distanceString = segUtils.listToString(segmentSummaryData.distanceValues);
 
         appendWithTab(builder, altitudeString);
         appendWithTab(builder, distanceString);
 
-        appendWithNewline(builder, lineString);
-
-        return builder.toString();
-    }
-
-    private String listToString(List<Float> values) {
-
-        StringBuilder builder = new StringBuilder();
-
-        for (Float value : values) {
-            builder.append(value);
-            builder.append(";");
-        }
-
-        return builder.toString();
-    }
-
-    private String coordinatesToString(LatLng coordinates) {
-        return coordinates.toString();
-    }
-
-    private String coordinatesToString(List<LatLng> coordinatesList) {
-
-        StringBuilder builder = new StringBuilder();
-
-        for (LatLng latLng : coordinatesList) {
-            builder.append(coordinatesToString(latLng));
-            builder.append(";");
-        }
+        appendWithNewline(builder, segmentSummaryData.polyline);
 
         return builder.toString();
     }

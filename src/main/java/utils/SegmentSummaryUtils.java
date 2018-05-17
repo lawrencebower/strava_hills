@@ -7,12 +7,14 @@ import javastrava.api.v3.model.*;
 import javastrava.api.v3.model.reference.StravaStreamType;
 import javastrava.api.v3.service.Strava;
 import model.LatLng;
+import model.SegInfo;
 import model.SegmentSummaryData;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
-public class SegmentInfoUtils {
+public class SegmentSummaryUtils {
 
     private Strava strava;
 
@@ -35,6 +37,30 @@ public class SegmentInfoUtils {
         return segment;
     }
 
+    public String getSegmentLeaderTime(int segmentId) {
+
+        StravaSegmentLeaderboard leaderboard;
+
+        leaderboard = strava.getSegmentLeaderboard(segmentId);
+        List<StravaSegmentLeaderboardEntry> entries = leaderboard.getEntries();
+
+        String timeString = "not set";
+
+        if(!entries.isEmpty()) {
+            StravaSegmentLeaderboardEntry fastest = entries.get(0);
+
+            int totalSecs = fastest.getElapsedTime();
+
+            int hours = totalSecs / 3600;
+            int minutes = (totalSecs % 3600) / 60;
+            int seconds = totalSecs % 60;
+
+            timeString = String.format("%02d:%02d:%02d", hours, minutes, seconds);
+        }
+
+        return timeString;
+    }
+
     public List<StravaStream> getSegmentStreams(int segmentId) {
 
         List<StravaStream> streams = strava.getSegmentStreams(segmentId);
@@ -42,31 +68,36 @@ public class SegmentInfoUtils {
         return streams;
     }
 
-    public SegmentSummaryData getSegmentSummaryValues(int segmentId) {
+    public SegmentSummaryData getSegmentSummaryValues(SegInfo segmentInfo) {
 
+        Integer segmentId = segmentInfo.segmentId;
         StravaSegment segment = getSegment(segmentId);
+        String leaderTime = getSegmentLeaderTime(segmentId);
         List<StravaStream> segmentStreams = getSegmentStreams(segmentId);
         StravaStream altitudeStream = getSpecifiedStream(StravaStreamType.ALTITUDE, segmentStreams);
         StravaStream distanceStream = getSpecifiedStream(StravaStreamType.DISTANCE, segmentStreams);
 
         SegmentSummaryData summaryValues = new SegmentSummaryData();
-        summaryValues.description = filterChars(segment.getName());
+        summaryValues.city = filterChars(segment.getCity());
         summaryValues.name = filterChars(segment.getName());
-        summaryValues.series = "100 climbs";
-        segment.getAverageGrade();
-        segment.getDistance();
-        segment.getClimbCategory();
-        segment.getTotalElevationGain();
-        segment.getMaximumGrade();
+        summaryValues.id = segmentId.toString();
+        summaryValues.seriesNames = new ArrayList<>(segmentInfo.seriesNames);
+        summaryValues.averageGrad = segment.getAverageGrade();
+        summaryValues.maxGrad = segment.getMaximumGrade();
+        summaryValues.distance = segment.getDistance();
+        summaryValues.category = segment.getClimbCategory().getValue().toString();
+        summaryValues.elevation = segment.getTotalElevationGain();
+        summaryValues.leaderTime = leaderTime;
 
         summaryValues.altitudeValues = altitudeStream.getData();
         summaryValues.distanceValues = distanceStream.getData();
 
         StravaMap map = segment.getMap();
-        String polyline = map.getPolyline();
-        List<LatLng> latLngs = PolyUtil.decode(polyline);
-        summaryValues.lineCoordinates = latLngs;
-        summaryValues.startCoordinate = latLngs.get(0);
+        summaryValues.polyline = map.getPolyline();
+//        List<LatLng> latLngs = PolyUtil.decode(polyline);
+//        summaryValues.lineCoordinates = latLngs;
+        StravaMapPoint startLatlng = segment.getStartLatlng();
+        summaryValues.startCoordinate = new LatLng(startLatlng.getLatitude(), startLatlng.getLongitude());
 
         return summaryValues;
     }
@@ -74,7 +105,7 @@ public class SegmentInfoUtils {
     private StravaStream getSpecifiedStream(StravaStreamType type, List<StravaStream> segmentStreams) {
 
         for (StravaStream segmentStream : segmentStreams) {
-            if(segmentStream.getType() == type) {
+            if (segmentStream.getType() == type) {
                 return segmentStream;
             }
         }
@@ -83,7 +114,14 @@ public class SegmentInfoUtils {
     }
 
     private String filterChars(String input) {
-        return input.replaceAll("&", "and");
+
+        String result = "not_set";
+
+        if(input != null){
+            result = input.replaceAll("&", "and");
+        }
+
+        return result;
     }
 
     public List<StravaSegment> getSegments(List<Integer> segmentIds) {
@@ -110,12 +148,12 @@ public class SegmentInfoUtils {
     }
 */
 
-    public List<SegmentSummaryData> getSegmentSummaryValues(List<Integer> segmentIds) {
+    public List<SegmentSummaryData> getSegmentSummaryValues(ArrayList<SegInfo> segmentInfos) {
 
         List<SegmentSummaryData> results = new ArrayList<>();
 
-        for (Integer segmentId : segmentIds) {
-            SegmentSummaryData segmentValues = getSegmentSummaryValues(segmentId);
+        for (SegInfo segmentInfo : segmentInfos) {
+            SegmentSummaryData segmentValues = getSegmentSummaryValues(segmentInfo);
             results.add(segmentValues);
         }
 
@@ -133,5 +171,45 @@ public class SegmentInfoUtils {
         }
 
         return results;
+    }
+
+    public String listToString(List<Float> values) {
+
+        StringBuilder builder = new StringBuilder();
+
+        for (Float value : values) {
+            builder.append(value);
+            builder.append(";");
+        }
+
+        return builder.toString();
+    }
+
+    public String coordinatesToString(LatLng coordinates) {
+        return coordinates.toString();
+    }
+
+    public String coordinatesToString(List<LatLng> coordinatesList) {
+
+        StringBuilder builder = new StringBuilder();
+
+        for (LatLng latLng : coordinatesList) {
+            builder.append(coordinatesToString(latLng));
+            builder.append(";");
+        }
+
+        return builder.toString();
+    }
+
+    public String seriesNamesToString(List<String> seriesNames) {
+
+        StringBuilder builder = new StringBuilder();
+
+        for (String seriesName : seriesNames) {
+            builder.append(seriesName);
+            builder.append(";");
+        }
+
+        return builder.toString();
     }
 }

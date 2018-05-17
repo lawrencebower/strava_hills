@@ -2,14 +2,13 @@ package reader;
 
 import model.SegmentSummaryData;
 import utils.PolyUtil;
-import utils.SegmentInfoUtils;
+import utils.SegmentSummaryUtils;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 
 public class SegmentSummaryReader {
 
@@ -30,13 +29,14 @@ public class SegmentSummaryReader {
                 System.out.println("line = " + line);
                 String[] tokens = line.split("\t");
                 SegmentSummaryData values = new SegmentSummaryData();
-                values.name = tokens[0];
-                values.description = tokens[1];
-                values.series = tokens[2];
-                values.startCoordinate = PolyUtil.stringToLatLong(tokens[3]);
-                values.altitudeValues = SegmentInfoUtils.stringsToFloats(tokens[4]);
-                values.distanceValues = SegmentInfoUtils.stringsToFloats(tokens[5]);
-                values.lineCoordinates = PolyUtil.stringsToLatLong(tokens[6]);
+                values.id = tokens[0];
+                values.name = tokens[1];
+                values.city = tokens[2];
+                values.seriesNames = mapSeriesNames(tokens[3]);
+                values.startCoordinate = PolyUtil.stringToLatLong(tokens[4]);
+                values.altitudeValues = SegmentSummaryUtils.stringsToFloats(tokens[5]);
+                values.distanceValues = SegmentSummaryUtils.stringsToFloats(tokens[6]);
+                values.polyline = tokens[6];
 
                 segmentSummaryValues.add(values);
             }
@@ -45,5 +45,9 @@ public class SegmentSummaryReader {
         scanner.close();
 
         return segmentSummaryValues;
+    }
+
+    private List<String> mapSeriesNames(String token) {
+        return null;
     }
 }

@@ -51,11 +51,15 @@
             <version>4.8.2</version>
             <scope>test</scope>
         </dependency>
+<!--
         <dependency>
             <groupId>com.github.danshannon</groupId>
             <artifactId>javastrava-api</artifactId>
             <version>1.0.1</version>
+            &lt;!&ndash;<version>master</version>&ndash;&gt;
+            &lt;!&ndash;<version>1.0.3</version>&ndash;&gt;
         </dependency>
+-->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -65,6 +69,37 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>4.3.14.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.retrofit</groupId>
+            <artifactId>retrofit</artifactId>
+            <version>1.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-jcs-core</artifactId>
+            <version>2.0-beta-1</version>
         </dependency>
     </dependencies>
 </project>

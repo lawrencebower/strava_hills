@@ -2,26 +2,21 @@ package writer;
 
 import model.LatLng;
 import model.SegmentSummaryData;
-import reader.IdReader;
+import reader.SegmentSummaryReader;
 import utils.ClassPathStringLoader;
-import utils.SegmentInfoUtils;
+import utils.SegmentSummaryUtils;
 
 import java.io.*;
 import java.util.List;
 
 public class KmlWriter {
 
+    private SegmentSummaryUtils segUtils = new SegmentSummaryUtils();
+
     public void write() {
 
-        SegmentInfoUtils segmentInfoUtils = new SegmentInfoUtils();
-        segmentInfoUtils.setupSession();
 
-        System.out.println("starting...");
-//        List<Integer> segmentIds = Arrays.asList(6665368, 6677446);
-        List<Integer> segmentIds = readIdsFile();
-        List<SegmentSummaryData> segmentSummaryValues = segmentInfoUtils.getSegmentSummaryValues(segmentIds);
-        System.out.println("...done");
-
+        List<SegmentSummaryData> segmentSummaryValues = readSegmentSummaryFile();
         String kmlString = mapSegmentsToKML(segmentSummaryValues);
 
         writeKML(kmlString);
@@ -29,12 +24,12 @@ public class KmlWriter {
         int i = 0;
     }
 
-    private List<Integer> readIdsFile() {
+    private List<SegmentSummaryData> readSegmentSummaryFile() {
 
         try {
             FileInputStream inputStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\segments.txt");
-            List<Integer> segmentIds = new IdReader().readIds(inputStream);
-            return segmentIds;
+            SegmentSummaryReader segmentSummaryReader = new SegmentSummaryReader();
+            return segmentSummaryReader.readSummaryFile(inputStream);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -86,8 +81,9 @@ public class KmlWriter {
                                 String templateString) {
 
         templateString = templateString.replaceAll("\\{NAME\\}", segment.name);
-        templateString = templateString.replaceAll("\\{DESCRIPTION\\}", segment.description);
-        templateString = templateString.replaceAll("\\{SERIES\\}", segment.series);
+        templateString = templateString.replaceAll("\\{DESCRIPTION\\}", segment.city);
+        String seriesNameString = segUtils.seriesNamesToString(segment.seriesNames);
+        templateString = templateString.replaceAll("\\{SERIES\\}", seriesNameString);
 
         String lineCoordinates = coordinatesToString(segment.lineCoordinates);
         String startCoordinate = coordinatesToStartString(segment.lineCoordinates);
