@@ -11,7 +11,6 @@ import java.util.List;
 public class Test {
 
     public static void main(String[] args) {
-        System.out.println("Hello");
 
         Integer application_client_id = 20235;
         String client_secret = "8730e64ad94d2df3a1efda3c5391696ec6549e1d";
@@ -25,7 +24,7 @@ public class Test {
 //        StreamService streamService = javastrava.api.v3.service.impl.StreamServiceImpl.instance(token);
 
 //        StravaSegment segment = strava.getSegment(637403);
-//        StravaSegmentLeaderboard allSegmentLeaderboard = strava.getSegmentLeaderTime(1095648);
+//        StravaSegmentLeaderboard allSegmentLeaderboard = strava.setSegmentLeaderTimeAndEffortCount(1095648);
 //        StravaActivity activity = strava.getActivity(1148302107, true);
 
         new Test().hello(strava);
@@ -51,11 +50,14 @@ public class Test {
     public void hello(Strava strava) {
         java.util.Arrays.asList("hello");
 
-        List<StravaStream> streams = strava.getSegmentStreams(637403);
+//        List<StravaStream> streams = strava.getSegmentStreams(637403);
+
+        StravaSegment segment = strava.getSegment(13952286);
+
 
 //        List<StravaStream> streams = strava.getActivityStreams(1148302107);
 
-        StravaStream gradients = streams.get(7);
+//        StravaStream gradients = streams.get(7);
 
         int i = 0;
     }

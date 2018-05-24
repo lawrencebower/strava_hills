@@ -1,7 +1,7 @@
 <Placemark>
     <name>{NAME}</name>
-    <description>{DESCRIPTION}</description>
-    <styleUrl>#icon-503-009D57</styleUrl>
+    <!--<description>{DESCRIPTION}</description>-->
+    <styleUrl>#icon-503-DB4436-normal</styleUrl>
     <ExtendedData>
         <Data name="Type">
             <value>Start</value>

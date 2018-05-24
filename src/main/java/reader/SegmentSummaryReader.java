@@ -26,17 +26,24 @@ public class SegmentSummaryReader {
             String line = scanner.nextLine();
 
             if (!line.isEmpty()) {
-                System.out.println("line = " + line);
+//                System.out.println("line = " + line);
                 String[] tokens = line.split("\t");
                 SegmentSummaryData values = new SegmentSummaryData();
                 values.id = tokens[0];
                 values.name = tokens[1];
                 values.city = tokens[2];
                 values.seriesNames = mapSeriesNames(tokens[3]);
-                values.startCoordinate = PolyUtil.stringToLatLong(tokens[4]);
-                values.altitudeValues = SegmentSummaryUtils.stringsToFloats(tokens[5]);
-                values.distanceValues = SegmentSummaryUtils.stringsToFloats(tokens[6]);
-                values.polyline = tokens[6];
+                values.category = tokens[4];
+                values.distance = Float.parseFloat(tokens[5]);
+                values.averageGrad = Float.parseFloat(tokens[6]);
+                values.maxGrad = Float.parseFloat(tokens[7]);
+                values.elevation = Float.parseFloat(tokens[8]);
+                values.leaderTime = tokens[9];
+                values.startCoordinate = PolyUtil.stringToLatLong(tokens[10]);
+                values.altitudeValues = SegmentSummaryUtils.stringsToFloats(tokens[11]);
+                values.distanceValues = SegmentSummaryUtils.stringsToFloats(tokens[12]);
+                values.checkAltAndDistLengths();
+                values.polyline = tokens[13];
 
                 segmentSummaryValues.add(values);
             }
@@ -48,6 +55,6 @@ public class SegmentSummaryReader {
     }
 
     private List<String> mapSeriesNames(String token) {
-        return null;
+        return SegmentSummaryUtils.stringsToList(token);
     }
 }

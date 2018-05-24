@@ -1,24 +1,24 @@
 package writer;
 
-import model.ClimbSummaryData;
+import model.RefinedSegmentSummaryData;
 import model.LatLng;
-import model.SegmentSummaryData;
 
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.List;
+import java.util.Map;
 
-public class ClimbSummaryWriter {
+public class RefinedSegmentSummaryWriter {
 
-    public void writeClimbSummaries(List<ClimbSummaryData> climbSummaries, OutputStream outputStream) {
+    public void writeClimbSummaries(Map<String, RefinedSegmentSummaryData> climbSummaries, OutputStream outputStream) {
 
         PrintWriter writer = new PrintWriter(outputStream);
 
-        for (ClimbSummaryData summaryData : climbSummaries) {
+        for (RefinedSegmentSummaryData summaryData : climbSummaries.values()) {
             System.out.println("Writing climb " + summaryData.name);
-            String climbSummaryString = getClimbSummaryString(summaryData);
+            String climbSummaryString = getRefinedSegmentString(summaryData);
             writer.write(climbSummaryString);
-            break;
+//            break;
         }
 
         writer.flush();
@@ -26,14 +26,22 @@ public class ClimbSummaryWriter {
 
     }
 
-    private String getClimbSummaryString(ClimbSummaryData climbSummaryData) {
-        return detailsToString(climbSummaryData);
+    private String getRefinedSegmentString(RefinedSegmentSummaryData refinedSegmentSummaryData) {
+        return detailsToString(refinedSegmentSummaryData);
     }
 
-    private String detailsToString(ClimbSummaryData climbSummaryData) {
+    private String detailsToString(RefinedSegmentSummaryData summaryData) {
 
         StringBuilder builder = new StringBuilder();
-        appendWithNewline(builder, climbSummaryData.gradBins.getGraphString());
+        appendWithTab(builder, summaryData.id);
+        appendWithTab(builder, summaryData.name);
+        appendWithTab(builder, summaryData.distance);
+        appendWithTab(builder, summaryData.elevation);
+        appendWithTab(builder, summaryData.maxGrad);
+        appendWithTab(builder, summaryData.averageGrad);
+        appendWithTab(builder, summaryData.leaderTime);
+        appendWithTab(builder, summaryData.getSummaryString());
+        appendWithNewline(builder, summaryData.gradBins.getBinString());
 
         return builder.toString();
     }

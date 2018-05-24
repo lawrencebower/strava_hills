@@ -37,7 +37,7 @@ public class PolyUtil {
     public static List<LatLng> decode(final String encodedPath) {
         int len = encodedPath.length();
 
-        // For speed we preallocate to an upper bound on the final length, then
+        // For speed we preallocate to an upper bound on the final distance, then
         // truncate the array before returning.
         final List<LatLng> path = new ArrayList<LatLng>();
         int index = 0;

@@ -60,7 +60,9 @@ public class SegmentSummaryWriter {
         appendWithTab(builder, altitudeString);
         appendWithTab(builder, distanceString);
 
-        appendWithNewline(builder, segmentSummaryData.polyline);
+        appendWithTab(builder, segmentSummaryData.polyline);
+
+        appendWithNewline(builder, segmentSummaryData.effortCount.toString());
 
         return builder.toString();
     }

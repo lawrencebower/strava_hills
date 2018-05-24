@@ -1,23 +1,33 @@
 package utils;
 
-import model.ClimbSummaryData;
+import model.RefinedSegmentSummaryData;
 import model.GradBins;
 import model.GradUnit;
 import model.SegmentSummaryData;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
-public class ClimbSummaryValuesUtil {
+public class RefinedSegmentSummaryUtil {
 
     private static final int UNIT_DISTANCE = 20;
 
-    public ClimbSummaryData segmentSummaryToClimbSummary(SegmentSummaryData segmentSummaryData) {
+    private GradBinUtils gradBinUtils = new GradBinUtils();
+
+    public RefinedSegmentSummaryData segmentSummaryToRefinedSegmentSummary(SegmentSummaryData segmentSummaryData) {
 
         System.out.println(segmentSummaryData.name);
 
-        ClimbSummaryData results = new ClimbSummaryData();
+        RefinedSegmentSummaryData results = new RefinedSegmentSummaryData();
+        results.id = segmentSummaryData.id;
         results.name = segmentSummaryData.name;
+        results.elevation = segmentSummaryData.elevation.toString();
+        results.distance = segmentSummaryData.distance.toString();
+        results.leaderTime = segmentSummaryData.leaderTime;
+        results.averageGrad = segmentSummaryData.averageGrad.toString();
+        results.maxGrad = segmentSummaryData.maxGrad.toString();
         results.gradBins = mapSegmentSummaryToGradBins(segmentSummaryData);
 
         return results;
@@ -33,8 +43,14 @@ public class ClimbSummaryValuesUtil {
         GradBins gradBins = new GradBins();
 
         gradBins.gradUnits = gradUnits;
+        gradBins.totalLength = segmentSummaryData.distance;
+        calculateAndSetGradStrings(segmentSummaryData.name, gradBins);
 
         return gradBins;
+    }
+
+    private void calculateAndSetGradStrings(String name, GradBins gradBins) {
+        gradBinUtils.calculateAndSetGradStrings(name, gradBins);
     }
 
     private List<GradUnit> calculateGradUnits(List<Float> alts, List<Float> dists) {
@@ -63,10 +79,10 @@ public class ClimbSummaryValuesUtil {
                         alts.get(currentIndex));
 
                 results.add(gradUnit);
-                System.out.println(gradUnit.toString());
-                if(gradUnit.grad > 30) {
-                    int i = 0;
-                }
+//                System.out.println(gradUnit.toString());
+//                if(gradUnit.grad > 30) {
+//                    int i = 0;
+//                }
 
 //                distanceSinceLast = 0;//reset
                 unitStartIndex = currentIndex++;
@@ -91,13 +107,13 @@ public class ClimbSummaryValuesUtil {
                 alt2);
     }
 
-    public List<ClimbSummaryData> segmentSummaryToClimbSummary(List<SegmentSummaryData> segmentSummaryValues) {
+    public Map<String, RefinedSegmentSummaryData> segmentSummaryToRefinedSegmentSummary(List<SegmentSummaryData> segmentSummaryValues) {
 
-        List<ClimbSummaryData> results = new ArrayList<>();
+        Map<String, RefinedSegmentSummaryData> results = new LinkedHashMap<>();
 
         for (SegmentSummaryData segmentSummaryValue : segmentSummaryValues) {
-            ClimbSummaryData climbSummaryData = segmentSummaryToClimbSummary(segmentSummaryValue);
-            results.add(climbSummaryData);
+            RefinedSegmentSummaryData refinedSegmentSummaryData = segmentSummaryToRefinedSegmentSummary(segmentSummaryValue);
+            results.put(refinedSegmentSummaryData.id, refinedSegmentSummaryData);
         }
 
         return results;

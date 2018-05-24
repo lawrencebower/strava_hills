@@ -11,8 +11,8 @@ import model.SegInfo;
 import model.SegmentSummaryData;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
-import java.util.Set;
 
 public class SegmentSummaryUtils {
 
@@ -37,12 +37,14 @@ public class SegmentSummaryUtils {
         return segment;
     }
 
-    public String getSegmentLeaderTime(int segmentId) {
+    public void setSegmentLeaderTimeAndEffortCount(int segmentId, SegmentSummaryData summaryValues) {
 
         StravaSegmentLeaderboard leaderboard;
 
         leaderboard = strava.getSegmentLeaderboard(segmentId);
         List<StravaSegmentLeaderboardEntry> entries = leaderboard.getEntries();
+
+        summaryValues.effortCount = leaderboard.getEffortCount();
 
         String timeString = "not set";
 
@@ -56,9 +58,10 @@ public class SegmentSummaryUtils {
             int seconds = totalSecs % 60;
 
             timeString = String.format("%02d:%02d:%02d", hours, minutes, seconds);
+
+            summaryValues.leaderTime = timeString;
         }
 
-        return timeString;
     }
 
     public List<StravaStream> getSegmentStreams(int segmentId) {
@@ -70,14 +73,14 @@ public class SegmentSummaryUtils {
 
     public SegmentSummaryData getSegmentSummaryValues(SegInfo segmentInfo) {
 
+        SegmentSummaryData summaryValues = new SegmentSummaryData();
+
         Integer segmentId = segmentInfo.segmentId;
         StravaSegment segment = getSegment(segmentId);
-        String leaderTime = getSegmentLeaderTime(segmentId);
         List<StravaStream> segmentStreams = getSegmentStreams(segmentId);
         StravaStream altitudeStream = getSpecifiedStream(StravaStreamType.ALTITUDE, segmentStreams);
         StravaStream distanceStream = getSpecifiedStream(StravaStreamType.DISTANCE, segmentStreams);
 
-        SegmentSummaryData summaryValues = new SegmentSummaryData();
         summaryValues.city = filterChars(segment.getCity());
         summaryValues.name = filterChars(segment.getName());
         summaryValues.id = segmentId.toString();
@@ -86,8 +89,9 @@ public class SegmentSummaryUtils {
         summaryValues.maxGrad = segment.getMaximumGrade();
         summaryValues.distance = segment.getDistance();
         summaryValues.category = segment.getClimbCategory().getValue().toString();
-        summaryValues.elevation = segment.getTotalElevationGain();
-        summaryValues.leaderTime = leaderTime;
+        summaryValues.elevation = segment.getElevationHigh() - segment.getElevationLow();
+
+        setSegmentLeaderTimeAndEffortCount(segmentId, summaryValues);
 
         summaryValues.altitudeValues = altitudeStream.getData();
         summaryValues.distanceValues = distanceStream.getData();
@@ -167,8 +171,25 @@ public class SegmentSummaryUtils {
         String[] tokens = tokenString.split(";");
 
         for (String token : tokens) {
-            results.add(Float.parseFloat(token));
+            float aFloat = 0;
+            try {
+                aFloat = Float.parseFloat(token);
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+            }
+            results.add(aFloat);
         }
+
+        return results;
+    }
+
+    public static List<String> stringsToList(String tokenString) {
+
+        List<String> results = new ArrayList<>();
+
+        String[] tokens = tokenString.split(";");
+
+        Collections.addAll(results, tokens);
 
         return results;
     }

@@ -21,4 +21,12 @@ public class SegmentSummaryData {
     public String category;
     public Float elevation;
     public String leaderTime;
+    public String difficulty = "NOT_SET";
+    public Integer effortCount;
+
+    public void checkAltAndDistLengths() {
+        if(altitudeValues.size() != distanceValues.size()) {
+            System.out.println("Different lengths - " + id);
+        }
+    }
 }

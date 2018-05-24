@@ -1,16 +1,37 @@
 <Placemark>
   <name>{NAME}</name>
-  <description>{DESCRIPTION}</description>
-  <styleUrl>#line-F8971B-3325</styleUrl>
+  <!--<description>{DESCRIPTION}</description>-->
+  <styleUrl>#line-orange</styleUrl>
   <ExtendedData>
-    <Data name="Region">
+    <Data name="Difficulty">
+      <value>{DIFFICULTY}</value>
+    </Data>
+    <Data name="Region(s)">
       <value>{SERIES}</value>
     </Data>
-    <Data name="description">
-      <value>{DESCRIPTION}</value>
+    <Data name="Location">
+      <value>{CITY}</value>
     </Data>
-    <Data name="_SnapToRoads">
-      <value>true</value>
+    <Data name="Length">
+      <value>{LENGTH}</value>
+    </Data>
+    <Data name="Gain">
+      <value>{GAIN}</value>
+    </Data>
+    <Data name="Av Grad">
+      <value>{AV_GRAD}</value>
+    </Data>
+    <Data name="Max Grad">
+      <value>{MAX_GRAD}</value>
+    </Data>
+    <Data name="Leader Time">
+      <value>{LEADER_TIME}</value>
+    </Data>
+    <Data name="Strava">
+      <value>{STRAVA}</value>
+    </Data>
+    <Data name="Veloviewer">
+      <value>{VELOVIEWER}</value>
     </Data>
   </ExtendedData>
   <LineString>
