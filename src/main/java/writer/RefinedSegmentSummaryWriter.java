@@ -35,10 +35,10 @@ public class RefinedSegmentSummaryWriter {
         StringBuilder builder = new StringBuilder();
         appendWithTab(builder, summaryData.id);
         appendWithTab(builder, summaryData.name);
-        appendWithTab(builder, summaryData.distance);
-        appendWithTab(builder, summaryData.elevation);
-        appendWithTab(builder, summaryData.maxGrad);
-        appendWithTab(builder, summaryData.averageGrad);
+        appendWithTab(builder, summaryData.distance.toString());
+        appendWithTab(builder, summaryData.elevation.toString());
+        appendWithTab(builder, summaryData.maxGrad.toString());
+        appendWithTab(builder, summaryData.averageGrad.toString());
         appendWithTab(builder, summaryData.leaderTime);
         appendWithTab(builder, summaryData.getSummaryString());
         appendWithNewline(builder, summaryData.gradBins.getBinString());

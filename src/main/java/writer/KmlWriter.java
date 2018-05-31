@@ -28,8 +28,8 @@ public class KmlWriter {
     private List<SegmentSummaryData> readSegmentSummaryFile() {
 
         try {
-//            FileInputStream inputStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\segment_stats.tsv");
-            FileInputStream inputStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\small_segment_stats.tsv");
+            FileInputStream inputStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\segment_stats.tsv");
+//            FileInputStream inputStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\small_segment_stats.tsv");
             SegmentSummaryReader segmentSummaryReader = new SegmentSummaryReader();
             return segmentSummaryReader.readSummaryFile(inputStream);
         } catch (FileNotFoundException e) {

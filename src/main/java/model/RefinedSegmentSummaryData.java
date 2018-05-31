@@ -2,18 +2,18 @@ package model;
 
 public class RefinedSegmentSummaryData {
 
-    private static final String format = "length - %s gain - %s max grad. - %s av. grad. - %s leader time - %s";
+    private static final String format = "length - %.0fm gain - %.0fm max grad. - %.1f%% av. grad. - %.1f%% leader time - %s";
 
     public String id;
     public String name;
-    public String elevation;
-    public String distance;
+    public Float elevation;
+    public Float distance;
     public String leaderTime;
-    public String averageGrad;
-    public String maxGrad;
+    public Float averageGrad;
+    public Float maxGrad;
     public GradBins gradBins;
 
     public String getSummaryString() {
-        return String.format(format, distance, elevation, averageGrad, maxGrad, leaderTime);
+        return String.format(format, distance, elevation, maxGrad, averageGrad, leaderTime);
     }
 }

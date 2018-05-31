@@ -95,6 +95,7 @@ public class SegmentSummaryUtils {
 
         summaryValues.altitudeValues = altitudeStream.getData();
         summaryValues.distanceValues = distanceStream.getData();
+        summaryValues.checkAltAndDistLengths();
 
         StravaMap map = segment.getMap();
         summaryValues.polyline = map.getPolyline();

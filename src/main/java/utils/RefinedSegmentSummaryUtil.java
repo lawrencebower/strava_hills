@@ -23,11 +23,11 @@ public class RefinedSegmentSummaryUtil {
         RefinedSegmentSummaryData results = new RefinedSegmentSummaryData();
         results.id = segmentSummaryData.id;
         results.name = segmentSummaryData.name;
-        results.elevation = segmentSummaryData.elevation.toString();
-        results.distance = segmentSummaryData.distance.toString();
+        results.elevation = segmentSummaryData.elevation;
+        results.distance = segmentSummaryData.distance;
         results.leaderTime = segmentSummaryData.leaderTime;
-        results.averageGrad = segmentSummaryData.averageGrad.toString();
-        results.maxGrad = segmentSummaryData.maxGrad.toString();
+        results.averageGrad = segmentSummaryData.averageGrad;
+        results.maxGrad = segmentSummaryData.maxGrad;
         results.gradBins = mapSegmentSummaryToGradBins(segmentSummaryData);
 
         return results;

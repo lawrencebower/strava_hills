@@ -1,7 +1,5 @@
 __author__ = 'lawrence'
 
-import pytube
-
 from pytube import YouTube
 from pytube import Playlist
 
@@ -12,4 +10,10 @@ pl = Playlist("https://www.youtube.com/playlist?list=PLL7SmUjap7Vh3uf4zmElfSxLqI
 pl.populate_video_urls()
 urls = pl.video_urls
 
-print urls
+for url in urls:
+    yt = YouTube(url)
+    print yt.title
+    stream = yt.streams.filter(only_audio=True).order_by('resolution').all()
+    # stream = yt.streams.all()
+    print stream
+    i = 0
