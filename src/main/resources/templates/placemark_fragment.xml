@@ -1,15 +1,6 @@
 <Placemark>
     <name>{NAME}</name>
-    <!--<description>{DESCRIPTION}</description>-->
     <styleUrl>#icon-503-DB4436-normal</styleUrl>
-    <ExtendedData>
-        <Data name="Type">
-            <value>Start</value>
-        </Data>
-        <Data name="description">
-            <value/>
-        </Data>
-    </ExtendedData>
     <Point>
         <coordinates>
             {START_COORDINATE}

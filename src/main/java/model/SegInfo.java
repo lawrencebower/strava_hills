@@ -8,10 +8,11 @@ import java.util.Set;
 public class SegInfo {
 
     public Integer segmentId;
-    public Set<String> seriesNames = new LinkedHashSet<>();
+    public Set<Series> seriesNames = new LinkedHashSet<>();
 
     public SegInfo(Integer segmentId, String seriesName) {
         this.segmentId = segmentId;
-        this.seriesNames.add(seriesName);
+        Series series = Series.codeToSeries(seriesName);
+        this.seriesNames.add(series);
     }
 }

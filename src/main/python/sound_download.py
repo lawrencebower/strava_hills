@@ -1,31 +1,69 @@
+import os
+import re
+import sound_download
+
 __author__ = 'lawrence'
 
 from pytube import YouTube
 
-# yt = YouTube('https://youtu.be/mT7lQs7g5S8').streams.first().download("C:\Users\lawrence\uk_hill\music")
-yt = YouTube('https://youtu.be/mT7lQs7g5S8')
-# yt = YouTube('https://youtu.be/-p27dCVk-w0')
+def download(title, stream):
 
-print yt.title
-collection = yt.streams.filter(only_audio=True, file_extension="mp4").order_by('bitrate').desc()
-# collection = yt.streams
-streams = collection.all()
-# stream.download("C:\Users\lawrence\uk_hill\music")
-
-def download(stream):
-    print "downloading"
-    stream.download("C:\Users\lawrence\uk_hill\music", yt.title + "_music_" + stream.abr)
-
-for stream in streams:
-    print stream.abr
-    if stream.abr == "160kbps":
-        download(stream)
-        break
-    elif stream.abr == "128kbps":
-        download(stream)
-        break
+    filename = title + "_music_" + stream.abr
+    #stream.default
+    # root = "C:\Users\lawrence\uk_hill\music\\"
+    root = "F:\music\\"
+    filePath = root + filename + "." + stream.subtype
+    if(not os.path.exists(filePath)):
+        print "downloading " + filePath
+        stream.download(root, filename)
     else:
-        print stream.abr
+        print "already exists " + filePath
 
-print "Finished"
+def getBestStream (title, streams):
 
+    bestStream = None
+    bestRate = 0
+
+    for stream in streams:
+        bitString = stream.abr
+        # print bitString
+
+        if (bitString is not None):
+            rate = int(bitString.split("kbps")[0])
+            # print rate
+            if rate > bestRate:
+                # print("Assigning new best rate :{:d}".format(rate))
+                bestStream = stream
+                bestRate = rate
+
+    download(title, bestStream)
+
+def test():
+    # yt = YouTube('https://youtu.be/mT7lQs7g5S8')
+    yt = YouTube('https://youtu.be/BANDCsM6WdM')
+
+    title = sound_download.fixString(yt.title)
+    print title
+    allStreams = yt.streams
+    streams = getAudioStreams(allStreams)
+
+    getBestStream(title, streams)
+    print "Finished"
+
+
+def getAudioStreams(allStreams):
+    streams = allStreams.filter(only_audio=True).all()
+    if (not streams):
+        print "No audio streams"
+        streams = allStreams.all()
+    return streams
+
+
+if __name__ == '__main__':
+    test()
+
+
+def fixString(string):
+    fixed = re.sub('[^A-Za-z0-9\s]+', '', string)
+    fixed = re.sub('\s', '_', fixed)
+    return  fixed

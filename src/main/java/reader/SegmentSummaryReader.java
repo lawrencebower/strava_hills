@@ -1,6 +1,7 @@
 package reader;
 
 import model.SegmentSummaryData;
+import model.Series;
 import utils.PolyUtil;
 import utils.SegmentSummaryUtils;
 
@@ -36,7 +37,7 @@ public class SegmentSummaryReader {
                 values.category = tokens[4];
                 values.distance = Float.parseFloat(tokens[5]);
                 values.averageGrad = Float.parseFloat(tokens[6]);
-                values.maxGrad = Float.parseFloat(tokens[7]);
+                values.setMaxGrad(Float.parseFloat(tokens[7]));
                 values.elevation = Float.parseFloat(tokens[8]);
                 values.leaderTime = tokens[9];
                 values.startCoordinate = PolyUtil.stringToLatLong(tokens[10]);
@@ -54,7 +55,16 @@ public class SegmentSummaryReader {
         return segmentSummaryValues;
     }
 
-    private List<String> mapSeriesNames(String token) {
-        return SegmentSummaryUtils.stringsToList(token);
+    private List<Series> mapSeriesNames(String token) {
+
+        List<String> strings = SegmentSummaryUtils.stringsToList(token);
+        List<Series> results = new ArrayList<>();
+
+        for (String string : strings) {
+            Series seriesEnum = Series.codeToSeries(string);
+            results.add(seriesEnum);
+        }
+
+        return results;
     }
 }

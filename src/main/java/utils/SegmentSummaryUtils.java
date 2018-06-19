@@ -9,6 +9,7 @@ import javastrava.api.v3.service.Strava;
 import model.LatLng;
 import model.SegInfo;
 import model.SegmentSummaryData;
+import model.Series;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -86,7 +87,7 @@ public class SegmentSummaryUtils {
         summaryValues.id = segmentId.toString();
         summaryValues.seriesNames = new ArrayList<>(segmentInfo.seriesNames);
         summaryValues.averageGrad = segment.getAverageGrade();
-        summaryValues.maxGrad = segment.getMaximumGrade();
+        summaryValues.setMaxGrad(segment.getMaximumGrade());
         summaryValues.distance = segment.getDistance();
         summaryValues.category = segment.getClimbCategory().getValue().toString();
         summaryValues.elevation = segment.getElevationHigh() - segment.getElevationLow();
@@ -223,15 +224,17 @@ public class SegmentSummaryUtils {
         return builder.toString();
     }
 
-    public String seriesNamesToString(List<String> seriesNames) {
+    public String seriesNamesToString(List<Series> seriesList) {
 
         StringBuilder builder = new StringBuilder();
 
-        for (String seriesName : seriesNames) {
-            builder.append(seriesName);
-            builder.append(";");
+        for (Series series : seriesList) {
+            builder.append(series.getDisplayName());
+            builder.append(", ");
         }
 
-        return builder.toString();
+        String resultString = builder.toString();
+
+        return resultString.substring(0, resultString.length()-2);//remove ", "
     }
 }

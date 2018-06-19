@@ -46,7 +46,7 @@ public class SegmentSummaryWriter {
         appendWithTab(builder, segmentSummaryData.category);
         appendWithTab(builder, segmentSummaryData.distance.toString());
         appendWithTab(builder, segmentSummaryData.averageGrad.toString());
-        appendWithTab(builder, segmentSummaryData.maxGrad.toString());
+        appendWithTab(builder, segmentSummaryData.getMaxGrad().toString());
         appendWithTab(builder, segmentSummaryData.elevation.toString());
         appendWithTab(builder, segmentSummaryData.leaderTime);
 

@@ -40,29 +40,108 @@
         <styleUrl>#icon-503-DB4436-highlight</styleUrl>
       </Pair>
     </StyleMap>
-      
-    <Style id="line-orange-normal">
+
+    <Style id="norating-style">
       <LineStyle>
-        <color>ff1b97f8</color>
-        <width>3.325</width>
+        <color>50969696</color>
+        <width>4</width>
       </LineStyle>
     </Style>
-    <Style id="line-orange-highlight">
+
+    <Style id="video1-style">
       <LineStyle>
-        <color>ff1b97f8</color>
-        <width>4.9875</width>
+        <color>5014F078</color>
+        <width>6</width>
       </LineStyle>
     </Style>
-    <StyleMap id="line-orange">
+    <Style id="novideo1-style">
+      <LineStyle>
+        <color>5014F078</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+
+    <Style id="video2-style">
+      <LineStyle>
+        <color>5014F0F0</color>
+        <width>6</width>
+      </LineStyle>
+    </Style>
+    <Style id="novideo2-style">
+      <LineStyle>
+        <color>5014F0F0</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+
+    <Style id="video3-style">
+      <LineStyle>
+        <color>501478F0</color>
+        <width>6</width>
+      </LineStyle>
+    </Style>
+    <Style id="novideo3-style">
+      <LineStyle>
+        <color>501478F0</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+
+    <Style id="video4-style">
+      <LineStyle>
+        <color>501400D2</color>
+        <width>6</width>
+      </LineStyle>
+    </Style>
+    <Style id="novideo4-style">
+      <LineStyle>
+        <color>501400D2</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+
+    <StyleMap id="video1">
       <Pair>
-        <key>normal</key>
-        <styleUrl>#line-orange-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#line-orange-highlight</styleUrl>
+        <styleUrl>#video1-style</styleUrl>
       </Pair>
     </StyleMap>
+    <StyleMap id="video2">
+      <Pair>
+        <styleUrl>#video2-style</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="video3">
+      <Pair>
+        <styleUrl>#video3-style</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="video4">
+      <Pair>
+        <styleUrl>#video4-style</styleUrl>
+      </Pair>
+    </StyleMap>
+
+    <StyleMap id="novideo1">
+      <Pair>
+        <styleUrl>#novideo1-style</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="novideo2">
+      <Pair>
+        <styleUrl>#novideo2-style</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="novideo3">
+      <Pair>
+        <styleUrl>#novideo3-style</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="novideo4">
+      <Pair>
+        <styleUrl>#novideo4-style</styleUrl>
+      </Pair>
+    </StyleMap>
+
     <Folder>
       <name>Cycling Climbs</name>
       {PLACEMARKS}

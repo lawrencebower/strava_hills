@@ -1,7 +1,6 @@
 <Placemark>
   <name>{NAME}</name>
-  <!--<description>{DESCRIPTION}</description>-->
-  <styleUrl>#line-orange</styleUrl>
+  <styleUrl>{LINE_STYLE}</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>{DIFFICULTY}</value>
@@ -32,6 +31,9 @@
     </Data>
     <Data name="Veloviewer">
       <value>{VELOVIEWER}</value>
+    </Data>
+    <Data name="YouTube">
+      <value>{YOUTUBE}</value>
     </Data>
   </ExtendedData>
   <LineString>

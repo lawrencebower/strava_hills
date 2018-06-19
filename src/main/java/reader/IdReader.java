@@ -29,7 +29,7 @@ public class IdReader {
 
         scanner.close();
 
-        return new ArrayList(results.values());
+        return new ArrayList<>(results.values());
     }
 
     private void checkAndAdd(Map<Integer, SegInfo> results, SegInfo segInfo) {

@@ -27,7 +27,7 @@ public class RefinedSegmentSummaryUtil {
         results.distance = segmentSummaryData.distance;
         results.leaderTime = segmentSummaryData.leaderTime;
         results.averageGrad = segmentSummaryData.averageGrad;
-        results.maxGrad = segmentSummaryData.maxGrad;
+        results.maxGrad = segmentSummaryData.getMaxGrad();
         results.gradBins = mapSegmentSummaryToGradBins(segmentSummaryData);
 
         return results;
