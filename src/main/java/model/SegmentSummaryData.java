@@ -69,12 +69,14 @@ public class SegmentSummaryData {
             int rawDifficulty = annotation.difficulty;
             if (rawDifficulty > 0 && rawDifficulty <= 3) {
                 result = 1;
-            } else if (rawDifficulty >= 4 && rawDifficulty <= 7) {
+            } else if (rawDifficulty >= 4 && rawDifficulty <= 6) {
                 result = 2;
-            } else if (rawDifficulty >= 8 && rawDifficulty <= 9) {
+            } else if (rawDifficulty >= 7 && rawDifficulty <= 8) {
                 result = 3;
-            } else if (rawDifficulty >= 10) {
+            } else if (rawDifficulty == 9) {
                 result = 4;
+            } else if (rawDifficulty >= 10) {
+                result = 5;
             }
         }
 

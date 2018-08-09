@@ -31,7 +31,7 @@ public class KmlWriter {
 
         try {
             FileInputStream segmentStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\segment_stats.tsv");
-//            FileInputStream inputStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\small_segment_stats.tsv");
+//            FileInputStream segmentStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\small_segment_stats.tsv");
             SegmentSummaryReader segmentSummaryReader = new SegmentSummaryReader();
             List<SegmentSummaryData> segmentSummaries = segmentSummaryReader.readSummaryFile(segmentStream);
             readSegmentAnnotationFileAndAnnotate(segmentSummaries);
@@ -92,7 +92,7 @@ public class KmlWriter {
 
         String kmlString = templateString.replaceAll("\\{PLACEMARKS\\}", linesBuilder.toString());
 
-//        kmlString = kmlString.replaceAll("\\{MARKERS\\}", placemarksBuilder.toString());
+        kmlString = kmlString.replaceAll("\\{MARKERS\\}", placemarksBuilder.toString());
 
         return kmlString;
     }
@@ -123,17 +123,7 @@ public class KmlWriter {
 
         boolean hasVideo = !segment.getVideoUrl().isEmpty();
         Integer difficultyCat = segment.getDifficultyCategory();
-        String style;
-
-        switch(difficultyCat){
-            case 0: style = "norating-style";break;
-            case 1 : style = hasVideo ? "video1" : "novideo1";break;
-            case 2: style = hasVideo ? "video2" : "novideo2";break;
-            case 3: style = hasVideo ? "video3" : "novideo3";break;
-            case 4: style = hasVideo ? "video4" : "novideo4";break;
-            default:
-                throw new RuntimeException("Cant map difficulty " + difficultyCat);
-        }
+        String style = diffToStyle(hasVideo, difficultyCat);
 
         templateString = templateString.replaceAll("\\{LINE_STYLE\\}", style);
 
@@ -146,6 +136,23 @@ public class KmlWriter {
 
         linesBuilder.append(templateString);
         linesBuilder.append("\n");
+    }
+
+    private String diffToStyle(boolean hasVideo, Integer difficultyCat) {
+
+        String style;
+
+        switch(difficultyCat){
+            case 0: style = "#norating-style";break;
+            case 1 : style = hasVideo ? "#video1" : "#novideo1";break;
+            case 2: style = hasVideo ? "#video2" : "#novideo2";break;
+            case 3: style = hasVideo ? "#video3" : "#novideo3";break;
+            case 4: style = hasVideo ? "#video4" : "#novideo4";break;
+            case 5: style = hasVideo ? "#video5" : "#novideo5";break;
+            default:
+                throw new RuntimeException("Cant map difficulty " + difficultyCat);
+        }
+        return style;
     }
 
     private String coordinatesToString(List<LatLng> lineCoordinates) {

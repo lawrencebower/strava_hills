@@ -10,8 +10,8 @@ def download(title, stream):
 
     filename = title + "_music_" + stream.abr
     #stream.default
-    # root = "C:\Users\lawrence\uk_hill\music\\"
-    root = "F:\music\\"
+    root = "C:\Users\lawrence\uk_hill\music\\"
+    # root = "F:\music\\"
     filePath = root + filename + "." + stream.subtype
     if(not os.path.exists(filePath)):
         print "downloading " + filePath
@@ -40,7 +40,7 @@ def getBestStream (title, streams):
 
 def test():
     # yt = YouTube('https://youtu.be/mT7lQs7g5S8')
-    yt = YouTube('https://youtu.be/BANDCsM6WdM')
+    yt = YouTube('https://youtu.be/Y0SwlMohRng')
 
     title = sound_download.fixString(yt.title)
     print title

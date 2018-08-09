@@ -1,6 +1,6 @@
 <Placemark>
     <name>{NAME}</name>
-    <styleUrl>#icon-503-DB4436-normal</styleUrl>
+    <styleUrl>#placemark</styleUrl>
     <Point>
         <coordinates>
             {START_COORDINATE}

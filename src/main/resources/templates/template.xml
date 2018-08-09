@@ -4,7 +4,7 @@
     <name>UK Hill Info</name>
     <description><![CDATA[All values calculated from Strava segments via the Strava API]]></description>
 
-    <Style id="icon-503-DB4436-normal">
+    <Style id="placemark-normal">
       <IconStyle>
         <color>ff3644db</color>
         <scale>1.1</scale>
@@ -17,7 +17,7 @@
         <scale>0</scale>
       </LabelStyle>
     </Style>
-    <Style id="icon-503-DB4436-highlight">
+    <Style id="placemark-highlight">
       <IconStyle>
         <color>ff3644db</color>
         <scale>1.1</scale>
@@ -30,75 +30,94 @@
         <scale>1.1</scale>
       </LabelStyle>
     </Style>
-    <StyleMap id="icon-503-DB4436">
+    <StyleMap id="placemark">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-503-DB4436-normal</styleUrl>
+        <styleUrl>#placemark-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-503-DB4436-highlight</styleUrl>
+        <styleUrl>#placemark-highlight</styleUrl>
       </Pair>
     </StyleMap>
 
     <Style id="norating-style">
       <LineStyle>
-        <color>50969696</color>
+        <color>647850F0</color>
         <width>4</width>
       </LineStyle>
     </Style>
 
     <Style id="video1-style">
       <LineStyle>
-        <color>5014F078</color>
+        <color>64147850</color>
         <width>6</width>
       </LineStyle>
     </Style>
     <Style id="novideo1-style">
       <LineStyle>
-        <color>5014F078</color>
+        <color>64147850</color>
         <width>4</width>
       </LineStyle>
     </Style>
 
     <Style id="video2-style">
       <LineStyle>
-        <color>5014F0F0</color>
+        <color>6414D5FF</color>
         <width>6</width>
       </LineStyle>
     </Style>
     <Style id="novideo2-style">
       <LineStyle>
-        <color>5014F0F0</color>
+        <color>6414D5FF</color>
         <width>4</width>
       </LineStyle>
     </Style>
 
     <Style id="video3-style">
       <LineStyle>
-        <color>501478F0</color>
+        <color>640078F0</color>
         <width>6</width>
       </LineStyle>
     </Style>
     <Style id="novideo3-style">
       <LineStyle>
-        <color>501478F0</color>
+        <color>640078F0</color>
         <width>4</width>
       </LineStyle>
     </Style>
 
     <Style id="video4-style">
       <LineStyle>
-        <color>501400D2</color>
+        <color>641400D2</color>
         <width>6</width>
       </LineStyle>
     </Style>
     <Style id="novideo4-style">
       <LineStyle>
-        <color>501400D2</color>
+        <color>641400D2</color>
         <width>4</width>
       </LineStyle>
     </Style>
+
+    <Style id="video5-style">
+      <LineStyle>
+        <color>647800B4</color>
+        <width>6</width>
+      </LineStyle>
+    </Style>
+    <Style id="novideo5-style">
+      <LineStyle>
+        <color>647800B4</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+
+    <StyleMap id="no-rating">
+      <Pair>
+        <styleUrl>#norating-style</styleUrl>
+      </Pair>
+    </StyleMap>
 
     <StyleMap id="video1">
       <Pair>
@@ -120,6 +139,11 @@
         <styleUrl>#video4-style</styleUrl>
       </Pair>
     </StyleMap>
+    <StyleMap id="video5">
+      <Pair>
+        <styleUrl>#video5-style</styleUrl>
+      </Pair>
+    </StyleMap>
 
     <StyleMap id="novideo1">
       <Pair>
@@ -139,6 +163,11 @@
     <StyleMap id="novideo4">
       <Pair>
         <styleUrl>#novideo4-style</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="novideo5">
+      <Pair>
+        <styleUrl>#novideo5-style</styleUrl>
       </Pair>
     </StyleMap>
 
