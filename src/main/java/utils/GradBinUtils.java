@@ -11,6 +11,7 @@ public class GradBinUtils {
     private float fifteen2twenty = 0;
     private float twenty2twentyfive = 0;
     private float twentyfivePlus = 0;
+    private float maxGrad = 0;
 
     public void calculateAndSetGradStrings(String segmentName, GradBins gradBins) {
 
@@ -20,6 +21,7 @@ public class GradBinUtils {
         fifteen2twenty = 0;
         twenty2twentyfive = 0;
         twentyfivePlus = 0;
+        maxGrad = 0;
 
         for (GradUnit gradUnit : gradBins.gradUnits) {
             if (gradUnit.grad >= 25) {
@@ -35,6 +37,10 @@ public class GradBinUtils {
             } else {
                 sub5 += gradUnit.dist;
             }
+
+            if(gradUnit.grad > maxGrad) {
+                maxGrad = gradUnit.grad;
+            }
         }
 
         float totalLength = gradBins.totalLength;
@@ -48,6 +54,7 @@ public class GradBinUtils {
             gradBins.ten2fifteen = String.format("%.0fm (%.0f%%)", ten2fifteen, (ten2fifteen / totalLength) * 100);
             gradBins.five2ten = String.format("%.0fm (%.0f%%)", five2ten, (five2ten / totalLength) * 100);
             gradBins.subFive = String.format("%.0fm (%.0f%%)", sub5, (sub5 / totalLength) * 100);
+            gradBins.maxGrad = maxGrad;
         }else{
             throw new RuntimeException("Distances dont add up " + segmentName);
         }

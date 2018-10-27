@@ -7,6 +7,7 @@ public class SegmentAnnotation {
     public Float correctedMaxGrad;
     public Integer difficulty;
     public String videoURL;
+    public String synonym;
 
     public SegmentAnnotation(String segId,
                              String name,
@@ -19,5 +20,9 @@ public class SegmentAnnotation {
         this.correctedMaxGrad = correctedMaxGrad;
         this.difficulty = difficulty;
         this.videoURL = videoURL;
+    }
+
+    public void addSynonym(String synonym) {
+        this.synonym = synonym;
     }
 }

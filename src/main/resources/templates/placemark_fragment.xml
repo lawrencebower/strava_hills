@@ -1,6 +1,6 @@
 <Placemark>
     <name>{NAME}</name>
-    <styleUrl>#placemark</styleUrl>
+    <styleUrl>#{PLACEMARK_TYPE}</styleUrl>
     <Point>
         <coordinates>
             {START_COORDINATE}

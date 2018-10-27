@@ -1,9 +1,6 @@
 package utils;
 
-import model.RefinedSegmentSummaryData;
-import model.GradBins;
-import model.GradUnit;
-import model.SegmentSummaryData;
+import model.*;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -12,7 +9,7 @@ import java.util.Map;
 
 public class RefinedSegmentSummaryUtil {
 
-    private static final int UNIT_DISTANCE = 20;
+    private static final int UNIT_DISTANCE = 35;
 
     private GradBinUtils gradBinUtils = new GradBinUtils();
 
@@ -20,14 +17,7 @@ public class RefinedSegmentSummaryUtil {
 
         System.out.println(segmentSummaryData.name);
 
-        RefinedSegmentSummaryData results = new RefinedSegmentSummaryData();
-        results.id = segmentSummaryData.id;
-        results.name = segmentSummaryData.name;
-        results.elevation = segmentSummaryData.elevation;
-        results.distance = segmentSummaryData.distance;
-        results.leaderTime = segmentSummaryData.leaderTime;
-        results.averageGrad = segmentSummaryData.averageGrad;
-        results.maxGrad = segmentSummaryData.getMaxGrad();
+        RefinedSegmentSummaryData results = new RefinedSegmentSummaryData(segmentSummaryData);
         results.gradBins = mapSegmentSummaryToGradBins(segmentSummaryData);
 
         return results;
@@ -107,15 +97,26 @@ public class RefinedSegmentSummaryUtil {
                 alt2);
     }
 
-    public Map<String, RefinedSegmentSummaryData> segmentSummaryToRefinedSegmentSummary(List<SegmentSummaryData> segmentSummaryValues) {
+    public Map<String, RefinedSegmentSummaryData> segmentSummaryToRefinedSegmentSummary(List<SegmentSummaryData> segmentSummaryValues,
+                                                                                        Map<String,SegmentAnnotation> annotations) {
 
         Map<String, RefinedSegmentSummaryData> results = new LinkedHashMap<>();
 
         for (SegmentSummaryData segmentSummaryValue : segmentSummaryValues) {
             RefinedSegmentSummaryData refinedSegmentSummaryData = segmentSummaryToRefinedSegmentSummary(segmentSummaryValue);
-            results.put(refinedSegmentSummaryData.id, refinedSegmentSummaryData);
+            annotateSummary(refinedSegmentSummaryData, annotations);
+            results.put(refinedSegmentSummaryData.segData.id, refinedSegmentSummaryData);
         }
 
         return results;
+    }
+
+    private void annotateSummary(RefinedSegmentSummaryData summaryData, Map<String, SegmentAnnotation> annotations) {
+
+        String segId = summaryData.getId();
+
+        if(annotations.containsKey(segId)){
+            summaryData.setAnnotation(annotations.get(segId));
+        }
     }
 }

@@ -6,14 +6,15 @@ import javastrava.api.v3.auth.model.Token;
 import javastrava.api.v3.model.*;
 import javastrava.api.v3.model.reference.StravaStreamType;
 import javastrava.api.v3.service.Strava;
-import model.LatLng;
-import model.SegInfo;
-import model.SegmentSummaryData;
-import model.Series;
+import model.*;
+import reader.SegmentAnnotationReader;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 public class SegmentSummaryUtils {
 
@@ -87,7 +88,6 @@ public class SegmentSummaryUtils {
         summaryValues.id = segmentId.toString();
         summaryValues.seriesNames = new ArrayList<>(segmentInfo.seriesNames);
         summaryValues.averageGrad = segment.getAverageGrade();
-        summaryValues.setMaxGrad(segment.getMaximumGrade());
         summaryValues.distance = segment.getDistance();
         summaryValues.category = segment.getClimbCategory().getValue().toString();
         summaryValues.elevation = segment.getElevationHigh() - segment.getElevationLow();
@@ -236,5 +236,41 @@ public class SegmentSummaryUtils {
         String resultString = builder.toString();
 
         return resultString.substring(0, resultString.length()-2);//remove ", "
+    }
+
+    public Map<String, SegmentAnnotation> readSegmentAnnotationFile() {
+
+        try {
+
+            FileInputStream annotationStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\segment_annotation.tsv");
+            SegmentAnnotationReader annotationReader = new SegmentAnnotationReader();
+
+            Map<String, SegmentAnnotation> segmentAnotations = annotationReader.readAnnotationsAndAnnotate(annotationStream);
+
+            addSynonyms(segmentAnotations);
+
+            return segmentAnotations;
+
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void addSynonyms(Map<String, SegmentAnnotation> segmentAnotations) {
+
+        SegmentSynonymUtils synonymUtils = new SegmentSynonymUtils();
+
+        Map<String, String> synonyms = synonymUtils.readSegmentSynonymsFile();
+
+        for (SegmentAnnotation segmentAnnotation : segmentAnotations.values()) {
+
+            String segmentId = segmentAnnotation.segmentId;
+
+            if(synonyms.containsKey(segmentId)){
+                String synonym = synonyms.get(segmentId);
+                segmentAnnotation.addSynonym(synonym);
+            }
+        }
+
     }
 }

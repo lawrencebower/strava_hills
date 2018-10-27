@@ -15,7 +15,7 @@ public class RefinedSegmentSummaryWriter {
         PrintWriter writer = new PrintWriter(outputStream);
 
         for (RefinedSegmentSummaryData summaryData : climbSummaries.values()) {
-            System.out.println("Writing climb " + summaryData.name);
+            System.out.println("Writing climb " + summaryData.segData.name);
             String climbSummaryString = getRefinedSegmentString(summaryData);
             writer.write(climbSummaryString);
 //            break;
@@ -33,13 +33,13 @@ public class RefinedSegmentSummaryWriter {
     private String detailsToString(RefinedSegmentSummaryData summaryData) {
 
         StringBuilder builder = new StringBuilder();
-        appendWithTab(builder, summaryData.id);
-        appendWithTab(builder, summaryData.name);
-        appendWithTab(builder, summaryData.distance.toString());
-        appendWithTab(builder, summaryData.elevation.toString());
-        appendWithTab(builder, summaryData.maxGrad.toString());
-        appendWithTab(builder, summaryData.averageGrad.toString());
-        appendWithTab(builder, summaryData.leaderTime);
+        appendWithTab(builder, summaryData.segData.id);
+        appendWithTab(builder, summaryData.segData.name);
+        appendWithTab(builder, summaryData.segData.distance.toString());
+        appendWithTab(builder, summaryData.segData.elevation.toString());
+        appendWithTab(builder, "MAX_GRAD_BAD");
+        appendWithTab(builder, summaryData.segData.averageGrad.toString());
+        appendWithTab(builder, summaryData.segData.leaderTime);
         appendWithTab(builder, summaryData.getSummaryString());
         appendWithNewline(builder, summaryData.gradBins.getBinString());
 

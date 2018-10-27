@@ -10,6 +10,7 @@ public class GradBins {
     public String fifteen2twenty;
     public String twenty2twentyfive;
     public String twentyfivePlus;
+    public Float maxGrad;
 
     public List<GradUnit> gradUnits;
     public float totalLength;

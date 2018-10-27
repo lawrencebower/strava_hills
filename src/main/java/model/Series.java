@@ -12,7 +12,7 @@ public enum Series {
     NORTH_WEST("North-west", "nw\\d"),
     SOUTH_WEST("South-west", "sw\\d"),
     SOUTH("South", "s\\d"),
-    WEST("West", "w\\d"),
+    WALES("Wales", "w\\d"),
     YORKSHIRE("Yorkshire", "y\\d"),
     A_100("another 100", "a1"),;
 
@@ -37,7 +37,7 @@ public enum Series {
         }
 
         if (result == null) {
-            throw new RuntimeException("Cant map code " + rawCode);
+            throw new RuntimeException("Cant map code '" + rawCode + "'");
         }
 
         return result;

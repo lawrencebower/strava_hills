@@ -4,43 +4,6 @@
     <name>UK Hill Info</name>
     <description><![CDATA[All values calculated from Strava segments via the Strava API]]></description>
 
-    <Style id="placemark-normal">
-      <IconStyle>
-        <color>ff3644db</color>
-        <scale>1.1</scale>
-        <Icon>
-          <href>https://www.clker.com/cliparts/E/L/C/f/4/B/google-maps-icon-blank-md.png</href>
-        </Icon>
-        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-    </Style>
-    <Style id="placemark-highlight">
-      <IconStyle>
-        <color>ff3644db</color>
-        <scale>1.1</scale>
-        <Icon>
-          <href>https://www.clker.com/cliparts/E/L/C/f/4/B/google-maps-icon-blank-md.png</href>
-        </Icon>
-        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1.1</scale>
-      </LabelStyle>
-    </Style>
-    <StyleMap id="placemark">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#placemark-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#placemark-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-
     <Style id="norating-style">
       <LineStyle>
         <color>647850F0</color>
@@ -174,10 +137,6 @@
     <Folder>
       <name>Cycling Climbs</name>
       {PLACEMARKS}
-    </Folder>
-    <Folder>
-      <name>Start Markers</name>
-      {MARKERS}
     </Folder>
   </Document>
 </kml>

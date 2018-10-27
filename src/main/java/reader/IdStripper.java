@@ -2,6 +2,8 @@ package reader;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class IdStripper {
 
@@ -20,10 +22,10 @@ public class IdStripper {
 
             String seriesName = getSeriesNameFromFileName(file.getName());
 
-            ArrayList<String> results = new ArrayList<>();
+            Map<String, String> results = new LinkedHashMap<>();
             while ((lineString = br.readLine()) != null) {
                 if (lineString.contains("https://veloviewer.com/segment")) {
-                    results.addAll(processLine(lineString, seriesName));
+                    processLine(lineString, seriesName, results);
                 }
             }
 
@@ -51,46 +53,52 @@ public class IdStripper {
     private String getSeriesNameFromFileName(String name) {
 
         String prefix = name.split(".html")[0];
-        if(prefix.contains("_")){
-            prefix = prefix.substring(0,prefix.indexOf("_"));
+        if (prefix.contains("_")) {
+            prefix = prefix.substring(0, prefix.indexOf("_"));
         }
 
         return prefix;
     }
 
-    private void printResults(ArrayList<String> results, PrintWriter writer) {
-        for (String string : results) {
-            writer.println(string);
+    private void printResults(Map<String, String> results, PrintWriter writer) {
+        for (String string : results.values()) {
+            writer.print(string);
         }
     }
 
-    private ArrayList<String> processLine(String lineString, String seriesName) {
-
-        ArrayList<String> results = new ArrayList<>();
+    private Map<String, String> processLine(String lineString,
+                                            String seriesName,
+                                            Map<String, String> results) {
 
         String[] strings = lineString.split("</th>");
         for (String string : strings) {
-            if(string.contains("segment")){
-                results.add(processSegmentString(string, seriesName));
+            if (string.contains("segment")) {
+                processSegmentString(
+                        string,
+                        seriesName,
+                        results);
             }
         }
 
         return results;
     }
 
-    private String processSegmentString(String segmentString, String seriesName) {
+    private void processSegmentString(String segmentString,
+                                      String seriesName,
+                                      Map<String, String> results) {
+
         String trimmed = segmentString.trim();
         String url = trimmed.split("<a")[1];
         String[] urlTokens = url.split(" ");
         url = urlTokens[2];
         urlTokens = url.split("/");
         String segId = urlTokens[4];
-        segId = segId.replace("\"","");
+        segId = segId.replace("\"", "");
         String[] tokens = trimmed.split("</a>");
         String name = tokens[1];
         String formatted = String.format("%s\t%s\t%s\n", name, segId, seriesName);
         System.out.print(formatted);
 
-        return formatted;
+        results.put(segId, formatted);
     }
 }

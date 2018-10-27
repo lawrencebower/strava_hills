@@ -6,8 +6,6 @@ import javastrava.api.v3.auth.model.Token;
 import javastrava.api.v3.model.*;
 import javastrava.api.v3.service.Strava;
 
-import java.util.List;
-
 public class Test {
 
     public static void main(String[] args) {
@@ -23,11 +21,13 @@ public class Test {
 //        StravaAthlete athlete = strava.getAthlete(athleteId);
 //        StreamService streamService = javastrava.api.v3.service.impl.StreamServiceImpl.instance(token);
 
-//        StravaSegment segment = strava.getSegment(637403);
+        StravaSegment segment = strava.getSegment(6670984);
+        Integer effortCount = segment.getAthleteSegmentStats().getEffortCount();
+        System.out.println("effortCount = " + effortCount);
 //        StravaSegmentLeaderboard allSegmentLeaderboard = strava.setSegmentLeaderTimeAndEffortCount(1095648);
 //        StravaActivity activity = strava.getActivity(1148302107, true);
 
-        new Test().hello(strava);
+//        new Test().hello(strava);
 
 //        ActivityServiceImpl;
 

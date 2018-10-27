@@ -16,7 +16,7 @@ public class IdsToSegSummaryWriterRunner {
     public static void main(String[] args) throws FileNotFoundException {
 
 //        FileInputStream inputStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\small_segments.tsv");
-        FileInputStream inputStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\segments.tsv");
+        FileInputStream inputStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\segments2.tsv");
 
         ArrayList<SegInfo> segInfos = new IdReader().readIds(inputStream);
 
@@ -25,7 +25,7 @@ public class IdsToSegSummaryWriterRunner {
         segmentSummaryUtils.setupSession();
 
         SegmentSummaryWriter summaryWriter = new SegmentSummaryWriter();
-        OutputStream outStream = new FileOutputStream(new File("C:\\Users\\lawrence\\uk_hill\\maps\\segment_stats.tsv"));
+        OutputStream outStream = new FileOutputStream(new File("C:\\Users\\lawrence\\uk_hill\\maps\\segment_stats2.tsv"));
         summaryWriter.prepareWriter(outStream);
 
         requests = 0;
