@@ -1,0 +1,1881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>UK Hill Info</name>
+    <description><![CDATA[All values calculated from Strava segments via the Strava API]]></description>
+
+    <Style id="placemark-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.clker.com/cliparts/E/L/C/f/4/B/google-maps-icon-blank-md.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="placemark-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.clker.com/cliparts/E/L/C/f/4/B/google-maps-icon-blank-md.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="placemark2-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.clker.com/cliparts/U/t/9/a/p/c/bluepin-md.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="placemark2-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.clker.com/cliparts/U/t/9/a/p/c/bluepin-md.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+
+    <StyleMap id="placemark">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#placemark-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#placemark-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="placemark2">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#placemark2-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#placemark2-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+
+    <Folder>
+      <name>100 climbs start markers</name>
+      <Placemark>
+    <name>OFFICIAL 100Climbs No14 Box Hill</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -0.3226650059223175,51.25787353515625
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No17 Leith Hill</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -0.3808870017528534,51.160770416259766
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No22 Ditchling Beacon</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -0.11544200032949448,50.908138275146484
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No18 White Down</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -0.41385701298713684,51.21510314941406
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No1 Cheddar Gorge</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.772710084915161,51.279869079589844
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No97 The Tumble</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.0506598949432373,51.819007873535156
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No33 Winnats Pass</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.7837899923324585,53.342498779296875
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No43 Holme Moss</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.8477699756622314,53.54463577270508
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No84 Hardknott Pass</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.2154929637908936,54.3997917175293
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>Official 100Climbs No82 Whinlatter Pass (corrected)</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.1933109760284424,54.601993560791016
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No19 The Wall</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            0.07709699869155884,51.07307052612305
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No81 Newlands Hause</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.274348020553589,54.5418586730957
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No27 Swains Lane</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -0.14732900261878967,51.56237030029297
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No90 Horseshoe Pass</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.18666410446167,52.984840393066406
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No23 Whiteleaf</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -0.8221309781074524,51.7318000793457
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No52 Greenhow Hill</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.7629270553588867,54.083770751953125
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No15 York's Hill</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            0.14546899497509003,51.2398681640625
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No53 Norwood Edge</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.6821730136871338,53.94540023803711
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No20 Toys Hill</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            0.1058180034160614,51.22475051879883
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No70 Cat and Fiddle</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.1214029788970947,53.260398864746094
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No36 Mow Cop</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.2339000701904297,53.118865966796875
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No30 Monsal Head</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.7287479639053345,53.24348068237305
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No24 Streatley Hill</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.1500179767608643,51.522682189941406
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No95 Black Mountain</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.834928035736084,51.888275146484375
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No75 Trough of Bowland</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.563786029815674,53.956905364990234
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No98 Rhigos</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.5363969802856445,51.74143981933594
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No26 Mott Street</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            0.010499999858438969,51.66202163696289
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No9 Haytor Vale</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.6889450550079346,50.59214782714844
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No79 Cross of Greet</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.455544948577881,54.02608108520508
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No51 Tan Hill</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.031467914581299,54.433414459228516
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No85 Wrynose Pass</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.082550048828125,54.419944763183594
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No80 Honister Pass</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.2461280822753906,54.52381134033203
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No83 Kirkstone Pass</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.9202489852905273,54.5106315612793
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No16 White Lane</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            0.018706999719142914,51.27839279174805
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No47 Malham Cove</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.1529409885406494,54.06117630004883
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No56 White Horse Bank</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.213312029838562,54.21794891357422
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No49 Buttertubs</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.166266918182373,54.37724685668945
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No69 Bealach-na-Ba</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -5.608942031860352,57.4193229675293
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No29 Terrace Hill</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -0.821133017539978,52.8884391784668
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No50 Fleet Moss</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.1996231079101562,54.297977447509766
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No45 Park Rash</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.036076068878174,54.16217041015625
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No13 Dover's Hill</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.8149770498275757,52.06537628173828
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No88 Penbarra</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.277975082397461,53.1248664855957
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No11 Rundlestone</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -4.127766132354736,50.55260467529297
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No34 Rowsley Bar</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.6129800081253052,53.19142532348633
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No21 Steyning Bostal</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -0.3261829912662506,50.88372039794922
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No35 Curbar Edge</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.6308679580688477,53.26628112792969
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No77 Hartside</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.598987102508545,54.73106384277344
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No73 Garsdale Head</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.329263925552368,54.322574615478516
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No28 Michaelgate</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -0.5405189990997314,53.23234176635742
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No10 Widecombe</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.807184934616089,50.57711410522461
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No74 Nick of Pendle</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.3372600078582764,53.83351135253906
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No86 The Shelf</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.279026985168457,53.10136032104492
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No41 Pea Royd Lane</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.5900779962539673,53.48357009887695
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No55 Rosedale Chimney</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -0.8866810202598572,54.352325439453125
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No8 Dartmeet</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.875900983810425,50.543277740478516
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No39 The Burway</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.8078958988189697,52.53908157348633
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No25 Combe Gibbet</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.4750620126724243,51.363407135009766
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No94 Llangynidr Mountain</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.219939947128296,51.8670768737793
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No58 Carlton Bank</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.2154879570007324,54.43011474609375
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No67 Cairn Gorm</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.6871769428253174,57.16256332397461
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No72 The Rake</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.3195390701293945,53.64906692504883
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No12 Salcombe Hill</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.2347071170806885,50.684303283691406
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No71 Swiss Hill</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.2291910648345947,53.30137634277344
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No61 Winters Gibbet</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.100393056869507,55.22925567626953
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No76 Jubilee Tower</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.7499520778656006,54.02897262573242
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No32 Riber</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.5486079454421997,53.13402557373047
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No93 Devil's Staircase</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.7109038829803467,52.18742370605469
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No78 Lamps Moss</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.3459250926971436,54.455604553222656
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No42 Jackson Bridge</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.749582052230835,53.56329345703125
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No66 The Lecht</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.230005979537964,57.16699981689453
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>Bank Road Hill Climb</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.555493950843811,53.1384162902832
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No5 Dunkery Beacon</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.5665950775146484,51.19203567504883
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No65 The Cairnwell</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.4578440189361572,56.815643310546875
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No37 Peaslows</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.895982027053833,53.32315444946289
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No54 Boltby Bank</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.23478102684021,54.27482223510742
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No40 Shibden Wall</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.8502329587936401,53.74285888671875
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No2 Weston Hill</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.395843029022217,51.39841079711914
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No64 Cairn o' Mount</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.551603078842163,56.89424133300781
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No38 Jiggers Bank</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.494154930114746,52.6304817199707
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No99 The Bwlch</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.5411369800567627,51.627044677734375
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No57 The Stang</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.0014259815216064,54.42796325683594
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No91 Bwlch-y-Groes</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.6232869625091553,52.77363204956055
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No60 Peth Bank</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.739243984222412,54.82147216796875
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No96 Bryn Du</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.4453699588775635,51.7127685546875
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No46 Oxnop Scar</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.1169779300689697,54.373077392578125
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No48 Langcliffe Scar</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.2718849182128906,54.08134078979492
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No7 Challacombe</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -4.20753812789917,51.17041778564453
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No62 Chapel Fell</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.1807429790496826,54.736515045166016
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No59 Crawleyside</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -2.014025926589966,54.74897384643555
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No3 Crowcombe Combe</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.2292799949645996,51.12248229980469
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No6 Exmoor Forest</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.8290460109710693,51.22986602783203
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No89 The Road to Hell</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.434019088745117,53.17367172241211
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No63 Mennock Pass</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.8742640018463135,55.3491096496582
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No87 Moel Arthur</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.3091390132904053,53.17668533325195
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No44 Halifax Lane</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -1.9380639791488647,53.73051834106445
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No68 Rest and be Thankfull</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -4.914823055267334,56.203857421875
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No4 Porlock</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.5969901084899902,51.20879364013672
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No92 Ffordd Penllech</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -4.107577800750732,52.86178970336914
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No100 Constitution Hill</name>
+    <styleUrl>#placemark</styleUrl>
+    <Point>
+        <coordinates>
+            -3.9551520347595215,51.62080001831055
+        </coordinates>
+    </Point>
+</Placemark>
+
+    </Folder>
+    <Folder>
+      <name>another 100 climbs start markers</name>
+      <Placemark>
+    <name>OFFICIAL 100Climbs No 101 Gold Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.1976261138916016,51.00431442260742
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No102 Zig Zag Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.159719944000244,50.98632049560547
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No103 Park Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.272059917449951,51.18497085571289
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No104 Frocester Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.3117899894714355,51.726741790771484
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No105 Bushcombe Lane</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.042639970779419,51.946720123291016
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No106 Haresfield Beacon</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.271250009536743,51.78850173950195
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No107 Symonds Yat</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.636539936065674,51.853111267089844
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No108 Shaft Road</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.325129985809326,51.35826110839844
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>Another 100 Greatest Cycling Climbs - No 109</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.572464942932129,51.440765380859375
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No110 Countisbury Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.8292300701141357,51.230045318603516
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No111 Millook</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -4.575900077819824,50.77141189575195
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No112 Clovelly</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -4.398429870605469,50.99916076660156
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No113 Bishop's Wood</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -4.8165202140808105,50.49470138549805
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No114 Talland Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -4.519020080566406,50.3315315246582
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No124 Watson's Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            0.9186800122261047,52.082061767578125
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No125 Beacon Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            1.2458300590515137,52.9339714050293
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No198 Bungalow</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -4.492489814758301,54.276798248291016
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No199 Injebreck Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -4.526010036468506,54.2000617980957
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No200 Snaefell Mountain</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -4.386459827423096,54.32189178466797
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No126 Mam Nick</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.8311599493026733,53.35887908935547
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No127 Beeley Moor</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.604599952697754,53.203208923339844
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No128 Burbage Moor</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.6502399444580078,53.331459045410156
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No129 Slack Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.49822998046875,53.16682815551758
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No130 Axe Edge</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.935829997062683,53.25239181518555
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No131 Larkstone Lane</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.8518699407577515,53.084571838378906
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No132 Gun Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.016429901123047,53.14400100708008
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No133 The Wrekin</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.5368099212646484,52.67982864379883
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No134 Asterton Bank</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.888669967651367,52.5152702331543
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No135 Clee Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.619189977645874,52.37876892089844
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No136 Edge Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.4509299993515015,52.13867950439453
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No152 Yad Moss</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.1671969890594482,54.65070724487305
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No153 Cuthbert's Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.115809917449951,54.781959533691406
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No154 Peat Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.1449599266052246,54.7376708984375
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No155 Unthank Bank</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.015850067138672,54.74647903442383
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No156 High Knowes</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.0088300704956055,55.3921012878418
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No157 Cragpit Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.905869960784912,55.3101692199707
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No158 Ryal's Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.0283899307250977,55.06343078613281
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No159 Silverhills</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.6128000020980835,54.9202995300293
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No171 Pym Chair</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.0272300243377686,53.283451080322266
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No172 Knott Hill Lane</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.0226800441741943,53.56502914428711
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No173 Chew Road</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.9723600149154663,53.525081634521484
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No174 Crown Point</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.2452800273895264,53.773868560791016
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No175 Whalley Nab</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.40733003616333,53.81840133666992
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No176 Newton Fell</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.4595139026641846,53.947174072265625
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No177 White Shaw Moss</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.4272499084472656,54.24917984008789
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No178 Bank House Moor</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.1772799491882324,54.230010986328125
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No179 Kiln Bank Cross</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.2153100967407227,54.342288970947266
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No180 Cold Fell</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.4469399452209473,54.527069091796875
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No181 The Struggle</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.9630799293518066,54.43376159667969
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No182 Blea Tarn</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.1029698848724365,54.44253158569336
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No183 Shot Moss</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.3064301013946533,54.52878189086914
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No184 Dowgang Hush</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.344449996948242,54.787109375
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No185 Killhope Cross</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.3771400451660156,54.80617904663086
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No186 Great Dun Fell</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.5014400482177734,54.64160919189453
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No160 Devil's Beef Tub</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.4461801052093506,55.335960388183594
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No161 Crow Road</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -4.203046798706055,55.975440979003906
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No162 Duke's Pass</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -4.384659767150879,56.17877960205078
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No163 Bealach Maim</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -5.217820167541504,55.99795913696289
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No164 Glen Finnart</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -4.93980598449707,56.07143020629883
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No165 Glen Quaich</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.911520004272461,56.53947067260742
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No166 Bealach Feith Nan Laogh</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -5.562610149383545,56.70854187011719
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No167 Ben Lawers</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -4.3190999031066895,56.59095001220703
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No168 Glen Coe</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -5.106929779052734,56.68141174316406
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No169 Bealach Ratagan</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -5.426390171051025,57.2115592956543
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No170 Quiraing</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -6.242849826812744,57.63190841674805
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No115 Ashdown Forest</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            0.17284999787807465,51.107879638671875
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No116 Combe Lane</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -0.4712600111961365,51.223060607910156
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No117 Chalkpit Lane</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -0.015469999983906746,51.263851165771484
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No118 Coldharbour Lane</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -0.3410379886627197,51.21934509277344
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No119 Quell Lane</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -0.6783499717712402,51.048770904541016
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No120 Barhatch Lane</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -0.4754199981689453,51.15196990966797
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No121 Dragon Hill Road</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.5649199485778809,51.582740783691406
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No122 Kingston Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -0.9274299740791321,51.68061065673828
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No187 Long Mountain</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.102760076522827,52.67224884033203
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No188 Melin-y-Wig</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.433039903640747,53.02766036987305
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No189 Llanberis Pass</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -4.080959796905518,53.102909088134766
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No190 Prenteg</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -4.106299877166748,52.95146942138672
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No191 Hirnant Pass</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.5604300498962402,52.84844970703125
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No192 Dyfi Forest</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.8197999000549316,52.673561096191406
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No193 Devil's Elbow</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.5604701042175293,51.87485122680664
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No194 Gospel Pass</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.097259998321533,52.04859924316406
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No195 Gamallt</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.751610040664673,52.19927978515625
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No196 Caerphilly Mountain</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.219510078430176,51.5714111328125
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No197 Rhiwr Road</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -3.118489980697632,51.813350677490234
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No137 Ewden Bank</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.637619972229004,53.4676399230957
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No138 Cragg Vale</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.9843900203704834,53.72850036621094
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No139 Mytholm Steeps</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.024266004562378,53.74241638183594
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No140 Thwaites Brow</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.8865100145339966,53.86832809448242
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No141 Hainworth Lane</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.916290044784546,53.85271072387695
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No142 Turf Moor</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.0203158855438232,54.381832122802734
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No143 Bowland Knotts</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -2.4102699756622314,54.104408264160156
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No144 Greets Moss</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.9296499490737915,54.38114929199219
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No145 Trapping Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.845829963684082,54.155941009521484
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No146 Nought Bank Road</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -1.7597700357437134,54.076419830322266
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No147 Sleights Moor</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -0.7176399827003479,54.43532180786133
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No148 Blakey Bank</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -0.9680200219154358,54.37046813964844
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No149 Caper Hill</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -0.858210027217865,54.417240142822266
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No150 Egton High Moor</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -0.7698799967765808,54.43479919433594
+        </coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>OFFICIAL 100Climbs No151 Hanging Grimston</name>
+    <styleUrl>#placemark2</styleUrl>
+    <Point>
+        <coordinates>
+            -0.7811200022697449,54.022911071777344
+        </coordinates>
+    </Point>
+</Placemark>
+
+    </Folder>
+  </Document>
+</kml>
