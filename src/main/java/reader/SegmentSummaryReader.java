@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class SegmentSummaryReader {
 
-    public List<SegmentSummaryData> readSummaryAndAnnotationFile(InputStream inputStream) {
+    public List<SegmentSummaryData> readSummaryFile(InputStream inputStream) {
         List<SegmentSummaryData> segmentSummaryData = readSegmentSummaryStream(inputStream);
         return segmentSummaryData;
     }

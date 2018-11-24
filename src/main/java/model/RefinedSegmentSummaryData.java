@@ -6,7 +6,7 @@ import java.util.List;
 
 public class RefinedSegmentSummaryData {
 
-    private static final String format = "length - %.0fm gain - %.0fm max grad. - %s av. grad. - %.1f%% leader time - %s";
+    private static final String format = "length - %.0fm gain - %.0fm max grad. - %.0f%% av. grad. - %.1f%% leader time - %s";
 
     public SegmentSummaryData segData;
     public GradBins gradBins;

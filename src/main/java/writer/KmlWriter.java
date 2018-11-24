@@ -17,7 +17,7 @@ public class KmlWriter {
     private SegmentSummaryUtils segUtils = new SegmentSummaryUtils();
 
     public void write() {
-        Map<String, RefinedSegmentSummaryData> segmentSummaryValues = readSegmentSummaryFileAndWrite();
+        Map<String, RefinedSegmentSummaryData> segmentSummaryValues = readSegmentSummaryFileAndAnnotations();
         writeLines(segmentSummaryValues);
         writePlacemarks(segmentSummaryValues);
     }
@@ -32,22 +32,22 @@ public class KmlWriter {
         writeKMLplacemarks(kmlString);
     }
 
-    private Map<String, RefinedSegmentSummaryData> readSegmentSummaryFileAndWrite() {
+    private Map<String, RefinedSegmentSummaryData> readSegmentSummaryFileAndAnnotations() {
 
 
         try {
-            FileInputStream segmentStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\segment_stats.tsv");
+            FileInputStream segmentStream = new FileInputStream("C:\\Users\\lawrence\\software\\strava\\src\\main\\resources\\output\\spreadsheets\\segment_stats.tsv");
 //            FileInputStream segmentStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\small_segment_stats.tsv");
             SegmentSummaryReader segmentSummaryReader = new SegmentSummaryReader();
 
-            List<SegmentSummaryData> segmentSummaryValues = segmentSummaryReader.readSummaryAndAnnotationFile(segmentStream);
+            List<SegmentSummaryData> segmentSummaryValues = segmentSummaryReader.readSummaryFile(segmentStream);
 
             Map<String, SegmentAnnotation> annotations = segUtils.readSegmentAnnotationFile();
 
             RefinedSegmentSummaryUtil refinedSegmentSummaryUtil = new RefinedSegmentSummaryUtil();
-            Map<String, RefinedSegmentSummaryData> refinedSummaryData = refinedSegmentSummaryUtil.segmentSummaryToRefinedSegmentSummary(segmentSummaryValues, annotations);
 
-            return refinedSummaryData;
+            return refinedSegmentSummaryUtil.segmentSummaryToRefinedSegmentSummary(segmentSummaryValues, annotations);
+
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -55,7 +55,7 @@ public class KmlWriter {
 
     private void writeKMLLines(String kmlString) {
         try {
-            FileWriter fileWriter = new FileWriter("C:\\Users\\lawrence\\uk_hill\\maps\\climbs.kml");
+            FileWriter fileWriter = new FileWriter("C:\\Users\\lawrence\\software\\strava\\src\\main\\resources\\output\\spreadsheets\\climbs.kml");
             PrintWriter writer = new PrintWriter(fileWriter, true);
             writer.write(kmlString);
             writer.close();
@@ -66,7 +66,7 @@ public class KmlWriter {
 
     private void writeKMLplacemarks(String kmlString) {
         try {
-            FileWriter fileWriter = new FileWriter("C:\\Users\\lawrence\\uk_hill\\maps\\placemarks.kml");
+            FileWriter fileWriter = new FileWriter("C:\\Users\\lawrence\\software\\strava\\src\\main\\resources\\output\\spreadsheets\\placemarks.kml");
             PrintWriter writer = new PrintWriter(fileWriter, true);
             writer.write(kmlString);
             writer.close();
@@ -133,41 +133,40 @@ public class KmlWriter {
                                 RefinedSegmentSummaryData segment,
                                 String templateString) {
 
-        if (segment.getName().contains("Mow")) {
-            int i = 0;
+        if (segment.getDifficulty() != 0) {
+
+            templateString = templateString.replaceAll("\\{NAME\\}", segment.getNameOrSynonym());
+            templateString = templateString.replaceAll("\\{DIFFICULTY\\}", segment.getDifficultyString());
+
+            String seriesNameString = segUtils.seriesNamesToString(segment.getSeriesNames());
+            templateString = templateString.replaceAll("\\{SERIES\\}", seriesNameString);
+
+            templateString = templateString.replaceAll("\\{CITY\\}", segment.getCity());
+            templateString = templateString.replaceAll("\\{LENGTH\\}", String.format("%.0f", segment.getDistance()));
+            templateString = templateString.replaceAll("\\{GAIN\\}", String.format("%.0f", segment.getElevation()));
+            templateString = templateString.replaceAll("\\{AV_GRAD\\}", segment.getAverageGrad().toString());
+            templateString = templateString.replaceAll("\\{MAX_GRAD\\}", segment.getMaxGrad().toString());
+            templateString = templateString.replaceAll("\\{LEADER_TIME\\}", segment.getLeaderTime());
+            templateString = templateString.replaceAll("\\{STRAVA\\}", "https://www.strava.com/segments/" + segment.getId());
+            templateString = templateString.replaceAll("\\{VELOVIEWER\\}", "https://veloviewer.com/segment/" + segment.getId());
+            templateString = templateString.replaceAll("\\{YOUTUBE\\}", segment.getVideoUrl());
+
+            boolean hasVideo = !segment.getVideoUrl().isEmpty();
+            Integer difficultyCat = segment.getDifficultyCategory();
+            String style = diffToStyle(hasVideo, difficultyCat);
+
+            templateString = templateString.replaceAll("\\{LINE_STYLE\\}", style);
+
+            List<LatLng> latLngs = PolyUtil.decode(segment.getPolyline());
+            String lineCoordinates = coordinatesToString(latLngs);
+            String startCoordinate = coordinateToString(segment.getStartCoordinate());
+
+            templateString = templateString.replaceAll("\\{COORDINATES\\}", lineCoordinates);
+            templateString = templateString.replaceAll("\\{START_COORDINATE\\}", startCoordinate);
+
+            linesBuilder.append(templateString);
+            linesBuilder.append("\n");
         }
-
-        templateString = templateString.replaceAll("\\{NAME\\}", segment.getNameOrSynonym());
-        templateString = templateString.replaceAll("\\{DIFFICULTY\\}", segment.getDifficultyString());
-
-        String seriesNameString = segUtils.seriesNamesToString(segment.getSeriesNames());
-        templateString = templateString.replaceAll("\\{SERIES\\}", seriesNameString);
-
-        templateString = templateString.replaceAll("\\{CITY\\}", segment.getCity());
-        templateString = templateString.replaceAll("\\{LENGTH\\}", String.format("%.0f", segment.getDistance()));
-        templateString = templateString.replaceAll("\\{GAIN\\}", String.format("%.0f", segment.getElevation()));
-        templateString = templateString.replaceAll("\\{AV_GRAD\\}", segment.getAverageGrad().toString());
-        templateString = templateString.replaceAll("\\{MAX_GRAD\\}", segment.getMaxGrad().toString());
-        templateString = templateString.replaceAll("\\{LEADER_TIME\\}", segment.getLeaderTime());
-        templateString = templateString.replaceAll("\\{STRAVA\\}", "https://www.strava.com/segments/" + segment.getId());
-        templateString = templateString.replaceAll("\\{VELOVIEWER\\}", "https://veloviewer.com/segment/" + segment.getId());
-        templateString = templateString.replaceAll("\\{YOUTUBE\\}", segment.getVideoUrl());
-
-        boolean hasVideo = !segment.getVideoUrl().isEmpty();
-        Integer difficultyCat = segment.getDifficultyCategory();
-        String style = diffToStyle(hasVideo, difficultyCat);
-
-        templateString = templateString.replaceAll("\\{LINE_STYLE\\}", style);
-
-        List<LatLng> latLngs = PolyUtil.decode(segment.getPolyline());
-        String lineCoordinates = coordinatesToString(latLngs);
-        String startCoordinate = coordinateToString(segment.getStartCoordinate());
-
-        templateString = templateString.replaceAll("\\{COORDINATES\\}", lineCoordinates);
-        templateString = templateString.replaceAll("\\{START_COORDINATE\\}", startCoordinate);
-
-        linesBuilder.append(templateString);
-        linesBuilder.append("\n");
     }
 
     private String diffToStyle(boolean hasVideo, Integer difficultyCat) {

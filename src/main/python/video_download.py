@@ -4,11 +4,11 @@ from pytube import YouTube
 
 # yt = YouTube('https://youtu.be/-p27dCVk-w0')
 # yt = YouTube('https://youtu.be/4ocBfChkQgE')#whiteleaf
-yt = YouTube('https://youtu.be/adIXaCTBVas')
+yt = YouTube('https://youtu.be/Gs0bxDEDkf8')
 
 print yt.title
 unfiltered = yt.streams
-streams = unfiltered.filter().order_by('resolution').desc().all()
+streams = unfiltered.filter().order_by('res').asc().all()
 # yt.streams.filter(progressive=True, file_extension='webm').order_by('resolution').desc().first().download("C:\Users\lawrence\uk_hill\music")
 for stream in streams:
     if(stream.includes_audio_track & stream.includes_video_track):

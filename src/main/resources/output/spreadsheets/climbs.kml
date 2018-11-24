@@ -11689,7 +11689,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No60 Peth Bank</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>4</value>-->
@@ -11722,7 +11722,7 @@
       <value>https://veloviewer.com/segment/6681185</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/erVShzkzHZQ</value>
     </Data>
   </ExtendedData>
   <LineString>
