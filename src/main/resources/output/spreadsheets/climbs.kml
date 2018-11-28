@@ -606,7 +606,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No1 Cheddar Gorge</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#video1</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>3</value>-->
@@ -627,7 +627,7 @@
       <value>4.2</value>
     </Data>
     <Data name="Max Grad">
-      <value>16.759811</value>
+      <value>16.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:08:18</value>
@@ -639,7 +639,7 @@
       <value>https://veloviewer.com/segment/6665302</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/p8P5DLoDPV0</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -1627,7 +1627,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No81 Newlands Hause</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#video3</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>8</value>-->
@@ -1648,7 +1648,7 @@
       <value>10.6</value>
     </Data>
     <Data name="Max Grad">
-      <value>25.063845</value>
+      <value>25.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:06:28</value>
@@ -1660,7 +1660,7 @@
       <value>https://veloviewer.com/segment/6677326</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/7mQL3S5_woQ</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -3093,7 +3093,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No24 Streatley Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>5</value>-->
@@ -3114,7 +3114,7 @@
       <value>11.2</value>
     </Data>
     <Data name="Max Grad">
-      <value>18.528612</value>
+      <value>18.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:03:06</value>
@@ -3126,7 +3126,7 @@
       <value>https://veloviewer.com/segment/6665255</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/OxAEtqNP5bM</value>
     </Data>
   </ExtendedData>
   <LineString>
