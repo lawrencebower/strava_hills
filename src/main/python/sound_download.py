@@ -40,7 +40,8 @@ def getBestStream (title, streams):
 
 def test():
     # yt = YouTube('https://youtu.be/mT7lQs7g5S8')
-    yt = YouTube('https://youtu.be/xZuDc4oo5UE')
+    # yt = YouTube('https://www.youtube.com/watch?v=0ztdqrMRiKc&t=24s')
+    yt = YouTube('https://youtu.be/VAY9wBvKJ3M')
 
     # title = "hello"
     title = sound_download.fixString(yt.title)

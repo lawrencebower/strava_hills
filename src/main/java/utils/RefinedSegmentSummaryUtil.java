@@ -117,6 +117,8 @@ public class RefinedSegmentSummaryUtil {
 
         if(annotations.containsKey(segId)){
             summaryData.setAnnotation(annotations.get(segId));
+        }else{
+            System.out.println("no annotation " + segId);
         }
     }
 }

@@ -11,24 +11,6 @@ import java.util.*;
 
 public class SegmentAnnotationReader {
 
-    public Map<String, SegmentAnnotation> readAnnotationsAndAnnotate(FileInputStream annotationStream) {
-
-        Map<String, SegmentAnnotation> annotations = readAnnotations(annotationStream);
-
-//        annotateSummaries(refinedSummaryValues, annotations);
-
-        return annotations;
-    }
-
-    private void annotateSummaries(List<RefinedSegmentSummaryData> refinedSummaryValues,
-                                   Map<String, SegmentAnnotation> annotations) {
-
-        for (RefinedSegmentSummaryData summaryValue : refinedSummaryValues) {
-            SegmentAnnotation annotation = annotations.get(summaryValue.getId());
-            summaryValue.setAnnotation(annotation);
-        }
-    }
-
     public Map<String, SegmentAnnotation> readAnnotations(InputStream stream) {
 
         Scanner scanner = new Scanner(stream);
