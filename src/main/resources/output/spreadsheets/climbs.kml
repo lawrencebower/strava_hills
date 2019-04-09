@@ -1204,7 +1204,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No84 Hardknott Pass</name>
-  <styleUrl>#novideo5</styleUrl>
+  <styleUrl>#video5</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>10</value>-->
@@ -1225,7 +1225,7 @@
       <value>13.3</value>
     </Data>
     <Data name="Max Grad">
-      <value>25.568127</value>
+      <value>33.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:09:25</value>
@@ -1237,7 +1237,7 @@
       <value>https://veloviewer.com/segment/6677392</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/3DFtVtdbx8Q</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -4020,7 +4020,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No79 Cross of Greet</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>6</value>-->
@@ -4041,7 +4041,7 @@
       <value>6.3</value>
     </Data>
     <Data name="Max Grad">
-      <value>15.143728</value>
+      <value>13.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:06:41</value>
@@ -4053,7 +4053,7 @@
       <value>https://veloviewer.com/segment/6688035</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/4Ea4snGRNyk</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -4944,7 +4944,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No16 White Lane</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>5</value>-->
@@ -4965,7 +4965,7 @@
       <value>12.8</value>
     </Data>
     <Data name="Max Grad">
-      <value>19.689148</value>
+      <value>22.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:01:40</value>
@@ -4977,7 +4977,7 @@
       <value>https://veloviewer.com/segment/6691229</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/BPyH8mp7rlg</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -6672,7 +6672,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No34 Rowsley Bar</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>6</value>-->
@@ -6693,7 +6693,7 @@
       <value>12.5</value>
     </Data>
     <Data name="Max Grad">
-      <value>23.163818</value>
+      <value>25.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:04:16</value>
@@ -6705,7 +6705,7 @@
       <value>https://veloviewer.com/segment/6681397</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/etgWORlBm1g</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -7448,7 +7448,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No28 Michaelgate</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>4</value>-->
@@ -7481,7 +7481,7 @@
       <value>https://veloviewer.com/segment/13952286</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/AJrPGnQK0Io</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -8414,7 +8414,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No94 Llangynidr Mountain</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#video3</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>7</value>-->
@@ -8435,7 +8435,7 @@
       <value>6.8</value>
     </Data>
     <Data name="Max Grad">
-      <value>14.207646</value>
+      <value>14.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:15:22</value>
@@ -8447,7 +8447,7 @@
       <value>https://veloviewer.com/segment/6665336</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/evsk9q3thjI</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -9038,7 +9038,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No12 Salcombe Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>5</value>-->
@@ -9059,7 +9059,7 @@
       <value>12.8</value>
     </Data>
     <Data name="Max Grad">
-      <value>21.857939</value>
+      <value>20.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:04:38</value>
@@ -9071,7 +9071,7 @@
       <value>https://veloviewer.com/segment/6691752</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/P4ZaaQLqWMU</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -10647,7 +10647,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No54 Boltby Bank</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#video3</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>7</value>-->
@@ -10668,7 +10668,7 @@
       <value>13.0</value>
     </Data>
     <Data name="Max Grad">
-      <value>25.613054</value>
+      <value>25.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:02:01</value>
@@ -10680,7 +10680,7 @@
       <value>https://veloviewer.com/segment/6696481</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/x2oAKFd2tEY</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -11190,7 +11190,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No99 The Bwlch</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>5</value>-->
@@ -11211,7 +11211,7 @@
       <value>5.1</value>
     </Data>
     <Data name="Max Grad">
-      <value>10.256399</value>
+      <value>8.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:13:32</value>
@@ -11223,7 +11223,7 @@
       <value>https://veloviewer.com/segment/6697363</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/DV85rLdKVqY</value>
     </Data>
   </ExtendedData>
   <LineString>
