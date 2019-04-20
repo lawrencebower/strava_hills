@@ -42,12 +42,15 @@ public class SegmentAnnotationReader {
                     url = tokens[4];
                 }
 
+                boolean completed = !tokens[5].isEmpty();
+
                 SegmentAnnotation segInfo = new SegmentAnnotation(
                         segmentId,
                         segmentName,
                         maxGrad,
                         difficulty,
-                        url);
+                        url,
+                        completed);
 
                 checkAndAdd(results, segInfo);
             }

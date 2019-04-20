@@ -3451,7 +3451,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No75 Trough of Bowland</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>4</value>-->
@@ -3472,7 +3472,7 @@
       <value>6.2</value>
     </Data>
     <Data name="Max Grad">
-      <value>16.338037</value>
+      <value>16.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:04:51</value>
@@ -3484,7 +3484,7 @@
       <value>https://veloviewer.com/segment/6688001</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/wgBXKzOfSgU</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -3836,7 +3836,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No9 Haytor Vale</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>5</value>-->
@@ -3857,7 +3857,7 @@
       <value>6.2</value>
     </Data>
     <Data name="Max Grad">
-      <value>16.713139</value>
+      <value>12.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:12:57</value>
@@ -3869,7 +3869,7 @@
       <value>https://veloviewer.com/segment/14075378</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/s-owbM9H55k</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -6118,7 +6118,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No45 Park Rash</name>
-  <styleUrl>#novideo4</styleUrl>
+  <styleUrl>#video4</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>9</value>-->
@@ -6139,7 +6139,7 @@
       <value>10.7</value>
     </Data>
     <Data name="Max Grad">
-      <value>22.764196</value>
+      <value>25.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:07:33</value>
@@ -6151,7 +6151,7 @@
       <value>https://veloviewer.com/segment/6687990</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/lrdFM1atIg0</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -6250,7 +6250,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No13 Dover's Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>5</value>-->
@@ -6271,7 +6271,7 @@
       <value>8.1</value>
     </Data>
     <Data name="Max Grad">
-      <value>13.597724</value>
+      <value>14.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:05:04</value>
@@ -6283,7 +6283,7 @@
       <value>https://veloviewer.com/segment/8459161</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/yj--ir-5P64</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -6770,7 +6770,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No21 Steyning Bostal</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>5</value>-->
@@ -6791,7 +6791,7 @@
       <value>7.9</value>
     </Data>
     <Data name="Max Grad">
-      <value>17.877094</value>
+      <value>18.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:03:47</value>
@@ -6803,7 +6803,7 @@
       <value>https://veloviewer.com/segment/6691367</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/Tv3O5ynwuOE</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -7890,7 +7890,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No41 Pea Royd Lane</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#video3</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>8</value>-->
@@ -7911,7 +7911,7 @@
       <value>12.5</value>
     </Data>
     <Data name="Max Grad">
-      <value>20.168095</value>
+      <value>20.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:03:40</value>
@@ -7923,7 +7923,7 @@
       <value>https://veloviewer.com/segment/6697336</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/XZ0ws6EBqAY</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -8954,7 +8954,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No72 The Rake</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#video3</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>8</value>-->
@@ -8975,7 +8975,7 @@
       <value>9.9</value>
     </Data>
     <Data name="Max Grad">
-      <value>21.369871</value>
+      <value>23.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:02:41</value>
@@ -8987,7 +8987,7 @@
       <value>https://veloviewer.com/segment/6688059</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/VXceEE_tPgk</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -9671,7 +9671,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No78 Lamps Moss</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#video3</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>7</value>-->
@@ -9692,7 +9692,7 @@
       <value>8.1</value>
     </Data>
     <Data name="Max Grad">
-      <value>19.834719</value>
+      <value>17.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:12:26</value>
@@ -9704,7 +9704,7 @@
       <value>https://veloviewer.com/segment/6687980</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/rr6fL0oFSXQ</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -9931,7 +9931,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No66 The Lecht</name>
-  <styleUrl>#novideo5</styleUrl>
+  <styleUrl>#video5</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>10</value>-->
@@ -9952,7 +9952,7 @@
       <value>5.7</value>
     </Data>
     <Data name="Max Grad">
-      <value>19.889538</value>
+      <value>20.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:11:49</value>
@@ -9964,7 +9964,7 @@
       <value>https://veloviewer.com/segment/6674394</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/bZ6sGLVY4mg</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -10100,7 +10100,7 @@
 </Placemark>
 <Placemark>
   <name>Bank Road Hill Climb</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#video3</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>8</value>-->
@@ -10121,7 +10121,7 @@
       <value>10.6</value>
     </Data>
     <Data name="Max Grad">
-      <value>16.797934</value>
+      <value>20.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:03:11</value>
@@ -10133,7 +10133,7 @@
       <value>https://veloviewer.com/segment/6677679</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/6VWXgbpK20I</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -12817,7 +12817,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No6 Exmoor Forest</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#video1</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>3</value>-->
@@ -12838,7 +12838,7 @@
       <value>3.8</value>
     </Data>
     <Data name="Max Grad">
-      <value>13.223262</value>
+      <value>12.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:23:42</value>
@@ -12850,7 +12850,7 @@
       <value>https://veloviewer.com/segment/6665364</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/IBNDdYvLuic</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -14079,7 +14079,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No68 Rest and be Thankfull</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <!--<Data name="Difficulty">-->
       <!--<value>6</value>-->
@@ -14100,7 +14100,7 @@
       <value>6.1</value>
     </Data>
     <Data name="Max Grad">
-      <value>15.4255</value>
+      <value>16.0</value>
     </Data>
     <Data name="Leader Time">
       <value>0:11:06</value>
@@ -14112,7 +14112,7 @@
       <value>https://veloviewer.com/segment/6697031</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/mk6kxAJlH3M</value>
     </Data>
   </ExtendedData>
   <LineString>

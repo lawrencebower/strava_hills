@@ -18,18 +18,32 @@ public class KmlWriter {
 
     public void write() {
         Map<String, RefinedSegmentSummaryData> segmentSummaryValues = readSegmentSummaryFileAndAnnotations();
-        writeLines(segmentSummaryValues);
-        writePlacemarks(segmentSummaryValues);
+        writeLines(segmentSummaryValues, false);
+        writePlacemarks(segmentSummaryValues, false);
     }
 
-    private void writeLines(Map<String, RefinedSegmentSummaryData> segmentSummaryValues) {
-        String kmlString = mapSegmentsToKMLLines(segmentSummaryValues.values());
-        writeKMLLines(kmlString);
+    public void writeProgress() {
+        Map<String, RefinedSegmentSummaryData> segmentSummaryValues = readSegmentSummaryFileAndAnnotations();
+        writeLines(segmentSummaryValues, true);
+        writePlacemarks(segmentSummaryValues, true);
     }
 
-    private void writePlacemarks(Map<String, RefinedSegmentSummaryData> segmentSummaryValues) {
-        String kmlString = mapSegmentsToKMLPlacemarks(segmentSummaryValues.values());
-        writeKMLplacemarks(kmlString);
+    private void writeLines(Map<String, RefinedSegmentSummaryData> segmentSummaryValues, boolean excludeDone) {
+        String kmlString = mapSegmentsToKMLLines(segmentSummaryValues.values(), excludeDone);
+        String fileName = "climbs.kml";
+        if(excludeDone){
+            fileName = "climbs_progress.kml";
+        }
+        writeKMLLines(kmlString, fileName);
+    }
+
+    private void writePlacemarks(Map<String, RefinedSegmentSummaryData> segmentSummaryValues, boolean excludeDone) {
+        String kmlString = mapSegmentsToKMLPlacemarks(segmentSummaryValues.values(), excludeDone);
+        String fileName = "placemarks.kml";
+        if(excludeDone){
+            fileName = "placemarks_progress.kml";
+        }
+        writeKMLplacemarks(kmlString, fileName);
     }
 
     private Map<String, RefinedSegmentSummaryData> readSegmentSummaryFileAndAnnotations() {
@@ -53,9 +67,9 @@ public class KmlWriter {
         }
     }
 
-    private void writeKMLLines(String kmlString) {
+    private void writeKMLLines(String kmlString, String fileName) {
         try {
-            FileWriter fileWriter = new FileWriter("C:\\Users\\lawrence\\software\\strava\\src\\main\\resources\\output\\spreadsheets\\climbs.kml");
+            FileWriter fileWriter = new FileWriter("C:\\Users\\lawrence\\software\\strava\\src\\main\\resources\\output\\spreadsheets\\" + fileName);
             PrintWriter writer = new PrintWriter(fileWriter, true);
             writer.write(kmlString);
             writer.close();
@@ -64,9 +78,9 @@ public class KmlWriter {
         }
     }
 
-    private void writeKMLplacemarks(String kmlString) {
+    private void writeKMLplacemarks(String kmlString, String fileName) {
         try {
-            FileWriter fileWriter = new FileWriter("C:\\Users\\lawrence\\software\\strava\\src\\main\\resources\\output\\spreadsheets\\placemarks.kml");
+            FileWriter fileWriter = new FileWriter("C:\\Users\\lawrence\\software\\strava\\src\\main\\resources\\output\\spreadsheets\\" + fileName);
             PrintWriter writer = new PrintWriter(fileWriter, true);
             writer.write(kmlString);
             writer.close();
@@ -75,7 +89,7 @@ public class KmlWriter {
         }
     }
 
-    private String mapSegmentsToKMLLines(Collection<RefinedSegmentSummaryData> segments) {
+    private String mapSegmentsToKMLLines(Collection<RefinedSegmentSummaryData> segments, boolean excludeComplete) {
 
         ClassPathStringLoader loader = new ClassPathStringLoader();
         String dirRoot = "/templates/";
@@ -87,9 +101,13 @@ public class KmlWriter {
 
         for (RefinedSegmentSummaryData segment : segments) {
 
-            processSegment(linesBuilder,
-                    segment,
-                    lineTemplateString);
+            boolean exclude = excludeComplete && segment.annotation.complete;
+
+            if(!exclude) {
+                processSegment(linesBuilder,
+                        segment,
+                        lineTemplateString);
+            }
         }
 
         String kmlLineString = templateString.replaceAll("\\{PLACEMARKS\\}", linesBuilder.toString());
@@ -97,7 +115,7 @@ public class KmlWriter {
         return kmlLineString;
     }
 
-    private String mapSegmentsToKMLPlacemarks(Collection<RefinedSegmentSummaryData> segments) {
+    private String mapSegmentsToKMLPlacemarks(Collection<RefinedSegmentSummaryData> segments, boolean excludeComplete) {
 
         ClassPathStringLoader loader = new ClassPathStringLoader();
         String dirRoot = "/templates/";
@@ -110,12 +128,14 @@ public class KmlWriter {
 
         for (RefinedSegmentSummaryData segment : segments) {
 
-            if (segment.segData.seriesNames.contains(Series.O_100)) {
+            boolean exclude = excludeComplete && segment.annotation.complete;
+
+            if (segment.segData.seriesNames.contains(Series.O_100) && !exclude) {
                 String placemarkString = placemarkTemplateString.replaceAll("\\{PLACEMARK_TYPE\\}", "placemark");
                 processSegment(o100PlacemarksBuilder,
                         segment,
                         placemarkString);
-            } else if (segment.segData.seriesNames.contains(Series.A_100)) {
+            } else if (segment.segData.seriesNames.contains(Series.A_100) && !exclude) {
                 String placemarkString = placemarkTemplateString.replaceAll("\\{PLACEMARK_TYPE\\}", "placemark2");
                 processSegment(a100PlacemarksBuilder,
                         segment,

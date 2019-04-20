@@ -1,7 +1,5 @@
 package model;
 
-import org.w3c.dom.NameList;
-
 import java.util.List;
 
 public class RefinedSegmentSummaryData {
@@ -10,7 +8,7 @@ public class RefinedSegmentSummaryData {
 
     public SegmentSummaryData segData;
     public GradBins gradBins;
-    private SegmentAnnotation annotation;
+    public SegmentAnnotation annotation;
 
     public RefinedSegmentSummaryData(SegmentSummaryData segmentSummaryData) {
         this.segData = segmentSummaryData;
