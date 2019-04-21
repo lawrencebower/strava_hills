@@ -51,6 +51,17 @@ public class RefinedSegmentSummaryData {
         return result;
     }
 
+    public boolean isComplete() {
+
+        boolean result = false;
+
+        if (annotation != null) {
+            result = annotation.complete;
+        }
+
+        return result;
+    }
+
     public String getVideoUrl() {
 
         String result = "";

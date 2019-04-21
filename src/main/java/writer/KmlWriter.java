@@ -14,36 +14,31 @@ import java.util.Map;
 
 public class KmlWriter {
 
+    public static boolean PROGRESS_MODE = false;
+
     private SegmentSummaryUtils segUtils = new SegmentSummaryUtils();
 
     public void write() {
         Map<String, RefinedSegmentSummaryData> segmentSummaryValues = readSegmentSummaryFileAndAnnotations();
-        writeLines(segmentSummaryValues, false);
-        writePlacemarks(segmentSummaryValues, false);
+        writeLines(segmentSummaryValues);
+        writePlacemarks(segmentSummaryValues);
     }
 
     public void writeProgress() {
+        KmlWriter.PROGRESS_MODE = true;
         Map<String, RefinedSegmentSummaryData> segmentSummaryValues = readSegmentSummaryFileAndAnnotations();
-        writeLines(segmentSummaryValues, true);
-        writePlacemarks(segmentSummaryValues, true);
+        writeLines(segmentSummaryValues);
+        writePlacemarks(segmentSummaryValues);
     }
 
-    private void writeLines(Map<String, RefinedSegmentSummaryData> segmentSummaryValues, boolean excludeDone) {
-        String kmlString = mapSegmentsToKMLLines(segmentSummaryValues.values(), excludeDone);
-        String fileName = "climbs.kml";
-        if(excludeDone){
-            fileName = "climbs_progress.kml";
-        }
-        writeKMLLines(kmlString, fileName);
+    private void writeLines(Map<String, RefinedSegmentSummaryData> segmentSummaryValues) {
+        String kmlString = mapSegmentsToKMLLines(segmentSummaryValues.values());
+        writeKMLLines(kmlString);
     }
 
-    private void writePlacemarks(Map<String, RefinedSegmentSummaryData> segmentSummaryValues, boolean excludeDone) {
-        String kmlString = mapSegmentsToKMLPlacemarks(segmentSummaryValues.values(), excludeDone);
-        String fileName = "placemarks.kml";
-        if(excludeDone){
-            fileName = "placemarks_progress.kml";
-        }
-        writeKMLplacemarks(kmlString, fileName);
+    private void writePlacemarks(Map<String, RefinedSegmentSummaryData> segmentSummaryValues) {
+        String kmlString = mapSegmentsToKMLPlacemarks(segmentSummaryValues.values());
+        writeKMLplacemarks(kmlString);
     }
 
     private Map<String, RefinedSegmentSummaryData> readSegmentSummaryFileAndAnnotations() {
@@ -67,8 +62,14 @@ public class KmlWriter {
         }
     }
 
-    private void writeKMLLines(String kmlString, String fileName) {
+    private void writeKMLLines(String kmlString) {
         try {
+
+            String fileName = "climbs.kml";
+            if(KmlWriter.PROGRESS_MODE){
+                fileName = "climbs_progress.kml";
+            }
+
             FileWriter fileWriter = new FileWriter("C:\\Users\\lawrence\\software\\strava\\src\\main\\resources\\output\\spreadsheets\\" + fileName);
             PrintWriter writer = new PrintWriter(fileWriter, true);
             writer.write(kmlString);
@@ -78,8 +79,14 @@ public class KmlWriter {
         }
     }
 
-    private void writeKMLplacemarks(String kmlString, String fileName) {
+    private void writeKMLplacemarks(String kmlString) {
         try {
+
+            String fileName = "placemarks.kml";
+            if(KmlWriter.PROGRESS_MODE){
+                fileName = "placemarks_progress.kml";
+            }
+
             FileWriter fileWriter = new FileWriter("C:\\Users\\lawrence\\software\\strava\\src\\main\\resources\\output\\spreadsheets\\" + fileName);
             PrintWriter writer = new PrintWriter(fileWriter, true);
             writer.write(kmlString);
@@ -89,7 +96,7 @@ public class KmlWriter {
         }
     }
 
-    private String mapSegmentsToKMLLines(Collection<RefinedSegmentSummaryData> segments, boolean excludeComplete) {
+    private String mapSegmentsToKMLLines(Collection<RefinedSegmentSummaryData> segments) {
 
         ClassPathStringLoader loader = new ClassPathStringLoader();
         String dirRoot = "/templates/";
@@ -100,14 +107,9 @@ public class KmlWriter {
         StringBuilder linesBuilder = new StringBuilder();
 
         for (RefinedSegmentSummaryData segment : segments) {
-
-            boolean exclude = excludeComplete && segment.annotation.complete;
-
-            if(!exclude) {
-                processSegment(linesBuilder,
-                        segment,
-                        lineTemplateString);
-            }
+            processSegment(linesBuilder,
+                    segment,
+                    lineTemplateString);
         }
 
         String kmlLineString = templateString.replaceAll("\\{PLACEMARKS\\}", linesBuilder.toString());
@@ -115,7 +117,7 @@ public class KmlWriter {
         return kmlLineString;
     }
 
-    private String mapSegmentsToKMLPlacemarks(Collection<RefinedSegmentSummaryData> segments, boolean excludeComplete) {
+    private String mapSegmentsToKMLPlacemarks(Collection<RefinedSegmentSummaryData> segments) {
 
         ClassPathStringLoader loader = new ClassPathStringLoader();
         String dirRoot = "/templates/";
@@ -128,7 +130,7 @@ public class KmlWriter {
 
         for (RefinedSegmentSummaryData segment : segments) {
 
-            boolean exclude = excludeComplete && segment.annotation.complete;
+            boolean exclude = KmlWriter.PROGRESS_MODE && segment.annotation.complete;
 
             if (segment.segData.seriesNames.contains(Series.O_100) && !exclude) {
                 String placemarkString = placemarkTemplateString.replaceAll("\\{PLACEMARK_TYPE\\}", "placemark");
@@ -171,9 +173,8 @@ public class KmlWriter {
             templateString = templateString.replaceAll("\\{VELOVIEWER\\}", "https://veloviewer.com/segment/" + segment.getId());
             templateString = templateString.replaceAll("\\{YOUTUBE\\}", segment.getVideoUrl());
 
-            boolean hasVideo = !segment.getVideoUrl().isEmpty();
             Integer difficultyCat = segment.getDifficultyCategory();
-            String style = diffToStyle(hasVideo, difficultyCat);
+            String style = diffToStyle(segment, difficultyCat);
 
             templateString = templateString.replaceAll("\\{LINE_STYLE\\}", style);
 
@@ -189,8 +190,11 @@ public class KmlWriter {
         }
     }
 
-    private String diffToStyle(boolean hasVideo, Integer difficultyCat) {
+    private String diffToStyle(RefinedSegmentSummaryData segment,
+                               Integer difficultyCat) {
 
+        boolean hasVideo = !segment.getVideoUrl().isEmpty();
+        boolean complete = segment.isComplete();
         String style;
 
         switch (difficultyCat) {
@@ -215,6 +219,15 @@ public class KmlWriter {
             default:
                 throw new RuntimeException("Cant map difficulty " + difficultyCat);
         }
+
+        if (KmlWriter.PROGRESS_MODE && complete) {
+            if (hasVideo) {
+                style = "#donewithvid";
+            } else {
+                style = "#donenovid";
+            }
+        }
+
         return style;
     }
 

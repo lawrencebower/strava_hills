@@ -82,6 +82,19 @@
       </Pair>
     </StyleMap>
 
+    <Style id="donewithvid-style">
+      <LineStyle>
+        <color>50828282</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="donenovid-style">
+      <LineStyle>
+        <color>50C8C8C8</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+
     <StyleMap id="video1">
       <Pair>
         <styleUrl>#video1-style</styleUrl>
@@ -131,6 +144,17 @@
     <StyleMap id="novideo5">
       <Pair>
         <styleUrl>#novideo5-style</styleUrl>
+      </Pair>
+    </StyleMap>
+
+    <StyleMap id="donewithvid">
+      <Pair>
+        <styleUrl>#donewithvid-style</styleUrl>
+      </Pair>
+    </StyleMap>
+    <StyleMap id="donenovid">
+      <Pair>
+        <styleUrl>#donenovid-style</styleUrl>
       </Pair>
     </StyleMap>
 
