@@ -158,10 +158,18 @@ public class KmlWriter {
         if (segment.getDifficulty() != 0) {
 
             templateString = templateString.replaceAll("\\{NAME\\}", segment.getNameOrSynonym());
-            templateString = templateString.replaceAll("\\{DIFFICULTY\\}", segment.getDifficultyString());
+            String difficultyString = "NA";
 
-            String seriesNameString = segUtils.seriesNamesToString(segment.getSeriesNames());
-            templateString = templateString.replaceAll("\\{SERIES\\}", seriesNameString);
+            if(KmlWriter.PROGRESS_MODE) {
+                difficultyString = segment.getDifficultyString();
+                templateString = templateString.replaceAll("\\{DIFFICULTY\\}", difficultyString);
+            }
+
+            String seriesNameString = "NA";
+            if(KmlWriter.PROGRESS_MODE) {
+                seriesNameString = segUtils.seriesNamesToString(segment.getSeriesNames());
+                templateString = templateString.replaceAll("\\{SERIES\\}", seriesNameString);
+            }
 
             templateString = templateString.replaceAll("\\{CITY\\}", segment.getCity());
             templateString = templateString.replaceAll("\\{LENGTH\\}", String.format("%.0f", segment.getDistance()));

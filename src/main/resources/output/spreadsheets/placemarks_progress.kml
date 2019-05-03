@@ -108,33 +108,6 @@
     </Point>
 </Placemark>
 <Placemark>
-    <name>OFFICIAL 100Climbs No51 Tan Hill</name>
-    <styleUrl>#placemark</styleUrl>
-    <Point>
-        <coordinates>
-            -2.031467914581299,54.433414459228516
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No83 Kirkstone Pass</name>
-    <styleUrl>#placemark</styleUrl>
-    <Point>
-        <coordinates>
-            -2.9202489852905273,54.5106315612793
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No50 Fleet Moss</name>
-    <styleUrl>#placemark</styleUrl>
-    <Point>
-        <coordinates>
-            -2.1996231079101562,54.297977447509766
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
     <name>OFFICIAL 100Climbs No11 Rundlestone</name>
     <styleUrl>#placemark</styleUrl>
     <Point>
@@ -571,24 +544,6 @@
     </Point>
 </Placemark>
 <Placemark>
-    <name>OFFICIAL 100Climbs No181 The Struggle</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -2.9630799293518066,54.43376159667969
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No182 Blea Tarn</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -3.1029698848724365,54.44253158569336
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
     <name>OFFICIAL 100Climbs No183 Shot Moss</name>
     <styleUrl>#placemark2</styleUrl>
     <Point>
@@ -612,15 +567,6 @@
     <Point>
         <coordinates>
             -2.3771400451660156,54.80617904663086
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No186 Great Dun Fell</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -2.5014400482177734,54.64160919189453
         </coordinates>
     </Point>
 </Placemark>
@@ -936,15 +882,6 @@
     <Point>
         <coordinates>
             -1.916290044784546,53.85271072387695
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No142 Turf Moor</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -2.0203158855438232,54.381832122802734
         </coordinates>
     </Point>
 </Placemark>

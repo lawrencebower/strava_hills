@@ -2,12 +2,12 @@
   <name>{NAME}</name>
   <styleUrl>{LINE_STYLE}</styleUrl>
   <ExtendedData>
-    <!--<Data name="Difficulty">-->
-      <!--<value>{DIFFICULTY}</value>-->
-    <!--</Data>-->
-    <!--<Data name="Region(s)">-->
-      <!--<value>{SERIES}</value>-->
-    <!--</Data>-->
+    <Data name="Difficulty">
+      <value>{DIFFICULTY}</value>
+    </Data>
+    <Data name="Region(s)">
+      <value>{SERIES}</value>
+    </Data>
     <Data name="Location">
       <value>{CITY}</value>
     </Data>
