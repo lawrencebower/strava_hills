@@ -37,12 +37,12 @@
 15753173	OFFICIAL 100Climbs No67 Cairn Gorm		6		done
 6697031	OFFICIAL 100Climbs No68 Rest and be Thankfull	16	6	https://youtu.be/mk6kxAJlH3M	done
 6671117	OFFICIAL 100Climbs No69 Bealach-na-Ba	19	11	https://youtu.be/Y4-sBrMsNsY	done
-6695759	OFFICIAL 100Climbs No14 Box Hill	7	3		
+6695759	OFFICIAL 100Climbs No14 Box Hill	7	3		done
 6691251	OFFICIAL 100Climbs No15 York's Hill	23	6	https://youtu.be/MmCM5xtcKek	done
 6691229	OFFICIAL 100Climbs No16 White Lane	22	5	https://youtu.be/BPyH8mp7rlg	done
 6691321	OFFICIAL 100Climbs No17 Leith Hill		6		done
 6691301	OFFICIAL 100Climbs No18 White Down		8		done
-6691343	OFFICIAL 100Climbs No19 The Wall		5		
+6691343	OFFICIAL 100Climbs No19 The Wall		5		done
 6691062	OFFICIAL 100Climbs No20 Toys Hill	18	7	https://youtu.be/65ZgvyqoXGc	done
 6691367	OFFICIAL 100Climbs No21 Steyning Bostal	18	5	https://youtu.be/Tv3O5ynwuOE	done
 6691384	OFFICIAL 100Climbs No22 Ditchling Beacon	11	6	https://youtu.be/Dy7O44ahXME	done
@@ -146,7 +146,7 @@
 16400854	OFFICIAL 100Climbs No178 Bank House Moor		7		
 16401101	OFFICIAL 100Climbs No179 Kiln Bank Cross		7		
 16401141	OFFICIAL 100Climbs No180 Cold Fell		6		
-16401176	OFFICIAL 100Climbs No181 The Struggle		8		done
+16401176	row dow (not including Pilgrims Way!)		8		done
 16401226	OFFICIAL 100Climbs No182 Blea Tarn		8		done
 16401496	OFFICIAL 100Climbs No183 Shot Moss		6		
 16401570	OFFICIAL 100Climbs No184 Dowgang Hush		7		
@@ -164,11 +164,11 @@
 16399977	OFFICIAL 100Climbs No169 Bealach Ratagan		8		
 16400033	OFFICIAL 100Climbs No170 Quiraing		5		
 16290971	OFFICIAL 100Climbs No115 Ashdown Forest		5		
-16291115	OFFICIAL 100Climbs No116 Combe Lane		5		
-16291169	OFFICIAL 100Climbs No117 Chalkpit Lane		7		
+16291115	OFFICIAL 100Climbs No116 Combe Lane		5		done
+16291169	OFFICIAL 100Climbs No117 Chalkpit Lane		7		done
 8255811	OFFICIAL 100Climbs No118 Coldharbour Lane		6		
 16291277	OFFICIAL 100Climbs No119 Quell Lane		4		
-16291325	OFFICIAL 100Climbs No120 Barhatch Lane		9		
+16291325	OFFICIAL 100Climbs No120 Barhatch Lane		9		done
 16298273	OFFICIAL 100Climbs No121 Dragon Hill Road		5		
 16298306	OFFICIAL 100Climbs No122 Kingston Hill		2		
 16406544	OFFICIAL 100Climbs No187 Long Mountain		7		
@@ -197,22 +197,22 @@
 16336611	OFFICIAL 100Climbs No149 Caper Hill		10		
 16677726	OFFICIAL 100Climbs No150 Egton High Moor		8		
 16337540	OFFICIAL 100Climbs No151 Hanging Grimston		4		
-2885469	VC10 Kop Hill KOM Challenge		7		
-1118661	Dudley Lane Climb		4		
-8020413	Chinnor Hill ToB KoM		4		
+2885469	VC10 Kop Hill KOM Challenge		7		donr
+1118661	Dudley Lane Climb		4		done
+8020413	Chinnor Hill ToB KoM		4		done
 6655533	Half steep		2		
 2528761	Britwell Hill Club challenge		4		
 670798	Whitchurch Hill		4		
 7855474	Blowingstone Categorised		6		
-644526	Dragon Hill Road, Uffington White Horse		5		
+644526	Dragon Hill Road	 Uffington White Horse		5	
 626528	Little Switzerland		2		
 1562691	Harvesting Lane - Buster Hill complete section		7		
-619557	Beacon Hill, Exton		3		
+619557	Beacon Hill	 Exton		3	
 7857853	"100 Greatest Climbs 123 ""DOWN LANE"""		5		
 643269	Warwick Wold Road		6		
 645908	Chalkpit Lane		7		
 10463739	Brasted Hill - Climbs of SE England		5		
-4334519	Star Hill		5		
+4334519	Star Hill		5		done
 1127162	Row Dow (not including Pilgrims Way!)		5		
 10952529	Climbs of SE England - Exedown Road		5		
 10952611	Climbs of SE England - Vigo Hill		7		
@@ -221,7 +221,7 @@
 1233997	Boxley Hill (full length)		7		
 4786907	Underpass to Castle Hill		5		
 355385	Hollingbourne Hill		5		
-620629	White Hill, Challock		4		
+620629	White Hill	 Challock		4	
 2329175	Lympne Hill (Short of stop street)		4		
 10350616	Official St Margarets Bay		4		
 4444686	North hill catch up		1		
@@ -238,7 +238,7 @@
 2322125	Duncton to actual top		5		
 946853	Quell Lane		5		
 629672	Milland Hill		4		
-2724911	S Harting Cat4, B2146 Junc - SDW dir Compton		4		
+2724911	S Harting Cat4	 B2146 Junc - SDW dir Compton		4	
 6698984	SSCC Turkey Drumstick		5		
 6957969	Claxby Crawl		2		
 1771669	Red Hill Bot to Top		1		
@@ -248,12 +248,12 @@
 5564339	Eaking Lane Hill		1		
 15235633	Oxton Bank - Blind Ln to Summit		2		
 6503236	"Thursday Thighs: Georges Hill ""The Beast and Beyond"" "		4		
-5498529	Clarion Hill Climb		1		
-631929	Beacon Hill (LFCC)		3		
-3809529	Full Polly Botts Lane Climb... (LFCC)		4		
-635951	Launde Abbey		1		
-5583439	The Full Uphill Gradient Climb into Uppingham		2		
-5902627	Rockingham Hill (Uphill)		3		
+5498529	Clarion Hill Climb		1		done
+631929	Beacon Hill (LFCC)		3		done
+3809529	Full Polly Botts Lane Climb... (LFCC)		4		done
+635951	Launde Abbey		1		done
+5583439	The Full Uphill Gradient Climb into Uppingham		2		done
+5902627	Rockingham Hill (Uphill)		3		done
 8325072	OHC/12 BandDCC Carr Lane HillClimb		3		
 1807901	Official BandDCC Hardwick Hillclimb (standing start !)		1		
 1754286	Slack hill to Lant Lane		6		
@@ -352,14 +352,14 @@
 1134660	B*stard Hill		6		
 2306929	Park Brow		3		
 1147092	Howtown Howler (LFCC)		4		
-708250	Red Bank Climb		7		done
-2573368	Blea Tarn Climb		8		
+708250	blea tarn Climb		7		done
+2573368	Blea Tarn Climb		8		done
 16245298	OFFICIAL NE Hawkshead Hill		4		
 4405298	Hummer Dinger 		6		
 8764058	BIRKER FELL (Full Climb)		8		
 2279419	Bobbin Mill Hill Climb		8		
 2109521	CORNEY!		7		
-7190013	no pain, no gain!		7		
+7190013	no pain	 no gain!		7	
 4705643	Gummers How climb		7		
 1435352	 Tow top		7		
 16245333	OFFICIAL NW Brigsteer Brow		5		
@@ -393,7 +393,7 @@
 695339	Coalpit Ln Climb		6		
 16245194	OFFICIAL NW Charity Lane		8		
 3804859	Sutton Common climb		3		
-760274	Chapel Lane, Kelsall		5		
+760274	Chapel Lane	 Kelsall		5	
 754198	Frodsham Climb		5		
 1299722	Sancta Maria Climb		7		
 664970	Stow 15%		7		
@@ -467,7 +467,7 @@
 1440797	FORD STREET 		4		
 5276961	Corfe Hillclimb (official version)		2		
 894936	Porlock Toll Road		3		
-5810706	ZigZag Hill (no 102, Greatest Climbs)		4		
+5810706	ZigZag Hill (no 102	 Greatest Climbs)		4	
 3281066	Woolland Hill		4		
 7323455	Alpe d'Piddle Lane 		4		
 1482106	White Way Climb Only		6		
@@ -564,7 +564,7 @@
 5506768	Acklam Brow		5		
 14103019	Lutton Ln climb		3		
 6755228	Ganton Hill		2		
-2368745	Murton bank, Hawnby		5		
+2368745	Murton bank	 Hawnby		5	
 12060995	Bilsdale - Stream to Mast		6		
 6940479	Scarth Nick To Cattle Grid		5		
 4854599	Blakey Bank Stream to T Junction		9		
@@ -574,7 +574,7 @@
 4478561	Regrettable Ravenscar Climb		8		
 9293720	Cote de Robin Hood's Bay		8		
 2443600	Bib Lane Hill Climb		8		
-3345962	Jenkin Road Hill_Full (Winkobank) (Tour 2014, Stage 2)		7		
+3345962	Jenkin Road Hill_Full (Winkobank) (Tour 2014	 Stage 2)		7	
 7667127	Cote de Oughtibridge		7		
 1133591	Spout Lane		4		
 3128761	Lodge Lane climb - full length		6		
@@ -583,7 +583,7 @@
 15408342	Midhopestones bank		6		
 5419929	The REAL Stainborough climb !!!!!		4		
 2250330	wessenden head first 2.2 miles		5		
-15408410	Ripponden Bank, full distance.		5		
+15408410	Ripponden Bank	 full distance.		5	
 1589571	norland hill climb		7		
 8394226	super trooper lane		10		
 2468176	Gibb Lane (Long)		8		
@@ -601,8 +601,8 @@
 6777348	Thwaites Brow - Cobbles to Summit		9		
 15408567	Full Ilkley Moor		6		
 7349822	Cow and Calf Climb		4		
-676432	Black Hill, Arthington		5		
-1070603	Hartwith Bank, Climb (max 21% grad)		6		
+676432	Black Hill	 Arthington		5	
+1070603	Hartwith Bank	 Climb (max 21% grad)		6	
 2341236	Nought Bank Road Climb 		8		
 7561629	SRTC - Junction to cattle grid		7		
 7236735	Cote de Cray		5		
