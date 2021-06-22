@@ -115,6 +115,9 @@ public class RefinedSegmentSummaryUtil {
 
         String segId = summaryData.getId();
 
+        if(segId.equals("5097449")){
+            int i = 0;
+        }
         if(annotations.containsKey(segId)){
             summaryData.setAnnotation(annotations.get(segId));
         }else{

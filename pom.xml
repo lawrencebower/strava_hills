@@ -53,15 +53,11 @@
             <version>4.8.2</version>
             <scope>test</scope>
         </dependency>
-<!--
         <dependency>
             <groupId>com.github.danshannon</groupId>
             <artifactId>javastrava-api</artifactId>
-            <version>1.0.1</version>
-            &lt;!&ndash;<version>master</version>&ndash;&gt;
-            &lt;!&ndash;<version>1.0.3</version>&ndash;&gt;
+            <version>1.0.3</version>
         </dependency>
--->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>

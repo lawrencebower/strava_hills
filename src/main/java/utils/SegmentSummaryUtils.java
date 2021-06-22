@@ -242,7 +242,7 @@ public class SegmentSummaryUtils {
 
         try {
 
-            FileInputStream annotationStream = new FileInputStream("C:\\Users\\lawrence\\software\\strava\\src\\main\\resources\\output\\spreadsheets\\segment_annotation.tsv");
+            FileInputStream annotationStream = new FileInputStream("/home/lb584/git/strava_hills/src/main/resources/output/spreadsheets/segment_annotation.tsv");
             SegmentAnnotationReader annotationReader = new SegmentAnnotationReader();
 
             Map<String, SegmentAnnotation> segmentAnotations = annotationReader.readAnnotations(annotationStream);

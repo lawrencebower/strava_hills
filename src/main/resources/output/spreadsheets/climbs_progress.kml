@@ -162,7 +162,7 @@
       <name>Cycling Climbs</name>
       <Placemark>
   <name>OFFICIAL 100Climbs No14 Box Hill</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>3</value>
@@ -195,7 +195,7 @@
       <value>https://veloviewer.com/segment/6695759</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/SXsXH3STaIw</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -271,7 +271,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No17 Leith Hill</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -304,7 +304,7 @@
       <value>https://veloviewer.com/segment/6691321</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/bajT7_blGEI</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -513,7 +513,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No18 White Down</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>8</value>
@@ -546,7 +546,7 @@
       <value>https://veloviewer.com/segment/6691301</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/ItUfR6LCDX0</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -1110,7 +1110,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No43 Holme Moss</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -1143,7 +1143,7 @@
       <value>https://veloviewer.com/segment/6691272</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/h5D2svnDt-c</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -1386,7 +1386,7 @@
 </Placemark>
 <Placemark>
   <name>Official 100Climbs No82 Whinlatter Pass (corrected)</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -1419,7 +1419,7 @@
       <value>https://veloviewer.com/segment/13952375</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/Kpo5xk4_CJs</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -1567,7 +1567,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No19 The Wall</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -2603,7 +2603,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No70 Cat and Fiddle</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>4</value>
@@ -2636,7 +2636,7 @@
       <value>https://veloviewer.com/segment/6681311</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/ufhCeMaqbgM</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -3761,7 +3761,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No26 Mott Street</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>3</value>
@@ -3794,7 +3794,7 @@
       <value>https://veloviewer.com/segment/6691219</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/bQYn0RpMIgM</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -4178,7 +4178,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No51 Tan Hill</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>3</value>
@@ -4211,7 +4211,7 @@
       <value>https://veloviewer.com/segment/6661216</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/FsaPvjkPNC0</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -4748,7 +4748,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No83 Kirkstone Pass</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -4781,7 +4781,7 @@
       <value>https://veloviewer.com/segment/6677526</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/NLMK8YGI8tA</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -5936,7 +5936,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No50 Fleet Moss</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>9</value>
@@ -5969,7 +5969,7 @@
       <value>https://veloviewer.com/segment/6687966</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/cKvbrE4ax7E</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -6373,7 +6373,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No88 Penbarra</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>9</value>
@@ -6406,7 +6406,7 @@
       <value>https://veloviewer.com/segment/6671057</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/Qv53OZBLems</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -7319,7 +7319,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No73 Garsdale Head</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -7352,7 +7352,7 @@
       <value>https://veloviewer.com/segment/6677557</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/-8pvvehUiEw</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -7532,7 +7532,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No10 Widecombe</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -7565,7 +7565,7 @@
       <value>https://veloviewer.com/segment/6665221</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/6ll-kin-vhY</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -7611,7 +7611,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No74 Nick of Pendle</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -7644,7 +7644,7 @@
       <value>https://veloviewer.com/segment/6688055</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/ywKXMD4Mv4k</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -7695,7 +7695,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No86 The Shelf</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -7728,7 +7728,7 @@
       <value>https://veloviewer.com/segment/6696494</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/AGqfa7rBpr8</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -8775,7 +8775,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No67 Cairn Gorm</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -8808,7 +8808,7 @@
       <value>https://veloviewer.com/segment/15753173</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/mMhnG44eIDg</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -9323,7 +9323,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No76 Jubilee Tower</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -9356,7 +9356,7 @@
       <value>https://veloviewer.com/segment/6688053</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/IgGDuaB2964</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -9846,7 +9846,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No42 Jackson Bridge</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -9879,7 +9879,7 @@
       <value>https://veloviewer.com/segment/6691287</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/-FV9RQyljj4</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -10604,7 +10604,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No37 Peaslows</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>4</value>
@@ -10637,7 +10637,7 @@
       <value>https://veloviewer.com/segment/6820268</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/f1I3JY6MkbQ</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -10850,7 +10850,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No2 Weston Hill</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>4</value>
@@ -10883,7 +10883,7 @@
       <value>https://veloviewer.com/segment/6665281</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/V8l4l1DYUE4</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -10947,7 +10947,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No64 Cairn o' Mount</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -10980,7 +10980,7 @@
       <value>https://veloviewer.com/segment/6674408</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/7dCshyNH-x0</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -11090,7 +11090,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No38 Jiggers Bank</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>3</value>
@@ -11123,7 +11123,7 @@
       <value>https://veloviewer.com/segment/6681373</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/Eto7jACR88w</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -11403,7 +11403,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No57 The Stang</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -11436,7 +11436,7 @@
       <value>https://veloviewer.com/segment/6691007</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/f4ICGtz79Q8</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -12205,7 +12205,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No48 Langcliffe Scar</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -12238,7 +12238,7 @@
       <value>https://veloviewer.com/segment/6688008</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/Isp0idYUFF8</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -13980,7 +13980,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No44 Halifax Lane</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>8</value>
@@ -14013,7 +14013,7 @@
       <value>https://veloviewer.com/segment/6690955</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/Z9oC5CEibl8</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -15306,7 +15306,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No110 Countisbury Hill</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -15339,7 +15339,7 @@
       <value>https://veloviewer.com/segment/2183219</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/rdyCuGNEWJQ</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -16590,7 +16590,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No128 Burbage Moor</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -18206,7 +18206,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No157 Cragpit Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -18461,7 +18461,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No171 Pym Chair</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -18494,7 +18494,7 @@
       <value>https://veloviewer.com/segment/16400083</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/O4jEqhI22sw</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -19516,7 +19516,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No181 The Struggle</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>8</value>
@@ -19549,7 +19549,7 @@
       <value>https://veloviewer.com/segment/16401176</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/LUC9R48xofk</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -20107,7 +20107,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No186 Great Dun Fell</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>11</value>
@@ -20140,7 +20140,7 @@
       <value>https://veloviewer.com/segment/16406525</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/eU70bChyjDA</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -21966,7 +21966,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No116 Combe Lane</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -22091,7 +22091,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No117 Chalkpit Lane</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -22350,7 +22350,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No120 Barhatch Lane</name>
-  <styleUrl>#novideo4</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>9</value>
@@ -24810,7 +24810,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No145 Trapping Hill</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -24960,7 +24960,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No146 Nought Bank Road</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>8</value>
@@ -25485,7 +25485,7 @@
 </Placemark>
 <Placemark>
   <name>Kop Hill</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -25554,7 +25554,7 @@
 </Placemark>
 <Placemark>
   <name>Dudley Lane</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>4</value>
@@ -25696,7 +25696,7 @@
 </Placemark>
 <Placemark>
   <name>Chinnor Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>4</value>
@@ -27041,7 +27041,7 @@
 </Placemark>
 <Placemark>
   <name>Star Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -29987,7 +29987,7 @@
 </Placemark>
 <Placemark>
   <name>Cocking Hill</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>1</value>
@@ -30320,7 +30320,7 @@
 </Placemark>
 <Placemark>
   <name>Lings Hill</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>1</value>
@@ -30376,7 +30376,7 @@
 </Placemark>
 <Placemark>
   <name>Beacon Hill</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>3</value>
@@ -30442,7 +30442,7 @@
 </Placemark>
 <Placemark>
   <name>Poly Bott's Lane</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>4</value>
@@ -30538,7 +30538,7 @@
 </Placemark>
 <Placemark>
   <name>Launde Abbey</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>1</value>
@@ -30594,7 +30594,7 @@
 </Placemark>
 <Placemark>
   <name>King's Hill</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>2</value>
@@ -30677,7 +30677,7 @@
 </Placemark>
 <Placemark>
   <name>Rockingham Hill</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>3</value>
@@ -30893,7 +30893,7 @@
 </Placemark>
 <Placemark>
   <name>Jagger's Lane</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -30926,7 +30926,7 @@
       <value>https://veloviewer.com/segment/6005380</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/PS1SQfcbV4s</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -35813,7 +35813,7 @@
 </Placemark>
 <Placemark>
   <name>Barley Mill Lane</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -39019,8 +39019,8 @@
   </LineString>
 </Placemark>
 <Placemark>
-  <name>KoM tour Britain 2017</name>
-  <styleUrl>#novideo2</styleUrl>
+  <name>Corby's Graggs</name>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -39269,7 +39269,7 @@
 </Placemark>
 <Placemark>
   <name>Middleton Hall</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -39330,7 +39330,7 @@
 </Placemark>
 <Placemark>
   <name>Lyham Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -40573,7 +40573,7 @@
 </Placemark>
 <Placemark>
   <name>Red Bank</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -40606,7 +40606,7 @@
       <value>https://veloviewer.com/segment/708250</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/5LJ-VV4nOA4</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -43058,7 +43058,7 @@
 </Placemark>
 <Placemark>
   <name>Pendle Hill</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#video3</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -43091,7 +43091,7 @@
       <value>https://veloviewer.com/segment/929790</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>    done</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -44780,7 +44780,7 @@
 </Placemark>
 <Placemark>
   <name>Brickworks</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -44813,7 +44813,7 @@
       <value>https://veloviewer.com/segment/612791</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>done</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -44948,7 +44948,7 @@
 </Placemark>
 <Placemark>
   <name>Blaze Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -44981,7 +44981,7 @@
       <value>https://veloviewer.com/segment/1240158</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>done</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -45065,96 +45065,6 @@
 -2.0594,53.291880000000006
 -2.0590300000000004,53.29173
 -2.0589,53.291720000000005
-
-    </coordinates>
-  </LineString>
-</Placemark>
-<Placemark>
-  <name>Pym Chair</name>
-  <styleUrl>#novideo3</styleUrl>
-  <ExtendedData>
-    <Data name="Difficulty">
-      <value>7</value>
-    </Data>
-    <Data name="Region(s)">
-      <value>North-west</value>
-    </Data>
-    <Data name="Location">
-      <value>Macclesfield, UK</value>
-    </Data>
-    <Data name="Length">
-      <value>1479</value>
-    </Data>
-    <Data name="Gain">
-      <value>162</value>
-    </Data>
-    <Data name="Av Grad">
-      <value>11.0</value>
-    </Data>
-    <Data name="Max Grad">
-      <value>20.25322</value>
-    </Data>
-    <Data name="Leader Time">
-      <value>0:05:33</value>
-    </Data>
-    <Data name="Strava">
-      <value>https://www.strava.com/segments/5665360</value>
-    </Data>
-    <Data name="Veloviewer">
-      <value>https://veloviewer.com/segment/5665360</value>
-    </Data>
-    <Data name="YouTube">
-      <value></value>
-    </Data>
-  </ExtendedData>
-  <LineString>
-    <tessellate>1</tessellate>
-    <coordinates>
-      -2.02692,53.283500000000004
--2.02637,53.28356
--2.0262700000000002,53.283660000000005
--2.0262800000000003,53.28372
--2.0263600000000004,53.28385
--2.0266,53.284110000000005
--2.02671,53.28439
--2.02667,53.284580000000005
--2.02659,53.284780000000005
--2.0264100000000003,53.28504
--2.0262000000000002,53.285410000000006
--2.0260000000000002,53.28569
--2.02589,53.28595000000001
--2.02582,53.28622000000001
--2.0256800000000004,53.28638
--2.02544,53.28636
--2.0248500000000003,53.28616
--2.0244500000000003,53.28604000000001
--2.02367,53.28584000000001
--2.02313,53.28573
--2.0228,53.28569
--2.0221500000000003,53.28564000000001
--2.02176,53.285630000000005
--2.02122,53.28569
--2.02067,53.28576
--2.02007,53.28578
--2.01879,53.285720000000005
--2.01824,53.28577000000001
--2.0173400000000004,53.286030000000004
--2.01702,53.286100000000005
--2.0163900000000003,53.28609
--2.01532,53.286100000000005
--2.0146800000000002,53.286060000000006
--2.01457,53.28609
--2.01444,53.286170000000006
--2.0142200000000003,53.28643
--2.0140200000000004,53.28660000000001
--2.01371,53.28679
--2.01342,53.28694
--2.01325,53.28694
--2.0129,53.2869
--2.01248,53.28687000000001
--2.01135,53.286910000000006
--2.01093,53.2869
--2.01025,53.28694
 
     </coordinates>
   </LineString>
@@ -45390,7 +45300,7 @@
 </Placemark>
 <Placemark>
   <name>Chapel Lane</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -45423,7 +45333,7 @@
       <value>https://veloviewer.com/segment/760274</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>done</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -45785,7 +45695,7 @@
 </Placemark>
 <Placemark>
   <name>Stow Hill</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#video3</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -45818,7 +45728,7 @@
       <value>https://veloviewer.com/segment/664970</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>done</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -45957,7 +45867,7 @@
 </Placemark>
 <Placemark>
   <name>Castle Gate</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#video2</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -45990,7 +45900,7 @@
       <value>https://veloviewer.com/segment/7258028</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>done</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -55789,109 +55699,6 @@
   </LineString>
 </Placemark>
 <Placemark>
-  <name>Zig Zag Hill</name>
-  <styleUrl>#novideo2</styleUrl>
-  <ExtendedData>
-    <Data name="Difficulty">
-      <value>4</value>
-    </Data>
-    <Data name="Region(s)">
-      <value>South-west</value>
-    </Data>
-    <Data name="Location">
-      <value>Shaftesbury SP7, UK</value>
-    </Data>
-    <Data name="Length">
-      <value>1622</value>
-    </Data>
-    <Data name="Gain">
-      <value>89</value>
-    </Data>
-    <Data name="Av Grad">
-      <value>5.5</value>
-    </Data>
-    <Data name="Max Grad">
-      <value>12.776411</value>
-    </Data>
-    <Data name="Leader Time">
-      <value>0:03:42</value>
-    </Data>
-    <Data name="Strava">
-      <value>https://www.strava.com/segments/5810706</value>
-    </Data>
-    <Data name="Veloviewer">
-      <value>https://veloviewer.com/segment/5810706</value>
-    </Data>
-    <Data name="YouTube">
-      <value></value>
-    </Data>
-  </ExtendedData>
-  <LineString>
-    <tessellate>1</tessellate>
-    <coordinates>
-      -2.1596200000000003,50.98635
--2.1585300000000003,50.986430000000006
--2.15809,50.98637
--2.15747,50.986250000000005
--2.15728,50.98624
--2.15694,50.986270000000005
--2.15614,50.98641000000001
--2.15605,50.98644
--2.15557,50.98682
--2.15543,50.98695000000001
--2.1553400000000003,50.98698
--2.1552900000000004,50.986990000000006
--2.1552200000000004,50.98695000000001
--2.15523,50.986880000000006
--2.15543,50.98650000000001
--2.1555,50.98615
--2.15552,50.98592000000001
--2.15544,50.98583000000001
--2.15539,50.98581
--2.15533,50.985820000000004
--2.1552700000000002,50.985850000000006
--2.1552700000000002,50.98604
--2.1550900000000004,50.98612000000001
--2.1548100000000003,50.98619000000001
--2.1542700000000004,50.98624
--2.1542000000000003,50.98626
--2.15416,50.986290000000004
--2.15416,50.98633
--2.15418,50.986360000000005
--2.15429,50.986430000000006
--2.1543,50.98649
--2.15429,50.98655
--2.15404,50.98684
--2.15383,50.987120000000004
--2.15348,50.98747
--2.1534400000000002,50.98756
--2.1534500000000003,50.987610000000004
--2.15341,50.98756
--2.15349,50.98736
--2.15356,50.98713000000001
--2.1535100000000003,50.98704000000001
--2.1534600000000004,50.987
--2.15334,50.98695000000001
--2.15314,50.98693
--2.1526500000000004,50.987
--2.1525700000000003,50.986990000000006
--2.15178,50.98716
--2.1514900000000003,50.9872
--2.15097,50.987170000000006
--2.1499800000000002,50.986990000000006
--2.1489800000000003,50.986740000000005
--2.14793,50.98642
--2.14669,50.98606
--2.14581,50.985850000000006
--2.1449200000000004,50.98574000000001
--2.14428,50.985690000000005
--2.1436300000000004,50.985670000000006
--2.1427400000000003,50.985600000000005
-
-    </coordinates>
-  </LineString>
-</Placemark>
-<Placemark>
   <name>Woolland Hill</name>
   <styleUrl>#novideo2</styleUrl>
   <ExtendedData>
@@ -60661,7 +60468,7 @@
 </Placemark>
 <Placemark>
   <name>The Cowlyd</name>
-  <styleUrl>#novideo5</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>11</value>
@@ -60694,7 +60501,7 @@
       <value>https://veloviewer.com/segment/8567419</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/Og43SHlJLT8</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -61765,7 +61572,7 @@
 </Placemark>
 <Placemark>
   <name>Hope Mountain</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -61912,7 +61719,7 @@
 </Placemark>
 <Placemark>
   <name>The Grim</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -62093,7 +61900,7 @@
 </Placemark>
 <Placemark>
   <name>The Old Shoe</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>8</value>
@@ -62164,7 +61971,7 @@
 </Placemark>
 <Placemark>
   <name>Church Hill</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -69297,7 +69104,7 @@
 </Placemark>
 <Placemark>
   <name>Jenkin Road</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -69365,7 +69172,7 @@
 </Placemark>
 <Placemark>
   <name>Oughtibridge Lane</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -69434,7 +69241,7 @@
 </Placemark>
 <Placemark>
   <name>Spout Lane</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>4</value>
@@ -69511,7 +69318,7 @@
 </Placemark>
 <Placemark>
   <name>Lodge Lane</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -72398,7 +72205,7 @@
 </Placemark>
 <Placemark>
   <name>Harwith Bank</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>

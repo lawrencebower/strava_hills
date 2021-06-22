@@ -1,10 +1,6 @@
 package model;
 
-import javastrava.api.v3.model.reference.StravaClimbCategory;
-
 import java.util.List;
-import java.util.Optional;
-import java.util.Set;
 
 public class SegmentSummaryData {
     public String id;

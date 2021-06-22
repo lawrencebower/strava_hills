@@ -45,7 +45,7 @@ public class KmlWriter {
 
 
         try {
-            FileInputStream segmentStream = new FileInputStream("C:\\Users\\lawrence\\software\\strava\\src\\main\\resources\\output\\spreadsheets\\segment_stats.tsv");
+            FileInputStream segmentStream = new FileInputStream("/home/lb584/git/strava_hills/src/main/resources/output/spreadsheets/segment_stats.tsv");
 //            FileInputStream segmentStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\small_segment_stats.tsv");
             SegmentSummaryReader segmentSummaryReader = new SegmentSummaryReader();
 
@@ -70,7 +70,7 @@ public class KmlWriter {
                 fileName = "climbs_progress.kml";
             }
 
-            FileWriter fileWriter = new FileWriter("C:\\Users\\lawrence\\software\\strava\\src\\main\\resources\\output\\spreadsheets\\" + fileName);
+            FileWriter fileWriter = new FileWriter("/home/lb584/git/strava_hills/src/main/resources/output/spreadsheets/" + fileName);
             PrintWriter writer = new PrintWriter(fileWriter, true);
             writer.write(kmlString);
             writer.close();
@@ -87,7 +87,7 @@ public class KmlWriter {
                 fileName = "placemarks_progress.kml";
             }
 
-            FileWriter fileWriter = new FileWriter("C:\\Users\\lawrence\\software\\strava\\src\\main\\resources\\output\\spreadsheets\\" + fileName);
+            FileWriter fileWriter = new FileWriter("/home/lb584/git/strava_hills/src/main/resources/output/spreadsheets/" + fileName);
             PrintWriter writer = new PrintWriter(fileWriter, true);
             writer.write(kmlString);
             writer.close();
@@ -130,6 +130,9 @@ public class KmlWriter {
 
         for (RefinedSegmentSummaryData segment : segments) {
 
+            if(segment.annotation == null){
+                int i = 0;
+            }
             boolean exclude = KmlWriter.PROGRESS_MODE && segment.annotation.complete;
 
             if (segment.segData.seriesNames.contains(Series.O_100) && !exclude) {

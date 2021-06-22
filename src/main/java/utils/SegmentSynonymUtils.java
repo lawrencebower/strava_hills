@@ -11,7 +11,7 @@ public class SegmentSynonymUtils {
     public Map<String, String> readSegmentSynonymsFile() {
 
         try {
-            FileInputStream synonymStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\segment_synonyms.tsv");
+            FileInputStream synonymStream = new FileInputStream("/home/lb584/git/strava_hills/src/main/resources/output/spreadsheets/segment_synonyms.tsv");
             SegmentSynonymReader annotationReader = new SegmentSynonymReader();
             return annotationReader.readSegmentSynonyms(synonymStream);
         } catch (FileNotFoundException e) {

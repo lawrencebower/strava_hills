@@ -81,24 +81,6 @@
     <Folder>
       <name>100 climbs start markers</name>
       <Placemark>
-    <name>OFFICIAL 100Climbs No14 Box Hill</name>
-    <styleUrl>#placemark</styleUrl>
-    <Point>
-        <coordinates>
-            -0.3226650059223175,51.25787353515625
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No19 The Wall</name>
-    <styleUrl>#placemark</styleUrl>
-    <Point>
-        <coordinates>
-            0.07709699869155884,51.07307052612305
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
     <name>OFFICIAL 100Climbs No90 Horseshoe Pass</name>
     <styleUrl>#placemark</styleUrl>
     <Point>
@@ -211,15 +193,6 @@
     </Point>
 </Placemark>
 <Placemark>
-    <name>OFFICIAL 100Climbs No110 Countisbury Hill</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -3.8292300701141357,51.230045318603516
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
     <name>OFFICIAL 100Climbs No111 Millook</name>
     <styleUrl>#placemark2</styleUrl>
     <Point>
@@ -306,15 +279,6 @@
     <Point>
         <coordinates>
             -1.604599952697754,53.203208923339844
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No128 Burbage Moor</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -1.6502399444580078,53.331459045410156
         </coordinates>
     </Point>
 </Placemark>
@@ -427,15 +391,6 @@
     </Point>
 </Placemark>
 <Placemark>
-    <name>OFFICIAL 100Climbs No157 Cragpit Hill</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -1.905869960784912,55.3101692199707
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
     <name>OFFICIAL 100Climbs No158 Ryal's Hill</name>
     <styleUrl>#placemark2</styleUrl>
     <Point>
@@ -450,15 +405,6 @@
     <Point>
         <coordinates>
             -1.6128000020980835,54.9202995300293
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No171 Pym Chair</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -2.0272300243377686,53.283451080322266
         </coordinates>
     </Point>
 </Placemark>
@@ -679,24 +625,6 @@
     </Point>
 </Placemark>
 <Placemark>
-    <name>OFFICIAL 100Climbs No116 Combe Lane</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -0.4712600111961365,51.223060607910156
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No117 Chalkpit Lane</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -0.015469999983906746,51.263851165771484
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
     <name>OFFICIAL 100Climbs No118 Coldharbour Lane</name>
     <styleUrl>#placemark2</styleUrl>
     <Point>
@@ -711,15 +639,6 @@
     <Point>
         <coordinates>
             -0.6783499717712402,51.048770904541016
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No120 Barhatch Lane</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -0.4754199981689453,51.15196990966797
         </coordinates>
     </Point>
 </Placemark>
@@ -900,24 +819,6 @@
     <Point>
         <coordinates>
             -1.9296499490737915,54.38114929199219
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No145 Trapping Hill</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -1.845829963684082,54.155941009521484
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No146 Nought Bank Road</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -1.7597700357437134,54.076419830322266
         </coordinates>
     </Point>
 </Placemark>

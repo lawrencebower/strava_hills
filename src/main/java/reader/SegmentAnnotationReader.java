@@ -23,8 +23,8 @@ public class SegmentAnnotationReader {
             if (!line.isEmpty()) {
                 System.out.println(line);
                 String[] tokens = StringUtils.splitPreserveAllTokens(line, "\t");
-
                 String segmentId = tokens[0];
+
                 String segmentName = tokens[1];
 
                 Float maxGrad = null;
@@ -33,16 +33,16 @@ public class SegmentAnnotationReader {
                 }
 
                 Integer difficulty = null;
-                if (!tokens[3].isEmpty()) {
+                if (tokens.length > 3 && !tokens[3].isEmpty()) {
                     difficulty = Integer.parseInt(tokens[3]);
                 }
 
                 String url = null;
-                if (!tokens[4].isEmpty()) {
+                if (tokens.length > 4 && !tokens[4].isEmpty()) {
                     url = tokens[4];
                 }
 
-                boolean completed = !tokens[5].isEmpty();
+                boolean completed = tokens.length > 5 && !tokens[5].isEmpty();
 
                 SegmentAnnotation segInfo = new SegmentAnnotation(
                         segmentId,

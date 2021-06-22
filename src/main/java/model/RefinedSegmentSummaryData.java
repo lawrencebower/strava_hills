@@ -22,7 +22,7 @@ public class RefinedSegmentSummaryData {
 
         Integer result = 0;//no rating
 
-        if (annotation.difficulty != null) {
+        if (annotation != null && annotation.difficulty != null) {
             result = annotation.difficulty;
         }
 
