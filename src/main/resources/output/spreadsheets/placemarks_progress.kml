@@ -81,15 +81,6 @@
     <Folder>
       <name>100 climbs start markers</name>
       <Placemark>
-    <name>OFFICIAL 100Climbs No90 Horseshoe Pass</name>
-    <styleUrl>#placemark</styleUrl>
-    <Point>
-        <coordinates>
-            -3.18666410446167,52.984840393066406
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
     <name>OFFICIAL 100Climbs No11 Rundlestone</name>
     <styleUrl>#placemark</styleUrl>
     <Point>
@@ -135,15 +126,6 @@
     <Point>
         <coordinates>
             -2.272059917449951,51.18497085571289
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No104 Frocester Hill</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -2.3117899894714355,51.726741790771484
         </coordinates>
     </Point>
 </Placemark>
@@ -274,29 +256,11 @@
     </Point>
 </Placemark>
 <Placemark>
-    <name>OFFICIAL 100Climbs No127 Beeley Moor</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -1.604599952697754,53.203208923339844
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
     <name>OFFICIAL 100Climbs No130 Axe Edge</name>
     <styleUrl>#placemark2</styleUrl>
     <Point>
         <coordinates>
             -1.935829997062683,53.25239181518555
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No131 Larkstone Lane</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -1.8518699407577515,53.084571838378906
         </coordinates>
     </Point>
 </Placemark>
@@ -648,15 +612,6 @@
     <Point>
         <coordinates>
             -1.5649199485778809,51.582740783691406
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No122 Kingston Hill</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -0.9274299740791321,51.68061065673828
         </coordinates>
     </Point>
 </Placemark>
