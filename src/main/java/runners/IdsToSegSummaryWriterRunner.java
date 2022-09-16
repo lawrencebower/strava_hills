@@ -16,7 +16,7 @@ public class IdsToSegSummaryWriterRunner {
     public static void main(String[] args) throws FileNotFoundException {
 
 //        FileInputStream inputStream = new FileInputStream("C:\\Users\\lawrence\\uk_hill\\maps\\small_segments.tsv");
-        FileInputStream inputStream = new FileInputStream("C:\\Users\\lawrence\\software\\strava\\src\\main\\resources\\output\\spreadsheets\\segments.tsv");
+        FileInputStream inputStream = new FileInputStream("/home/lb584/git/strava_hills/src/main/resources/output/spreadsheets/segments.tsv");
 
         ArrayList<SegInfo> segInfos = new IdReader().readIds(inputStream);
 

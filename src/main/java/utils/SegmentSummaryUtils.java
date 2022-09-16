@@ -24,7 +24,7 @@ public class SegmentSummaryUtils {
 
         Integer application_client_id = 20235;
         String client_secret = "8730e64ad94d2df3a1efda3c5391696ec6549e1d";
-        String code = "e3c622c3a353b281fc28eeb37c57553cec29a253";
+        String code = "f481316402784242d5700e301de2ad63903fad39";
 //        int athleteId = 20860518;
 
         AuthorisationService service = new AuthorisationServiceImpl();

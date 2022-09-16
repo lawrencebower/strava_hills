@@ -12,9 +12,11 @@ public enum Series {
     NORTH_WEST("North-west", "nw\\d"),
     SOUTH_WEST("South-west", "sw\\d"),
     SOUTH("South", "s\\d"),
+    SOUTH_EAST("South East", "se\\d"),
     WALES("Wales", "w\\d"),
     YORKSHIRE("Yorkshire", "y\\d"),
-    A_100("another 100", "a1"),;
+    A_100("another 100", "a1"),
+    UNKNOWN("unknown", "na");
 
     private String displayName;
     private Pattern pattern;
