@@ -1832,7 +1832,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No90 Horseshoe Pass</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -1865,7 +1865,7 @@
       <value>https://veloviewer.com/segment/10786151</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/tCB5ULTHrW4</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -2133,7 +2133,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No52 Greenhow Hill</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -2166,7 +2166,7 @@
       <value>https://veloviewer.com/segment/6690987</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/AhJzKGc6WMQ</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -2360,7 +2360,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No53 Norwood Edge</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -2393,7 +2393,7 @@
       <value>https://veloviewer.com/segment/6691028</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/uJtytmorI9Q</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -5849,7 +5849,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No29 Terrace Hill</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>1</value>
@@ -5882,7 +5882,7 @@
       <value>https://veloviewer.com/segment/6691047</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/RD84N9OccGc</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -17147,7 +17147,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No134 Asterton Bank</name>
-  <styleUrl>#novideo5</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>10</value>
@@ -17214,7 +17214,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No135 Clee Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -17821,7 +17821,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No153 Cuthbert's Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -19944,7 +19944,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No184 Dowgang Hush</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -20008,7 +20008,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No185 Killhope Cross</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>8</value>
@@ -22492,7 +22492,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No121 Dragon Hill Road</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -24960,7 +24960,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No146 Nought Bank Road</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>8</value>
@@ -24993,7 +24993,7 @@
       <value>https://veloviewer.com/segment/16336455</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/KVau04h9OOU</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -25485,7 +25485,7 @@
 </Placemark>
 <Placemark>
   <name>Kop Hill</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -25518,7 +25518,7 @@
       <value>https://veloviewer.com/segment/2885469</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/6f3Gl0sM_Is</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -26114,7 +26114,7 @@
 </Placemark>
 <Placemark>
   <name>Blowingstone Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -29540,7 +29540,7 @@
 </Placemark>
 <Placemark>
   <name>Normanby Rise</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>2</value>
@@ -29573,7 +29573,7 @@
       <value>https://veloviewer.com/segment/6957969</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/ftCTXyFI-nU</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -29632,7 +29632,7 @@
 </Placemark>
 <Placemark>
   <name>Red Hill</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>1</value>
@@ -29707,7 +29707,7 @@
 </Placemark>
 <Placemark>
   <name>Tetford Hill</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>3</value>
@@ -29969,7 +29969,7 @@
 </Placemark>
 <Placemark>
   <name>Eakring Hill</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>1</value>
@@ -30045,7 +30045,7 @@
 </Placemark>
 <Placemark>
   <name>Oxton Bank</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>2</value>
@@ -30447,7 +30447,7 @@
 </Placemark>
 <Placemark>
   <name>Launde Abbey</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>1</value>
@@ -30480,7 +30480,7 @@
       <value>https://veloviewer.com/segment/635951</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/QlK4MmNzDvs</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -33136,7 +33136,7 @@
 </Placemark>
 <Placemark>
   <name>The Long Mynd</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -33363,69 +33363,8 @@
   </LineString>
 </Placemark>
 <Placemark>
-  <name>Asterton Bank</name>
-  <styleUrl>#novideo5</styleUrl>
-  <ExtendedData>
-    <Data name="Difficulty">
-      <value>10</value>
-    </Data>
-    <Data name="Region(s)">
-      <value>Midlands</value>
-    </Data>
-    <Data name="Location">
-      <value>Lydbury North</value>
-    </Data>
-    <Data name="Length">
-      <value>1004</value>
-    </Data>
-    <Data name="Gain">
-      <value>172</value>
-    </Data>
-    <Data name="Av Grad">
-      <value>17.1</value>
-    </Data>
-    <Data name="Max Grad">
-      <value>25.495758</value>
-    </Data>
-    <Data name="Leader Time">
-      <value>0:05:32</value>
-    </Data>
-    <Data name="Strava">
-      <value>https://www.strava.com/segments/739488</value>
-    </Data>
-    <Data name="Veloviewer">
-      <value>https://veloviewer.com/segment/739488</value>
-    </Data>
-    <Data name="YouTube">
-      <value></value>
-    </Data>
-  </ExtendedData>
-  <LineString>
-    <tessellate>1</tessellate>
-    <coordinates>
-      -2.88879,52.51529000000001
--2.88877,52.515240000000006
--2.8877400000000004,52.51516
--2.88709,52.515420000000006
--2.88696,52.515980000000006
--2.8864900000000002,52.51666
--2.8851700000000005,52.51811000000001
--2.8846900000000004,52.518510000000006
--2.8843500000000004,52.51897
--2.8831800000000003,52.520360000000004
--2.8827700000000003,52.52064000000001
--2.8825000000000003,52.52074
--2.8814800000000003,52.52065
--2.88097,52.52069
--2.8802000000000003,52.520990000000005
--2.8798600000000003,52.521170000000005
-
-    </coordinates>
-  </LineString>
-</Placemark>
-<Placemark>
   <name>Spoad Hill</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>8</value>
@@ -33568,8 +33507,8 @@
   </LineString>
 </Placemark>
 <Placemark>
-  <name>Stanbroughs Wood Climb</name>
-  <styleUrl>#novideo5</styleUrl>
+  <name>Abdon burf</name>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>11</value>
@@ -33653,7 +33592,7 @@
 </Placemark>
 <Placemark>
   <name>Clunton Coppice</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -35722,7 +35661,7 @@
 </Placemark>
 <Placemark>
   <name>Barley Mill Lane</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#novideo2</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -36075,8 +36014,8 @@
   </LineString>
 </Placemark>
 <Placemark>
-  <name>Boltsburn Crescent</name>
-  <styleUrl>#novideo2</styleUrl>
+  <name>White Edge</name>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -36168,7 +36107,7 @@
 </Placemark>
 <Placemark>
   <name>Middlehope Bank</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -36228,7 +36167,7 @@
 </Placemark>
 <Placemark>
   <name>Well Bank</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>8</value>
@@ -36573,155 +36512,8 @@
   </LineString>
 </Placemark>
 <Placemark>
-  <name>Cuthbert's Hill</name>
-  <styleUrl>#novideo2</styleUrl>
-  <ExtendedData>
-    <Data name="Difficulty">
-      <value>6</value>
-    </Data>
-    <Data name="Region(s)">
-      <value>North-east</value>
-    </Data>
-    <Data name="Location">
-      <value>Rookhope</value>
-    </Data>
-    <Data name="Length">
-      <value>2703</value>
-    </Data>
-    <Data name="Gain">
-      <value>160</value>
-    </Data>
-    <Data name="Av Grad">
-      <value>5.9</value>
-    </Data>
-    <Data name="Max Grad">
-      <value>15.594095</value>
-    </Data>
-    <Data name="Leader Time">
-      <value>0:07:01</value>
-    </Data>
-    <Data name="Strava">
-      <value>https://www.strava.com/segments/1420605</value>
-    </Data>
-    <Data name="Veloviewer">
-      <value>https://veloviewer.com/segment/1420605</value>
-    </Data>
-    <Data name="YouTube">
-      <value></value>
-    </Data>
-  </ExtendedData>
-  <LineString>
-    <tessellate>1</tessellate>
-    <coordinates>
-      -2.11579,54.782180000000004
--2.1158200000000003,54.78222
--2.11586,54.782320000000006
--2.11588,54.78247
--2.1161100000000004,54.782680000000006
--2.1163800000000004,54.782830000000004
--2.11668,54.78304000000001
--2.1168,54.783150000000006
--2.11682,54.78329
--2.1169000000000002,54.78361
--2.11728,54.784400000000005
--2.11735,54.784530000000004
--2.11737,54.784780000000005
--2.1172500000000003,54.785090000000004
--2.1172600000000004,54.785230000000006
--2.11734,54.785340000000005
--2.11737,54.785470000000004
--2.11737,54.785560000000004
--2.1174600000000003,54.78566000000001
--2.11761,54.78575000000001
--2.1176500000000003,54.7858
--2.1177300000000003,54.78596
--2.1178600000000003,54.78616
--2.1181200000000002,54.78636
--2.11823,54.786390000000004
--2.11829,54.786530000000006
--2.1182600000000003,54.786590000000004
--2.1180100000000004,54.78669000000001
--2.1178700000000004,54.78672
--2.1177300000000003,54.786730000000006
--2.11661,54.786930000000005
--2.1158400000000004,54.78714000000001
--2.1156300000000003,54.78716000000001
--2.1148800000000003,54.787330000000004
--2.11458,54.78737
--2.11391,54.787440000000004
--2.11369,54.787470000000006
--2.11307,54.7875
--2.1126,54.78757
--2.1123600000000002,54.78768
--2.11152,54.78819000000001
--2.11124,54.788380000000004
--2.11098,54.788520000000005
--2.11091,54.78858
--2.11085,54.78867
--2.1108000000000002,54.788790000000006
--2.1108100000000003,54.78886000000001
--2.1108700000000002,54.78893000000001
--2.11097,54.78902000000001
--2.1110900000000004,54.78909
--2.1112100000000003,54.78913000000001
--2.11144,54.789260000000006
--2.11166,54.78933000000001
--2.11187,54.78951000000001
--2.1120900000000002,54.78967
--2.1122,54.78978000000001
--2.1123100000000004,54.789910000000006
--2.1124300000000003,54.79001
--2.11255,54.7901
--2.1128500000000003,54.79025000000001
--2.11341,54.790690000000005
--2.11356,54.790820000000004
--2.11374,54.790940000000006
--2.1138700000000004,54.791070000000005
--2.1139200000000002,54.791290000000004
--2.1137900000000003,54.79148000000001
--2.11363,54.79164
--2.11344,54.791790000000006
--2.11266,54.792480000000005
--2.11186,54.79323
--2.1112900000000003,54.793800000000005
--2.11076,54.79424
--2.1104700000000003,54.794630000000005
--2.11031,54.794790000000006
--2.1101900000000002,54.79496
--2.11003,54.79511
--2.10957,54.79571000000001
--2.10947,54.79580000000001
--2.1089800000000003,54.79612
--2.1087000000000002,54.796420000000005
--2.10826,54.79703000000001
--2.1080400000000004,54.797290000000004
--2.10772,54.797320000000006
--2.1071600000000004,54.79724
--2.10692,54.797270000000005
--2.1063,54.79739000000001
--2.1060700000000003,54.79746
--2.10585,54.79751
--2.10564,54.7976
--2.10562,54.797740000000005
--2.10554,54.797850000000004
--2.10547,54.798010000000005
--2.1054500000000003,54.79815000000001
--2.1053800000000003,54.798300000000005
--2.10522,54.79898000000001
--2.1051900000000003,54.79907000000001
--2.1051900000000003,54.799170000000004
--2.1051200000000003,54.79946
--2.1050500000000003,54.79959
--2.1049100000000003,54.7999
--2.1047800000000003,54.80026
--2.1047200000000004,54.80037000000001
-
-    </coordinates>
-  </LineString>
-</Placemark>
-<Placemark>
   <name>Ascent from Rookhope Burn Southside</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -39178,7 +38970,7 @@
 </Placemark>
 <Placemark>
   <name>Middleton Hall</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -39211,7 +39003,7 @@
       <value>https://veloviewer.com/segment/16245612</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/D1fQn1ExeQU</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -39321,7 +39113,7 @@
 </Placemark>
 <Placemark>
   <name>You must be Kidding!</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -39501,345 +39293,6 @@
 -2.71579,54.81913
 -2.7146700000000004,54.818650000000005
 -2.7139,54.818290000000005
-
-    </coordinates>
-  </LineString>
-</Placemark>
-<Placemark>
-  <name>Dowgang Hush</name>
-  <styleUrl>#novideo3</styleUrl>
-  <ExtendedData>
-    <Data name="Difficulty">
-      <value>7</value>
-    </Data>
-    <Data name="Region(s)">
-      <value>North-west</value>
-    </Data>
-    <Data name="Location">
-      <value>Alston CA9, UK</value>
-    </Data>
-    <Data name="Length">
-      <value>1444</value>
-    </Data>
-    <Data name="Gain">
-      <value>154</value>
-    </Data>
-    <Data name="Av Grad">
-      <value>10.5</value>
-    </Data>
-    <Data name="Max Grad">
-      <value>18.428154</value>
-    </Data>
-    <Data name="Leader Time">
-      <value>0:05:16</value>
-    </Data>
-    <Data name="Strava">
-      <value>https://www.strava.com/segments/5107909</value>
-    </Data>
-    <Data name="Veloviewer">
-      <value>https://veloviewer.com/segment/5107909</value>
-    </Data>
-    <Data name="YouTube">
-      <value></value>
-    </Data>
-  </ExtendedData>
-  <LineString>
-    <tessellate>1</tessellate>
-    <coordinates>
-      -2.3444100000000003,54.787110000000006
--2.3444700000000003,54.787090000000006
--2.34463,54.78708
--2.34486,54.787020000000005
--2.3451400000000002,54.787000000000006
--2.3453000000000004,54.78696000000001
--2.3454,54.7869
--2.34553,54.78687000000001
--2.34559,54.786840000000005
--2.3457000000000003,54.78671000000001
--2.3458200000000002,54.78661
--2.3463000000000003,54.78634
--2.34655,54.786170000000006
--2.34667,54.78605
--2.34673,54.78596
--2.34723,54.78548000000001
--2.3472600000000003,54.78542
--2.34741,54.78530000000001
--2.3474700000000004,54.785230000000006
--2.34768,54.785050000000005
--2.3480100000000004,54.78484
--2.34824,54.784710000000004
--2.3483400000000003,54.784670000000006
--2.34852,54.784560000000006
--2.3492100000000002,54.784180000000006
--2.34931,54.7841
--2.3497700000000004,54.78387000000001
--2.3503100000000003,54.78352
--2.3505000000000003,54.783390000000004
--2.35082,54.78309
--2.35134,54.78233
--2.3518000000000003,54.78197
--2.3519900000000002,54.781800000000004
--2.3522800000000004,54.781600000000005
--2.35256,54.781330000000004
--2.35286,54.781180000000006
--2.35326,54.78103
--2.35353,54.780950000000004
--2.35372,54.780860000000004
--2.3543600000000002,54.78069000000001
--2.35483,54.78052
--2.35516,54.780440000000006
--2.3551,54.780440000000006
--2.35517,54.780370000000005
--2.3553,54.78036
--2.35541,54.78031000000001
--2.35543,54.780280000000005
--2.35549,54.78027
--2.35568,54.78018
--2.3557900000000003,54.780170000000005
--2.35582,54.78013000000001
--2.35618,54.77994
--2.35639,54.77985
--2.3565,54.779740000000004
--2.3566000000000003,54.77969
--2.35665,54.779680000000006
--2.35679,54.779610000000005
--2.35692,54.779500000000006
--2.3571600000000004,54.779250000000005
--2.3572900000000003,54.77915
--2.35821,54.77868
--2.3586300000000002,54.778490000000005
--2.3591100000000003,54.778200000000005
--2.3593800000000003,54.77807000000001
-
-    </coordinates>
-  </LineString>
-</Placemark>
-<Placemark>
-  <name>Killhope Cross</name>
-  <styleUrl>#novideo3</styleUrl>
-  <ExtendedData>
-    <Data name="Difficulty">
-      <value>8</value>
-    </Data>
-    <Data name="Region(s)">
-      <value>North-west</value>
-    </Data>
-    <Data name="Location">
-      <value>Alston Moor, Cumbria, UK</value>
-    </Data>
-    <Data name="Length">
-      <value>5271</value>
-    </Data>
-    <Data name="Gain">
-      <value>267</value>
-    </Data>
-    <Data name="Av Grad">
-      <value>5.0</value>
-    </Data>
-    <Data name="Max Grad">
-      <value>16.0</value>
-    </Data>
-    <Data name="Leader Time">
-      <value>0:13:44</value>
-    </Data>
-    <Data name="Strava">
-      <value>https://www.strava.com/segments/1420587</value>
-    </Data>
-    <Data name="Veloviewer">
-      <value>https://veloviewer.com/segment/1420587</value>
-    </Data>
-    <Data name="YouTube">
-      <value></value>
-    </Data>
-  </ExtendedData>
-  <LineString>
-    <tessellate>1</tessellate>
-    <coordinates>
-      -2.3770800000000003,54.806200000000004
--2.3764600000000002,54.806270000000005
--2.37588,54.80631
--2.37571,54.80628
--2.37554,54.806230000000006
--2.37542,54.80615
--2.3751700000000002,54.8059
--2.3749700000000002,54.80575
--2.37467,54.80547000000001
--2.37459,54.805420000000005
--2.3743000000000003,54.80529000000001
--2.3741600000000003,54.80518000000001
--2.3738900000000003,54.804930000000006
--2.37344,54.80434
--2.3729500000000003,54.80387
--2.37279,54.803670000000004
--2.3726100000000003,54.80351
--2.3724100000000004,54.803050000000006
--2.37232,54.80301000000001
--2.37215,54.802910000000004
--2.3718600000000003,54.802670000000006
--2.3716700000000004,54.80259
--2.37155,54.802400000000006
--2.37135,54.80225000000001
--2.3710600000000004,54.80212
--2.37076,54.801930000000006
--2.3702400000000003,54.801660000000005
--2.36985,54.80142000000001
--2.36961,54.80131000000001
--2.3693500000000003,54.801230000000004
--2.369,54.80107
--2.3687400000000003,54.801
--2.36838,54.80082
--2.3680800000000004,54.800720000000005
--2.36788,54.800610000000006
--2.3673900000000003,54.80046
--2.3666400000000003,54.800140000000006
--2.36633,54.80002
--2.3661800000000004,54.799980000000005
--2.36585,54.79983000000001
--2.3656400000000004,54.799710000000005
--2.36546,54.79957
--2.36518,54.79948
--2.3649600000000004,54.799380000000006
--2.3642800000000004,54.799220000000005
--2.3637900000000003,54.79896
--2.36302,54.79871000000001
--2.36289,54.79863
--2.3628400000000003,54.79849
--2.3627800000000003,54.79842000000001
--2.36267,54.798350000000006
--2.36261,54.79824000000001
--2.3621100000000004,54.79775000000001
--2.36125,54.79713
--2.3609600000000004,54.79697
--2.36056,54.79681000000001
--2.36012,54.79659
--2.35996,54.79654000000001
--2.35971,54.796400000000006
--2.35921,54.79618000000001
--2.35855,54.795930000000006
--2.3581600000000003,54.795840000000005
--2.358,54.795840000000005
--2.3576300000000003,54.795770000000005
--2.3574,54.795750000000005
--2.35725,54.79572
--2.35706,54.795640000000006
--2.3568700000000002,54.795550000000006
--2.3564800000000004,54.79540000000001
--2.35584,54.795170000000006
--2.35507,54.79496
--2.35461,54.79478
--2.3543600000000002,54.794700000000006
--2.35413,54.794610000000006
--2.35367,54.7944
--2.35333,54.79422
--2.3526200000000004,54.793910000000004
--2.35222,54.79377
--2.35185,54.79356000000001
--2.35155,54.793440000000004
--2.35137,54.79334000000001
--2.35061,54.792860000000005
--2.34985,54.79243
--2.3489600000000004,54.79186000000001
--2.34872,54.79158
--2.3484800000000003,54.79122
--2.3482100000000004,54.79101000000001
--2.3478700000000003,54.790820000000004
--2.3471200000000003,54.79045000000001
--2.34626,54.789950000000005
--2.34602,54.78980000000001
--2.3458400000000004,54.789640000000006
--2.34561,54.789480000000005
--2.3454300000000003,54.78933000000001
--2.3452100000000002,54.7892
--2.34471,54.789
--2.3440700000000003,54.78864000000001
--2.34361,54.78846000000001
--2.3431900000000003,54.788270000000004
--2.3428,54.788180000000004
--2.34234,54.788050000000005
--2.34213,54.788030000000006
--2.34173,54.788030000000006
--2.34138,54.78786
--2.3413500000000003,54.78759
--2.34134,54.78732
--2.3413600000000003,54.787180000000006
--2.3413500000000003,54.78707000000001
--2.3413000000000004,54.78696000000001
--2.34113,54.786750000000005
--2.34104,54.786660000000005
--2.34091,54.786590000000004
--2.3404100000000003,54.786480000000005
--2.34024,54.786460000000005
--2.3400800000000004,54.786460000000005
--2.33978,54.78649000000001
--2.33923,54.78649000000001
--2.33863,54.786640000000006
--2.33847,54.786680000000004
--2.3382300000000003,54.78678000000001
--2.3375600000000003,54.786950000000004
--2.33697,54.787220000000005
--2.33625,54.78739
--2.3359900000000002,54.7875
--2.33582,54.78755
--2.3355,54.78757
--2.3350400000000002,54.78752000000001
--2.33495,54.787510000000005
--2.33456,54.787330000000004
--2.33427,54.78714000000001
--2.3340400000000003,54.78696000000001
--2.33379,54.78680000000001
--2.3330900000000003,54.786500000000004
--2.3326700000000002,54.78627
--2.33223,54.786190000000005
--2.33212,54.786120000000004
--2.3319900000000002,54.78607
--2.33143,54.78596
--2.33114,54.78586000000001
--2.3307800000000003,54.785790000000006
--2.3303900000000004,54.78557000000001
--2.33026,54.785540000000005
--2.32994,54.785520000000005
--2.3294900000000003,54.78544
--2.32938,54.78542
--2.32933,54.78538
--2.32912,54.78531
--2.32887,54.78524
--2.3285,54.785180000000004
--2.32831,54.78517000000001
--2.3273900000000003,54.78506
--2.3271900000000003,54.78506
--2.3268400000000002,54.785000000000004
--2.3265800000000003,54.78493
--2.3263100000000003,54.78491
--2.3259600000000002,54.78486
--2.32546,54.784870000000005
--2.3252200000000003,54.784800000000004
--2.3249500000000003,54.784780000000005
--2.3247400000000003,54.784780000000005
--2.32443,54.78483000000001
--2.32426,54.78484
--2.3239,54.784740000000006
--2.3235,54.78468
--2.3227900000000004,54.784580000000005
--2.32227,54.784490000000005
--2.32167,54.78441
--2.32153,54.78441
--2.32052,54.784240000000004
--2.31989,54.78417
--2.31841,54.78407000000001
--2.31826,54.78403
--2.3180300000000003,54.784000000000006
--2.3176,54.783910000000006
--2.3174200000000003,54.78389000000001
--2.31721,54.78383
--2.3169000000000004,54.783820000000006
--2.31659,54.78378000000001
--2.31582,54.783750000000005
--2.3157200000000002,54.78372
--2.31535,54.78369000000001
--2.31497,54.783620000000006
--2.3142500000000004,54.783590000000004
--2.31379,54.783500000000004
--2.31314,54.783500000000004
 
     </coordinates>
   </LineString>
@@ -45604,7 +45057,7 @@
 </Placemark>
 <Placemark>
   <name>Stow Hill</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -45637,7 +45090,7 @@
       <value>https://veloviewer.com/segment/664970</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/ShCqWhBCVuI</value>
     </Data>
   </ExtendedData>
   <LineString>
@@ -53867,7 +53320,7 @@
 </Placemark>
 <Placemark>
   <name>Hackpen Hill</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>3</value>
@@ -53965,7 +53418,7 @@
 </Placemark>
 <Placemark>
   <name>Milton Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>4</value>
@@ -54076,7 +53529,7 @@
 </Placemark>
 <Placemark>
   <name>Bowden Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -54153,7 +53606,7 @@
 </Placemark>
 <Placemark>
   <name>Redhorn Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>4</value>
@@ -54247,7 +53700,7 @@
 </Placemark>
 <Placemark>
   <name>Westbury Hill</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -54476,7 +53929,7 @@
 </Placemark>
 <Placemark>
   <name>Bannerdown Road</name>
-  <styleUrl>#novideo1</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>3</value>
@@ -54590,7 +54043,7 @@
 </Placemark>
 <Placemark>
   <name>Prospect Place</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -54655,7 +54108,7 @@
 </Placemark>
 <Placemark>
   <name>Shaft Road</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -61912,7 +61365,7 @@
 </Placemark>
 <Placemark>
   <name>The Old Shoe</name>
-  <styleUrl>#donenovid</styleUrl>
+  <styleUrl>#donewithvid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>8</value>
@@ -61945,7 +61398,7 @@
       <value>https://veloviewer.com/segment/901876</value>
     </Data>
     <Data name="YouTube">
-      <value></value>
+      <value>https://youtu.be/v22KaAtiVYw</value>
     </Data>
   </ExtendedData>
   <LineString>

@@ -283,24 +283,6 @@
     </Point>
 </Placemark>
 <Placemark>
-    <name>OFFICIAL 100Climbs No134 Asterton Bank</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -2.888669967651367,52.5152702331543
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No135 Clee Hill</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -2.619189977645874,52.37876892089844
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
     <name>OFFICIAL 100Climbs No136 Edge Hill</name>
     <styleUrl>#placemark2</styleUrl>
     <Point>
@@ -315,15 +297,6 @@
     <Point>
         <coordinates>
             -2.1671969890594482,54.65070724487305
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No153 Cuthbert's Hill</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -2.115809917449951,54.781959533691406
         </coordinates>
     </Point>
 </Placemark>
@@ -463,24 +436,6 @@
     </Point>
 </Placemark>
 <Placemark>
-    <name>OFFICIAL 100Climbs No184 Dowgang Hush</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -2.344449996948242,54.787109375
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No185 Killhope Cross</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -2.3771400451660156,54.80617904663086
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
     <name>OFFICIAL 100Climbs No160 Devil's Beef Tub</name>
     <styleUrl>#placemark2</styleUrl>
     <Point>
@@ -603,15 +558,6 @@
     <Point>
         <coordinates>
             -0.6783499717712402,51.048770904541016
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
-    <name>OFFICIAL 100Climbs No121 Dragon Hill Road</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -1.5649199485778809,51.582740783691406
         </coordinates>
     </Point>
 </Placemark>
