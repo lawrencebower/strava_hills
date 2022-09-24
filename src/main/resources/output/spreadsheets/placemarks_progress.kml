@@ -301,15 +301,6 @@
     </Point>
 </Placemark>
 <Placemark>
-    <name>OFFICIAL 100Climbs No154 Peat Hill</name>
-    <styleUrl>#placemark2</styleUrl>
-    <Point>
-        <coordinates>
-            -2.1449599266052246,54.7376708984375
-        </coordinates>
-    </Point>
-</Placemark>
-<Placemark>
     <name>OFFICIAL 100Climbs No155 Unthank Bank</name>
     <styleUrl>#placemark2</styleUrl>
     <Point>

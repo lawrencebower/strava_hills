@@ -17905,7 +17905,7 @@
 </Placemark>
 <Placemark>
   <name>OFFICIAL 100Climbs No154 Peat Hill</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>8</value>
@@ -35809,8 +35809,8 @@
   </LineString>
 </Placemark>
 <Placemark>
-  <name>Goldhill Ln</name>
-  <styleUrl>#novideo2</styleUrl>
+  <name>Goldhill Lane</name>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>4</value>
@@ -35910,8 +35910,8 @@
   </LineString>
 </Placemark>
 <Placemark>
-  <name>Baybridge to Edmundbyers Moor climb</name>
-  <styleUrl>#novideo2</styleUrl>
+  <name>Bale Hill</name>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>6</value>
@@ -36283,8 +36283,8 @@
   </LineString>
 </Placemark>
 <Placemark>
-  <name>Hill House Climb</name>
-  <styleUrl>#novideo3</styleUrl>
+  <name>Swinhope Head</name>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>8</value>
@@ -36637,125 +36637,6 @@
   </LineString>
 </Placemark>
 <Placemark>
-  <name>Another 100GCC book  #154 Peat Hill</name>
-  <styleUrl>#novideo3</styleUrl>
-  <ExtendedData>
-    <Data name="Difficulty">
-      <value>8</value>
-    </Data>
-    <Data name="Region(s)">
-      <value>North-east</value>
-    </Data>
-    <Data name="Location">
-      <value>Westgate</value>
-    </Data>
-    <Data name="Length">
-      <value>3506</value>
-    </Data>
-    <Data name="Gain">
-      <value>247</value>
-    </Data>
-    <Data name="Av Grad">
-      <value>7.0</value>
-    </Data>
-    <Data name="Max Grad">
-      <value>22.22224</value>
-    </Data>
-    <Data name="Leader Time">
-      <value>0:10:24</value>
-    </Data>
-    <Data name="Strava">
-      <value>https://www.strava.com/segments/6576097</value>
-    </Data>
-    <Data name="Veloviewer">
-      <value>https://veloviewer.com/segment/6576097</value>
-    </Data>
-    <Data name="YouTube">
-      <value></value>
-    </Data>
-  </ExtendedData>
-  <LineString>
-    <tessellate>1</tessellate>
-    <coordinates>
-      -2.1449100000000003,54.737640000000006
--2.1450500000000003,54.73774
--2.14523,54.73783
--2.1455100000000003,54.73800000000001
--2.1458000000000004,54.738200000000006
--2.14584,54.73823
--2.14598,54.738530000000004
--2.14584,54.738850000000006
--2.14581,54.739050000000006
--2.14575,54.73924
--2.1456600000000003,54.73942
--2.1455,54.739810000000006
--2.14533,54.740170000000006
--2.1452,54.740550000000006
--2.1450500000000003,54.740930000000006
--2.1446400000000003,54.741460000000004
--2.1444400000000003,54.741600000000005
--2.1441700000000004,54.741710000000005
--2.1435500000000003,54.741890000000005
--2.1430800000000003,54.74210000000001
--2.14298,54.74224
--2.1429500000000004,54.74241000000001
--2.1428800000000003,54.74259000000001
--2.14272,54.742740000000005
--2.1425400000000003,54.742850000000004
--2.1423300000000003,54.74289
--2.14215,54.742900000000006
--2.14195,54.74293
--2.1419300000000003,54.74295000000001
--2.14198,54.743030000000005
--2.1424100000000004,54.74345
--2.14285,54.74376
--2.14303,54.74392
--2.14313,54.74412
--2.14316,54.7443
--2.14311,54.7445
--2.1429400000000003,54.74466
--2.1424800000000004,54.744960000000006
--2.14225,54.74517
--2.14211,54.74535
--2.14168,54.74593
--2.14161,54.74613000000001
--2.14127,54.74692
--2.1410400000000003,54.74752
--2.1407800000000003,54.747980000000005
--2.1403800000000004,54.74833
--2.1401600000000003,54.74850000000001
--2.13775,54.750170000000004
--2.1375900000000003,54.7503
--2.1375200000000003,54.75043
--2.13767,54.752430000000004
--2.1377200000000003,54.75278
--2.13776,54.75336000000001
--2.1375300000000004,54.755
--2.13741,54.755370000000006
--2.13693,54.756600000000006
--2.1366400000000003,54.757380000000005
--2.13666,54.757850000000005
--2.1376500000000003,54.75869
--2.13783,54.758860000000006
--2.1380000000000003,54.75916
--2.13815,54.75952
--2.1388200000000004,54.761320000000005
--2.1390700000000002,54.76189
--2.1392,54.762280000000004
--2.13923,54.76249000000001
--2.13923,54.7629
--2.1392100000000003,54.763110000000005
--2.1392200000000003,54.763670000000005
--2.13924,54.76386
--2.1392900000000004,54.764050000000005
--2.13979,54.76520000000001
--2.14018,54.76597
--2.14035,54.766360000000006
-
-    </coordinates>
-  </LineString>
-</Placemark>
-<Placemark>
   <name>Unthank Bank</name>
   <styleUrl>#novideo2</styleUrl>
   <ExtendedData>
@@ -37095,7 +36976,7 @@
 </Placemark>
 <Placemark>
   <name>Newbiggin to top</name>
-  <styleUrl>#novideo2</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
@@ -37233,7 +37114,7 @@
 </Placemark>
 <Placemark>
   <name>Miry Lane</name>
-  <styleUrl>#novideo3</styleUrl>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>7</value>
@@ -37874,8 +37755,8 @@
   </LineString>
 </Placemark>
 <Placemark>
-  <name>Lead Rd</name>
-  <styleUrl>#novideo2</styleUrl>
+  <name>Leadpipe Hill</name>
+  <styleUrl>#donenovid</styleUrl>
   <ExtendedData>
     <Data name="Difficulty">
       <value>5</value>
